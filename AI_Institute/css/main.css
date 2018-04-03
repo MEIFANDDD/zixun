@@ -695,7 +695,7 @@ footer .widget h4 {
  /* -------------------------------------------------------------- 
    4 - Home Page
   -------------------------------------------------------------- */
-  section.portfolio-wrapper , section.page {
+  section.portfolio-wrapper , section.page{
     padding-top: 100px;
     float: left;
     clear: both;
