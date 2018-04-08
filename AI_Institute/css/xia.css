@@ -1,0 +1,287 @@
+
+			.banner {
+				height: 336px;
+				background: url(./img/banner.jpg) center no-repeat;
+			}
+			a:hover {
+				text-decoration: none;
+			}
+			
+			.tab_menu {
+				width: 100%;
+				margin: 30px 0;
+			}
+			
+			.tab-content {
+				margin-top: 20px;
+			}
+			
+			.tab_menu ul {
+				width: 204px;
+				margin: 0 auto;
+				border: none;
+			}
+			
+			.tab_menu>ul>li>a {
+				border: none !important;
+			}
+			
+			.nav-tabs li.active {
+				border-bottom: 4px solid #0C81A0;
+			}
+			
+			.nav-tabs li.active a {
+				color: #0C81A0 !important;
+			}
+			/*去掉hover时li的背景*/
+			
+			.nav-tabs li a:hover {
+				background: none;
+			}
+			
+			.left {
+				background: red;
+			}
+			
+			.right {
+				/*background: green;*/
+			}
+			/*热点*/
+			
+			.right-content {
+				margin-left: 20px;
+			}
+			
+			.hot-content {
+				margin-top: 30px;
+				margin-bottom: 20px;
+				text-indent: 2em;
+			}
+			/*浏览量和查看详情*/
+			
+			.page-view,
+			.page-view span {
+				/*color: #FF3B30; 红色*/
+				color: #1B76A5;
+				/*蓝色*/
+			}
+			
+			.hot-footer span {
+				margin-left: 4px;
+			}
+			/*查看详情*/
+			
+			.hot-footer .detail {
+				margin-top: -5px;
+				padding: 6px 10px;
+				background-color: #1B76A5;
+				border-radius: 20px;
+			}
+			
+			.hot-footer .detail a {
+				font-size: 12px;
+				color: #FFF;
+			}
+			/*新闻列表*/
+			
+			.content-list {
+				max-width: 600px;
+				margin: 0 auto;
+				margin-top: 50px;
+			}
+			
+			.content-list .bottom-line {
+				border-bottom: 2px dashed #ccc;
+				padding: 20px 0;
+			}
+			/*日期*/
+			.content-list .date .day,
+			.content-list .date .year-month {
+				text-align: center;
+				color: #FFF;
+			}
+			
+			.content-list .date .blue,
+			.content-list .date .blue {
+				background: #1B76A5;
+				/*蓝色*/
+			}
+			/*新闻到第5条，日期为灰色*/
+			
+			.content-list .date .gray,
+			.content-list .date .gray {
+				text-align: center;
+				background: #ccc;
+				color: #FFF;
+			}
+			
+			.content-list .date .day {
+				font-size: 36px;
+				padding: 10px 0;
+			}
+			
+			.content-list .date .year-month {
+				margin-top: 10px;
+			}
+			/*父盒子*/
+			
+			.news-list-item {
+				overflow: hidden;
+			}
+			
+			/*左边盒子*/
+			.content-list .picture {
+				float: left;
+				width: 150px;
+				height: 100px;
+				border: 1px solid yellow;
+			}
+			/*右边盒子*/
+			
+			.content-list .news-title {
+				max-width: 280px;
+				/*需要转变成rem或者em*/
+				float: left;
+				margin-left: 20px;
+				/*background-color: green;*/
+			}
+			/*新闻简介*/
+			
+			.content-list .news-title .news-descript {
+				display: -webkit-box;
+				-webkit-box-orient: vertical;
+				-webkit-line-clamp: 2;
+				overflow: hidden;
+			}
+			
+			.content-list .news-title .news-descript a {
+				font-size: 20px;
+				color: #000;
+			}
+			
+			.content-list .news-title .page-view {
+				margin-top: 22px;
+			}
+			/*分页*/
+			
+			.paging {
+				margin-top: 30px;
+			}
+			
+			.paging .prev {
+				margin-right: 20px;
+			}
+			/*页脚*/
+			
+			.footer-bg {
+				padding: 20px 0;
+				background-color: #2d2d2d;
+				color: #FFF;
+			}
+			
+			.footer-bg .focus-me {
+				height: 50px;
+				line-height: 50px;
+				vertical-align: middle;
+			}
+			
+			.footer-bg a[class] {
+				display: inline-block;
+				width: 50px;
+				height: 50px;
+				background-color: #353535;
+				background-position: center center;
+				background-repeat: no-repeat;
+				transition: background-color 0.4s;
+			}
+			
+			.footer-bg a.weichart {
+				background-image: url(./img/social/facebook.png);
+			}
+			
+			.footer-bg a.alibaba {
+				background-image: url(./img/social/facebook.png);
+			}
+			
+			.footer-bg a.weibo {
+				background-image: url(./img/social/facebook.png);
+			}
+			
+			.footer-bg a.a-site {
+				background-image: url(./img/social/facebook.png);
+			}
+			
+			.footer-bg a.b-site {
+				background-image: url(./img/social/facebook.png);
+			}
+			
+			.footer-bg a.toutiao {
+				background-image: url(./img/social/facebook.png);
+			}
+			
+			.footer-bg a.weichart:hover {
+				background-color: #4265b9;
+			}
+			
+			.footer-bg a.alibaba:hover {
+				background-color: #4265b9;
+			}
+			
+			.footer-bg a.weibo:hover {
+				background-color: #4265b9;
+			}
+			
+			.footer-bg a.a-site:hover {
+				background-color: #4265b9;
+			}
+			
+			.footer-bg a.b-site:hover {
+				background-color: #4265b9;
+			}
+			
+			.footer-bg a.toutiao:hover {
+				background-color: #4265b9;
+			}
+			/*商业合作*/
+			
+			.footer-right {
+				display: inline-block;
+				height: 50px;
+				line-height: 50px;
+				margin-right: 20px;
+			}
+			/*版权部分*/
+			
+			.copyright {
+				background-color: #353535;
+				margin-top: 20px;
+			}
+			
+			.footer-menu {
+				padding: 0;
+				margin: 0;
+				list-style: none;
+			}
+			
+			.footer-menu li {
+				float: left;
+			}
+			
+			.footer-menu li:after {
+				content: "/";
+				font-weight: 700;
+				font-size: 18px;
+				margin: 0 10px;
+			}
+			
+			.footer-menu li:last-child:after {
+				content: "";
+			}
+			
+			.footer-menu li a {
+				color: #FFF;
+			}
+			
+			.footer-menu li a:hover {
+				color: #0078a4;
+			}

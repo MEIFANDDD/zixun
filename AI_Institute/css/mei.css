@@ -1,0 +1,24 @@
+/** 设置padding**/
+.paddbotm{
+	padding-bottom: 10rem;
+}
+.paddbotm-2{
+	padding-bottom: 5rem;
+}
+.paddbotm-3{
+	padding-bottom: 3rem;
+}
+.paddlr{
+	padding: 0 10rem;
+}
+/** 核心技术部分 **/
+.hx h2{
+	padding-bottom: 2rem;
+}
+
+/** 案例展示部分 **/
+.casebnner{
+	background: url(../img/demo/blog_post.png);
+	widows: 1000px;
+	height: 300px;
+}
