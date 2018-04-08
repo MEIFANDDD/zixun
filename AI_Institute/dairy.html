@@ -3,451 +3,485 @@
 <!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
 <!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
 <!--[if IE 9 ]><html class="ie ie9" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
-<head>
-    <meta charset="utf-8">
-    <title>子询人工智能研究院</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content=" HTML5 Template">
-    <meta name="author" content="zixuncr.com">
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en">
+	<!--<![endif]-->
 
-    <!-- jquery -->
-    <script src="js/jquery.min.js"></script>
+	<head>
+		<meta charset="utf-8">
+		<title>子询人工智能研究院</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content=" HTML5 Template">
+		<meta name="author" content="zixuncr.com">
+		<link rel="shortcut icon" href="img/ai_logo.png">
+		<!-- Le styles -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/font-awesome.min.css" />
+		<!--animate库组件-->
+		<link href="css/animate.css" rel="stylesheet">
+		<link href="css/bootsnav.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/htmleaf-demo.css">
+		<link href="css/overwrite.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
+		<link href="css/color.css" rel="stylesheet">
+		<!--图片翻转特效-->
+		<link rel="stylesheet" href="css/demo.css" />
 
-    <!-- Le styles -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/main.css" type="text/css">
-    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
+		<!--页脚-->
+		<link rel="stylesheet" href="css/footer.css" />
+		<!-- <link href="css/bootstrap-responsive.min.css" rel="stylesheet">-->
+		<!--  <link rel="stylesheet" href="css/main.css" type="text/css">-->
+		<style>
+			.banner {
+				height: 336px;
+				background: url(./img/banner.jpg) center no-repeat;
+			}
+			
+			a:hover {
+				text-decoration: none;
+			}
+			
+			.tab_menu {
+				width: 100%;
+				margin: 30px 0;
+			}
+			
+			.tab-content {
+				margin-top: 20px;
+			}
+			
+			.tab_menu ul {
+				width: 204px;
+				margin: 0 auto;
+				border: none;
+			}
+			
+			.tab_menu>ul>li>a {
+				border: none !important;
+			}
+			
+			.nav-tabs li.active {
+				border-bottom: 4px solid #0C81A0;
+			}
+			
+			.nav-tabs li.active a {
+				color: #0C81A0 !important;
+			}
+			/*去掉hover时li的背景*/
+			
+			.nav-tabs li a:hover {
+				background: none;
+			}
+			/*公司简介*/
+			
+			.companyDesc h3 {
+				margin: 40px 0;
+				text-align: center;
+			}
+			
+			.companyDesc p {
+				text-indent: 2em;
+			}
+			/*导航条二级菜单图片*/
+			
+			.imgContent {
+				float: left;
+				margin-right: 20px;
+			}
+			
+			.imgContent a {
+				margin-top: 20px;
+				color: #484848;
+				font-size: 14px;
+				text-decoration: none;
+			}
+			
+			.imgContent a:hover {
+				margin-top: -5px;
+			}
+			
+			.imgContent img {
+				height: 170px;
+			}
+			
+			.imgContent p {
+				text-align: center;
+			}
+			/*加入我们旁边的圆圈--临时样式*/
+			
+			.circle {
+				width: 200px;
+				height: 200px;
+				border-radius: 50%;
+				background: blue;
+			}
+			/*加入我们和上面的间距40px margin*/
+			
+			.space {
+				margin-top: 40px;
+			}
+		</style>
+		<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+		<!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-    <!-- Le fav and touch icons -->
-    <link rel="shortcut icon" href="img/ai_logo.png">
+		<!-- Le fav and touch icons -->
 
-</head>
-<body class="body-container">
-    <!-- header -->
-    <header id="mocha-head" class="header">
+	</head>
 
-        <!-- Background -->
-        <div class="background-image"></div>
+	<body>
+		<!--导航条 开始-->
+		<nav class="navbar navbar-default navbar-mobile bootsnav">
+			<div class="container">
 
-        <!-- container -->
-        <div class="container">
+				<!-- logo -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                    <i class="fa fa-bars"></i>
+                </button>
+					<a class="navbar-brand" href="#brand"><img src="img/logo2.png" class="logo" alt=""></a>
+				</div>
+				<!-- logo -->
 
-            <!-- row1  -->
-            <div class="row">
-                <div class="span12">
+				<!-- 导航条开始 -->
+				<div class="collapse navbar-collapse" id="navbar-menu">
+					<ul class="nav navbar-nav navbar-right navbar-fixed" data-in="fadeInDown" data-out="fadeOutUp">
+						<li>
+							<a href="#">主页</a>
+						</li>
+						<li class="dropdown megamenu-fw">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">核心技术</a>
+							<ul class="dropdown-menu megamenu-content" role="menu">
+								<li>
+									<div class="row">
+										<div class="col-menu col-md-3">
+											<h6 class="title">语义理解技术</h6>
+											<div class="content">
+												<ul class="menu-col">
+													<li>
+														<a href="#">智能客服</a>
+													</li>
+													<li>
+														<a href="#">虚拟人物</a>
+													</li>
+													<li>
+														<a href="#">广告交互</a>
+													</li>
 
-                    <!-- logo -->
-                    <div class="logo width-ctl">
-                        <a href="index.html"><img src="img/logo.png" alt="zixun"/></a>
-                    </div>
-                    <!-- end logo -->
+												</ul>
+											</div>
+										</div>
+										<!-- end col-3 -->
+										<div class="col-menu col-md-3">
+											<h6 class="title">图像识别技术</h6>
+											<div class="content">
 
-                    <!-- nav -->
-                    <nav class="menu">	
-                        <ul>
-                            <li class="toggle"><a href="#">Menu</a></li>
-                            <li><a href="index.html">首页</a></li>
-                            <li><a href="about.html">核心技术</a>
-                                <ul>
-                                    <li><a href="about.html">语义理解技术</a>
-                                    		<ul>
-                                    			<li><a href="about.html">智能客服</a>
-                                    			<li><a href="about.html">虚拟人物</a>
-                                    			<li><a href="about.html">广告交互</a>
-                                    		</ul>
-                                    </li>
-                                    <li><a href="about.html">图像识别技术</a>
-                                    		<ul>
-                                    			<li><a href="about.html">癌症筛查</a>
-                                    			<li><a href="about.html">场景识别</a>
-                                    			<li><a href="about.html">机器人视觉</a>
-                                    			<li><a href="about.html">票据识别</a>
-                                    		</ul>
-                                    </li>
-                                    <li><a href="about.html">数据处理技术</a>
-                                    	<ul>
-                                    			<li><a href="about.html">智能数据库</a>
-                                    			<li><a href="about.html">搜索库</a>
-                                    			<li><a href="about.html">授信融资与保险定价</a>
-                                    			<li><a href="about.html">投资决策系统与智能投资顾问</a>
-                                    			<li><a href="about.html">金融预测、反欺诈与风控</a>
-                                    		</ul>
-                                    </li>
-                                    <li><a href="about.html">其他</a>
-                                    	<ul>
-                                    			<li><a href="about.html">自然语言合成</a>
-                                    			<li><a href="about.html">时序控制信号学习</a>
-                                    			<li><a href="about.html">近似目标锁定</a>
-                                    		</ul>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li><a href="item_details.html">案例展示</a>
-                                <ul>
-                                    <li><a href="#">智慧安防</a></li>
-                                    <li><a href="#">智能终端</a></li>
-                                    <li><a href="#">互联网娱乐</a></li>
-                                    <li><a href="#">智慧金融</a>
-                                    	<li><a href="#">智慧商业</a>
-                                    	<li><a href="#">遥感</a>
-                                    <li><a href="#">移动运营商</a>
-                                </ul>
-                            </li>
-                            <li><a href="item_related.html">自媒体</a>
-                                <ul>
-                                    <li><a href="#">文章</a></li>
-                                    <li><a href="#">视频</a></li>
-                                    <li><a href="#">咨询</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="hr.html">关于子询</a>
-                                <!--<ul>
-                                    <li><a href="hr_1.html">理事达人(Ai-Prof)</a></li>
-                                    <li><a href="hr_2.html">AI实验室(Ai-Lab)</a></li>
-                                    <li><a href="hr_3.html">子询AI派(Ai-HRPlan)</a></li>
-                                    <li><a href="hr_4.html">AI少年派(Ai-Union)</a></li>
-                                </ul>-->
-                            </li>
-                            <li><a href="dairy.html">加入子询</a>
-                                <!--<ul>
-                                    <li><a href="dairy_1.html">Ai科研动态(Ai-Papers)</a></li>
-                                    <li><a href="dairy_2.html">Ai企业动态(Ai-News)</a></li>
-                                    <li><a href="dairy_3.html">Ai投资动态(Ai-Capital)</a></li>
-                                </ul>-->
-                            </li>
-                            <!--<li><a href="contact.html">联系我们</a></li>-->
-                        </ul>
-                    </nav>
-                    <!-- end nav -->
-                    
-                    <!-- globalization -->
-                    	<div class="">
-                    		
-                    	</div>
-                    	<!-- end globalization -->
-                </div>
-                <!-- end span12 -->
-            </div>
-            <!-- end row 1-->
+												<ul class="menu-col">
+													<li>
+														<a href="#">癌症筛查 </a>
+													</li>
+													<li>
+														<a href="#">场景识别</a>
+													</li>
+													<li>
+														<a href="#">机器人视觉</a>
+													</li>
+													<li>
+														<a href="#">票据识别</a>
+													</li>
 
-            <!-- row2 -->
-            <div class="row">          
-                <div class="span12 teaser">
-                    <h2>子询 . Ai日记</h2>
-                    <p>记录Ai发展的每一个精彩的Moment</p>
-                </div>
-                <!-- end span12 -->
-            </div>
-            <!-- end row 2-->
-        </div>
-        <!-- end container -->
+												</ul>
+											</div>
+										</div>
+										<!-- end col-3 -->
+										<div class="col-menu col-md-3">
+											<h6 class="title">数据处理技术</h6>
+											<div class="content">
+												<ul class="menu-col">
+													<li>
+														<a href="#">智能数据库</a>
+													</li>
+													<li>
+														<a href="#">搜索库</a>
+													</li>
+													<li>
+														<a href="#">授信融资与保险定价</a>
+													</li>
+													<li>
+														<a href="#">投资决策系统与智能投资顾问</a>
+													</li>
+													<li>
+														<a href="#">金融预测、反欺诈与风控</a>
+													</li>
 
-    </header>   
-    <!-- end header -->
+												</ul>
+											</div>
+										</div>
+										<div class="col-menu col-md-3">
+											<h6 class="title">其他</h6>
+											<div class="content">
+												<ul class="menu-col">
+													<li>
+														<a href="#">自然语言合成</a>
+													</li>
+													<li>
+														<a href="#">时序控制信号学习</a>
+													</li>
+													<li>
+														<a href="#">近似目标锁定</a>
+													</li>
+												</ul>
+											</div>
+										</div>
+										<!-- end col-3 -->
+									</div>
+									<!-- end row -->
+								</li>
+							</ul>
+						</li>
+						<li class="dropdown megamenu-fw">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">案例展示</a>
+							<ul class="dropdown-menu megamenu-content clearfix" role="menu">
+								<li class="imgContent">
+									<a href="#">
+										<div class="imgDiv">
+											<img src="./img/1.png" alt="" />
+										</div>
+										<p>智能客服</p>
+									</a>
+								</li>
+								<li class="imgContent">
+									<a href="#">
+										<div class="imgDiv">
+											<img src="./img/1.png" alt="" />
+										</div>
+										<p>智能客服</p>
+									</a>
+								</li>
+								<li class="imgContent">
+									<a href="#">
+										<div class="imgDiv">
+											<img src="./img/1.png" alt="" />
+										</div>
+										<p>智能客服</p>
+									</a>
+								</li>
+								<li class="imgContent">
+									<a href="#">
+										<div class="imgDiv">
+											<img src="./img/1.png" alt="" />
+										</div>
+										<p>智能客服</p>
+									</a>
+								</li>
+								<li class="imgContent">
+									<a href="#">
+										<div class="imgDiv">
+											<img src="./img/1.png" alt="" />
+										</div>
+										<p>智能客服</p>
+									</a>
+								</li>
+							</ul>
 
+						</li>
+						<li>
+							<a href="#">自媒体</a>
+						</li>
+						<li>
+							<a href="#">关于子询</a>
+						</li>
+						<li>
+							<a href="#">加入子询</a>
+						</li>
+					</ul>
+				</div>
+				<!--导航条 结束 -->
+			</div>
 
-    <!-- page content -->
-    <section class="page portfolio-page-wrapper">            
-        <div class="container">
-            <div class="row">
-                            
-                <!-- sort list -->
-                <div class="portfolio-sortlist span12">                        
-                    <ul>
-                        <li><a href="#" data-sort="*">全部动态信息</a></li>
-                        <li><a href="#" data-sort="web-design">人工智能科研动态</a></li>
-                        <li><a href="#" data-sort="graphic-design">人工智能企业动态</a></li>
-                        <li><a href="#" data-sort="illustration">人工智能投资动态</a></li>
-                    </ul>
-                </div>
-                <!-- end sortlist -->
-                
-                <!-- portoflio  -->
-                <div class="portfolio-page">
-                    <!-- portfolio item -->
-                    <div class="span4 portfolio-item web-design">
-                        <!-- image -->
-                        <a href="dairy_1.html" class="image">
-                            <img src="img/demo/single-portfolio2.png" alt="Web Design">
-                        </a>
-                        <!-- end image -->
-                        <!-- title -->
-                        <a href="dairy_1.html" class="title">最新图像识别论文<br /></a>
-                        <!-- icon -->
-                        <a href="dairy_1.html" class="icon"></a>
-                    </div>
-                    <!-- end portfolio item -->
-                    
-                    <!-- portfolio item -->
-                    <div class="span4 portfolio-item web-design">
-                        <!-- image -->
-                        <a href="dairy_1.html" class="image">
-                            <img src="img/demo/single-portfolio4.png" alt="Web Design">
-                        </a>
-                        <!-- end image -->
-                        <!-- title -->
-                        <a href="dairy_1.html" class="title">最新语意识别论文</a>
-                        <!-- icon -->
-                        <a href="dairy_1.html" class="icon"></a>
-                    </div>
-                    <!-- end portfolio item -->
+		</nav>
+		<!-- End Navigation -->
 
-                    <!-- portfolio item -->
-                    <div class="span4 portfolio-item web-design">
-                        <!-- image -->
-                        <a href="dairy_1.html" class="image">
-                            <img src="img/demo/single-portfolio7.png" alt="Web Design">
-                        </a>
-                        <!-- end image -->
-                        <!-- title -->
-                        <a href="dairy_1.html" class="title">最新空间感知论文<br /></a>
-                        <!-- icon -->
-                        <a href="dairy_1.html" class="icon"></a>
-                    </div>
-                    <!-- end portfolio item -->
+		<div class="clearfix"></div>
 
-                    <!-- portfolio item -->
-                    <div class="span4 portfolio-item web-design">
-                        <!-- image -->
-                        <a href="dairy_1.html" class="image">
-                            <img src="img/demo/single-portfolio5.png" alt="Web Design">
-                        </a>
-                        <!-- end image -->
-                        <!-- title -->
-                        <a href="dairy_1.html" class="title">最新Ai黑科技<br /></a>
-                        <!-- icon -->
-                        <a href="dairy_1.html" class="icon"></a>
-                    </div>
-                    <!-- end portfolio item -->
+		<!--banner图-->
+		<div class="banner">
+			<div class="container">
 
-                    <!-- portfolio item -->
-                    <div class="span4 portfolio-item graphic-design">
-                        <!-- image -->
-                        <a href="dairy_2.html" class="image">
-                            <img src="img/demo/single-portfolio3.png" alt="Web Design">
-                        </a>
-                        <!-- end image -->
-                        <!-- title -->
-                        <a href="dairy_2.html" class="title">智能化产品<br /></a>
-                        <!-- icon -->
-                        <a href="dairy_2.html" class="icon"></a>
-                    </div>
-                    <!-- end portfolio item -->
+			</div>
+		</div>
+		<!--banner图 结束-->
 
-                    <!-- portfolio item -->
-                    <div class="span4 portfolio-item graphic-design">
-                        <!-- image -->
-                        <a href="dairy_2.html" class="image">
-                            <img src="img/demo/single-portfolio8.png" alt="Web Design">
-                        </a>
-                        <!-- end image -->
-                        <!-- title -->
-                        <a href="dairy_2.html" class="title">智能化设备<br /></a>
-                        <!-- icon -->
-                        <a href="dairy_2.html" class="icon"></a>
-                    </div>
-                    <!-- end portfolio item -->
+		<!--内容主体-->
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-md-6">
+					<div style="height: 200px;background: blue;"></div>
+				</div>
+				<div class="col-xs-12 col-md-6">
+					<h3 class="text-center">加入我们</h3>
+					<p>文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 col-md-6">
+					<h3 class="text-center">口号二</h3>
+					<p>文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍</p>
+				</div>
+				<div class="col-xs-12 col-md-6">
+					<div style="height: 200px;background: blue;"></div>
+				</div>
 
-                    <!-- portfolio item -->
-                    <div class="span4 portfolio-item graphic-design">
-                        <!-- image -->
-                        <a href="dairy_2.html" class="image">
-                            <img src="img/demo/single-portfolio9.png" alt="Web Design">
-                        </a>
-                        <!-- end image -->
-                        <!-- title -->
-                        <a href="dairy_2.html" class="title">人工智能专利<br /></a>
-                        <!-- icon -->
-                        <a href="dairy_2.html" class="icon"></a>
-                    </div>
-                    <!-- end portfolio item -->
+			</div>
+			<div class="row">
 
-                    <!-- portfolio item -->
-                    <div class="span4 portfolio-item graphic-design">
-                        <!-- image -->
-                        <a href="dairy_2.html" class="image">
-                            <img src="img/demo/single-portfolio9.png" alt="Web Design">
-                        </a>
-                        <!-- end image -->
-                        <!-- title -->
-                        <a href="dairy_2.html" class="title">企业Ai能力排名<br /></a>
-                        <!-- icon -->
-                        <a href="dairy_2.html" class="icon"></a>
-                    </div>
-                    <!-- end portfolio item -->
+				<div class="col-xs-12 col-md-6">
+					<div style="height: 200px;background: blue;"></div>
+				</div>
+				<div class="col-xs-12 col-md-6">
+					<h3 class="text-center">口号三</h3>
+					<p>文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍</p>
+				</div>
+			</div>
+			<div class="row space">
+				<div class="col-xs-6 col-md-6 clearfix">
+					<div class="circle pull-right"></div>
+				</div>
+				<div class="col-xs-6 col-md-6">
+					<div class="space">
+						<h3>现在就加入我们吧</h3>
+						<p>请将您的简历与作品</p>
+						<p>发送至：XXXX@qq.com</p>
+					</div>
+				</div>
+			</div>
 
-                    <!-- portfolio item -->
-                    <div class="span4 portfolio-item illustration">
-                        <!-- image -->
-                        <a href="dairy_3.html" class="image">
-                            <img src="img/demo/single-portfolio6.png" alt="Web Design">
-                        </a>
-                        <!-- end image -->
-                        <!-- title -->
-                        <a href="dairy_3.html" class="title">Ai投资基金汇总<br /></a>
-                        <!-- icon -->
-                        <a href="dairy_3.html" class="icon"></a>
-                    </div>
-                    <!-- end portfolio item -->
+		</div>
+		<!--内容主体 结束-->
+		<div class="container">
+			<!--招聘需求-->
+			<div class="space box">
+				<ul>
+					<li>
+						<div class='picBox'>
+							<div class='show'>
+								<image height='180px' width='180px' src='img/pic1.png'></image>
+							</div>
+							<div class='hide'>
+								<h3>
+						Picture1
+					</h3>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class='picBox'>
+							<div class='show'>
+								<image height='180px' width='180px' src='img/pic2.png'></image>
+							</div>
+							<div class='hide'>
+								<h3>
+					  Picture2
+					</h3>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class='picBox'>
+							<div class='show'>
+								<image height='180px' width='180px' src='img/pic3.png'></image>
+							</div>
+							<div class='hide'>
+								<h3>
+					   Picture3
+					</h3>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class='picBox'>
+							<div class='show'>
+								<image height='180px' width='180px' src='img/pic4.png'></image>
+							</div>
+							<div class='hide'>
+								<h3>
+						Picture4
+					</h3>
+							</div>
+						</div>
+					</li>
 
-                    <!-- portfolio item -->
-                    <div class="span4 portfolio-item illustration">
-                        <!-- image -->
-                        <a href="dairy_3.html" class="image">
-                            <img src="img/demo/single-portfolio1.png" alt="Brain Surgery">
-                        </a>
-                        <!-- end image -->
-                        <!-- title -->
-                        <a href="dairy_3.html" class="title">Ai领域投资动态<br /></a>
-                        <!-- icon -->
-                        <a href="dairy_3.html" class="icon"></a>
-                    </div>
-                    <!-- end portfolio item -->
-                </div>
-                <!-- end portfolio wrapper -->
-            </div>
-            <!-- end row -->
-        </div>
-        <!-- end container -->
+				</ul>
 
-    </section>
-    <!-- end page content -->
+			</div>
+			<!--招聘需求 结束-->
+		</div>
+		<!--页脚-->
+		<div class="footer-bg">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="footer-line clearfix">
+							<div class="focus-me pull-left">关注我们：</div>
+							<div class="footer-left pull-left">
 
-    <!-- footer -->
-    <footer>
+								<a href="#" class="weichart"></a>
+								<a href="#" class="alibaba"></a>
+								<a href="#" class="weibo"></a>
+								<a href="#" class="a-site"></a>
+								<a href="#" class="b-site"></a>
+								<a href="#" class="toutiao"></a>
 
-        <div class="container">
-            <div class="row">
+							</div>
 
-                <!-- widgets wrapper -->
-                <div class="widgets-wrapper">
+							<div class="footer-right pull-right">
+								<span>商业合作：</span>
+								<span>sales@zixuncr.com</span>
+							</div>
+						</div>
+					</div>
+				</div>
 
-                    <!-- widget -->
-                    <div class="span4 widget">
-                        <h3>"!#$%^%^^*?..."</h3>        
-                        <!-- widget content -->
-                        <div class="widget-content">
-                            <img src="img/logo_full.png" alt="zixun"/>
-                        </div>
-                        <!-- end widget content -->
-                    </div>
-                    <!-- end widget -->
+				<div class="row">
+					<div class="col-md-12">
+						<div class="copyright">
+							<div class="pull-left">子询(深圳)人工智能研究院有限公司版权所有 Copyrights All Reserverd &copy;2017.</div>
+							<div class="pull-right visible-md visible-lg">
+								<ul class="footer-menu">
+									<li>
+										<a href="">首页</a>
+									</li>
+									<li>
+										<a href="">核心技术</a>
+									</li>
+									<li>
+										<a href="">案例展示</a>
+									</li>
+									<li>
+										<a href="">自媒体</a>
+									</li>
+									<li>
+										<a href="">关于子询</a>
+									</li>
+									<li>
+										<a href="">加入子询</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--页脚 结束-->
+		<script src="js/jquery.min.js"></script>
+		<!--bootstrap导航条-->
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/bootsnav.js"></script>
+		<script src="js/velocity.js"></script>
+		<!--图片翻转特效-->
+		<script src="js/demo.js"></script>
+	</body>
 
-                    <!-- widget -->
-                    <div class="widget span4">
-                        <h3>常来联系呀!</h3>
-                        <!-- widget content -->
-                        <div class="widget-content">
-                            <p>以下是子询的各种关怀您的方式, 随便选择一种吧。我们期待您的倾诉。我们承诺以下的联系方式属于100%真人服务哟。中国的朋友们WeChat是子询的首选联系方式。海外的伙伴们咱们还是linkedin吧, 及专业又稳定。</p>
-                            <div class="clearfix"></div>
-                            <!-- social icons -->
-                            <div class="social-icons">
-                                <a href="#" class="facebook"></a>
-                                <a href="#" class="twitter"></a>
-                                <a href="#" class="dribbble"></a>
-                                <a href="#" class="vimeo"></a>
-                                <a href="#" class="linkedin"></a>
-                                <a href="#" class="rss"></a>
-                            </div>
-                            <!-- end social icons -->
-                            <div class="clearfix"></div>
-
-                            <!-- newsletter -->
-                            <div class="newsletter">     
-                                <h4>欢迎订阅子询Ai新闻</h4>
-                                <form class="newsletter-form">
-                                    <input type="text" class="email" placeholder="请输入您的邮箱地址" />
-                                    <input type="submit" class="submit" value="" >
-                                </form>
-                                <!-- end form -->
-                            </div>
-                            <!-- end newsletter -->
-                        </div>
-                        <!-- end widget content -->
-                    </div>
-                    <!-- end widget -->
-
-                    <!-- widget -->
-                    <div class="widget span4">
-                        <h3>子询自述</h3>
-                        <div class="widget-content">
-                            <!-- twitter -->
-                            <div class="twitter-wrapper">
-                                <div class="tweet">
-                                    <p><a href="#">@ZIXUN_QABot</a> Our background is Ai related creative development, we love open source, we believe that work is about way more than just making money.</p>
-                                </div>
-                                <!-- end tweet -->
-
-                                <div class="tweet">
-                                    <p><a href="#">@ZIXUN_QABot</a> 我是Ai自动问答机器人, 我的理想也是子询问答机器人团队的理想是: "通过Ai改变我们的社会, 让Ai服务国人。"</a>.</p>
-                                </div>
-                                <!-- end tweet -->
-
-                                <div class="tweet">
-                                   <p><a href="#">@ZIXUN_QABot</a> 怎么样才能让我更完善喃？得有人跟我聊天呀！我是只寂寞的Ai机器人, 等待主人的关怀。我会忠实的帮您成长, 鉴证您的生活, 传承您的思想, 让您永远有个懂你、等你的朋友。</p>
-                                </div>
-                                <!-- end tweet -->
-                            </div>
-                            <!-- end twitter wrapper -->
-                        </div>
-                        <!-- end widget content -->
-                    </div>
-                    <!-- end widget -->
-                </div>
-                <!-- end widgets wrapper -->
-            </div>
-            <!-- end row -->
-        </div>
-        <!-- end container -->
-
-
-        <!-- second container / copyrights -->
-        <div class="copyrights">
-            <div class="container">
-                <div class="row">
-                    
-                    <div class="copyrights-wrapper span12">
-                        <!-- left copyrights -->
-                        <div class="left-copyrights">
-                            <p>子询(深圳)人工智能研究院有限公司版权所有 Copyrights All Reserverd @2017.</p>
-                        </div>
-                        <!-- end left copyrights -->
-
-                        <!-- right menu -->
-                        <div class="right-menu">
-                            <ul>
-                                <li><a href="index.html">首页</a></li>
-                                <li><a href="about.html">研究院</a></li>
-                                <li><a href="item_details.html">Ai平台</a></li>
-                                <li><a href="item_related.html">Ai产品</a></li>
-                                <li><a href="hr.html">Ai伙伴</a></li>
-                                <li><a href="dairy.html">Ai日记</a></li>
-                                <li><a href="contact.html">踩我</a></li>
-                            </ul>
-                        </div>
-                        <!-- end right menu -->
-                    </div><!-- end span12 -->
-
-                </div>
-                <!-- end row -->
-            </div>
-            <!-- end container -->
-        </div>
-        <!-- end copyrights -->
-    </footer>
-
-    <!-- Javascript -->
-    <script src="js/mediaelement.min.js"></script>
-    <script src="js/jquery.flexslider-min.js"></script>
-    <script src="js/jquery-ui-1.10.3.custom.min.js"></script>
-    <script src="js/jquery.carouFredSel-6.2.1-packed.js"></script>
-    <script src="js/isotope.js"></script>
-    <script src="js/jflickrfeed.js"></script><script src="js/custom.js"></script>
-
-</body>
 </html>
