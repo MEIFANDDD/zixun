@@ -16,7 +16,6 @@
 		<link rel="shortcut icon" href="img/ai_logo.png">
 		<!-- Le styles -->
 		<link href="css/bootstrap.min.css" rel="stylesheet">
-		<!--字体图库-->
 		<link rel="stylesheet" href="css/font-awesome.min.css" />
 		<!--animate库组件-->
 		<link href="css/animate.css" rel="stylesheet">
@@ -25,7 +24,9 @@
 		<link href="css/overwrite.css" rel="stylesheet">
 		<link href="css/style.css" rel="stylesheet">
 		<link href="css/color.css" rel="stylesheet">
-		
+		<!--图片翻转特效-->
+		<link rel="stylesheet" href="css/demo.css" />
+
 		<!--页脚-->
 		<link rel="stylesheet" href="css/footer.css" />
 		<!-- <link href="css/bootstrap-responsive.min.css" rel="stylesheet">-->
@@ -72,38 +73,53 @@
 				background: none;
 			}
 			/*公司简介*/
+			
 			.companyDesc h3 {
 				margin: 40px 0;
 				text-align: center;
 			}
+			
 			.companyDesc p {
 				text-indent: 2em;
-				
+			}
+			/*导航条二级菜单图片*/
+			
+			.imgContent {
+				float: left;
+				margin-right: 20px;
 			}
 			
+			.imgContent a {
+				margin-top: 20px;
+				color: #484848;
+				font-size: 14px;
+				text-decoration: none;
+			}
 			
-		/*导航条二级菜单图片*/
-		.imgContent {
-            float: left;
-            margin-right: 20px;
-        }
-        
-        .imgContent a {
-            margin-top: 20px;
-            color: #484848;
-            font-size: 14px;
-            text-decoration: none;
-        }
-        .imgContent a:hover {
-            margin-top: -5px;
-        }
-        .imgContent img {
-            height: 170px;
-        }
-        .imgContent p {
-            text-align: center;
-        }
-			/*页脚 -- footer.css*/
+			.imgContent a:hover {
+				margin-top: -5px;
+			}
+			
+			.imgContent img {
+				height: 170px;
+			}
+			
+			.imgContent p {
+				text-align: center;
+			}
+			/*加入我们旁边的圆圈--临时样式*/
+			
+			.circle {
+				width: 200px;
+				height: 200px;
+				border-radius: 50%;
+				background: blue;
+			}
+			/*加入我们和上面的间距40px margin*/
+			
+			.space {
+				margin-top: 40px;
+			}
 		</style>
 		<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
 		<!--[if lt IE 9]>
@@ -115,7 +131,7 @@
 	</head>
 
 	<body>
-		<!--导航条 开始-->
+			<!--导航条 开始-->
 		<nav class="navbar navbar-default navbar-mobile bootsnav">
 			<div class="container">
 
@@ -207,7 +223,7 @@
 											<div class="content">
 												<ul class="menu-col">
 													<li>
-														<a href="#">自然语言合成</a>
+														<a href="#" onclick="alert("没有跳转")">自然语言合成</a>
 													</li>
 													<li>
 														<a href="#">时序控制信号学习</a>
@@ -288,7 +304,6 @@
 
 		<div class="clearfix"></div>
 
-	
 		<!--banner图-->
 		<div class="banner">
 			<div class="container">
@@ -296,107 +311,111 @@
 			</div>
 		</div>
 		<!--banner图 结束-->
-		
+
 		<!--内容主体-->
 		<div class="container">
 			<div class="row">
-				<div class="col-sm-12">
-					<div class="tab_menu">
-						<ul class="nav nav-tabs">
-							<li role="presentation" class="active">
-								<a href="#companyDesc" data-toggle="tab">公司简介</a>
-							</li>
-							<li role="presentation">
-								<a href="#teamDesc" data-toggle="tab">团队介绍</a>
-							</li>
-						</ul>
-
-						<div class="tab-content">
-							<!-- 公司简介 -->
-							<div id="companyDesc" class="tab-pane fade in active companyDesc">
-								<div class="container">
-									<div class="row">
-										<div class="col-sm-12 col-xs-12">
-											<h3>专业Al+提供商</h3>
-											<p>第一篇文章为置顶文章，后面的所有文章按照时间顺序排放，在后台上传新的文章后按照时间顺序自动排列，排列顺序为从上至下，上面为日期最新的，下面以此类推。 一页只展示十条，超过自动排到下一页。第一篇文章为置顶文章，后面的所有文章按照时间顺序排放，在后台上传新的文章后按照时间顺序自动排列，排列顺序为从上至下，上面为日期最新的，下面以此类推。 一页只展示十条，超过自动排到下一页。第一篇文章为置顶文章，后面的所有文章按照时间顺序排放，在后台上传新的文章后按照时间顺序自动排列，排列顺序</p>
-											<p>第一篇文章为置顶文章，后面的所有文章按照时间顺序排放，在后台上传新的文章后按照时间顺序自动排列，排列顺序为从上至下，上面为日期最新的，下面以此类推。 一页只展示十条，超过自动排到下一页。第一篇文章为置顶文章，后面的所有文章按照时间顺序排放，在后台上传新的文章后按照时间顺序自动排列，排列顺序为从上至下，上面为日期最新的，下面以此类推。 一页只展示十条，超过自动排到下一页。第一篇文章为置顶文章，后面的所有文章按照时间顺序排放，在后台上传新的文章后按照时间顺序自动排列，排列顺序</p>
-										</div>
-									</div>
-								</div>
-								
-							</div>
-							<!-- 公司简介  结束-->
-							<div id="teamDesc" class="tab-pane fade">
-								<div class="container">
-									<div class="row">
-										<h3>技术</h3>
-									</div>
-									<div class="row">
-										<div class="col-xs-6 col-md-2">
-											<img src="img/demo/avatar2.png" class="img-responsive center-block"/>
-											<p class="text-center">描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述</p>
-										</div>
-										<div class="col-xs-6 col-md-2">
-											<img src="img/demo/avatar2.png" class="img-responsive center-block"/>
-											<p class="text-center">描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述</p>
-										</div>
-										<div class="col-xs-6 col-md-2">
-											<img src="img/demo/avatar2.png" class="img-responsive center-block"/>
-											<p class="text-center">描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述</p>
-										</div>
-										<div class="col-xs-6 col-md-2">
-											<img src="img/demo/avatar2.png" class="img-responsive center-block"/>
-											<p class="text-center">描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述</p>
-										</div>
-										<div class="col-xs-6 col-md-2">
-											<img src="img/demo/avatar2.png" class="img-responsive center-block"/>
-											<p class="text-center">描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述</p>
-										</div>
-										<div class="col-xs-6 col-md-2">
-											<img src="img/demo/avatar2.png" class="img-responsive center-block"/>
-											<p class="text-center">描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述</p>
-										</div>
-									</div>
-									<div class="row">
-										<h3>商业</h3>
-									</div>
-									<div class="row">
-										<div class="col-xs-6 col-md-2">
-											<img src="img/demo/avatar2.png" class="img-responsive center-block"/>
-											
-										</div>
-										<div class="col-xs-6 col-md-2">
-											<img src="img/demo/avatar2.png" class="img-responsive center-block"/>
-											
-										</div>
-										<div class="col-xs-6 col-md-2">
-											<img src="img/demo/avatar2.png" class="img-responsive center-block"/>
-											
-										</div>
-										<div class="col-xs-6 col-md-2">
-											<img src="img/demo/avatar2.png" class="img-responsive center-block"/>
-											
-										</div>
-										<div class="col-xs-6 col-md-2">
-											<img src="img/demo/avatar2.png" class="img-responsive center-block"/>
-											
-										</div>
-										<div class="col-xs-6 col-md-2">
-											<img src="img/demo/avatar2.png" class="img-responsive center-block"/>
-											
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
+				<div class="col-xs-12 col-md-6">
+					<div style="height: 200px;background: blue;"></div>
+				</div>
+				<div class="col-xs-12 col-md-6">
+					<h3 class="text-center">加入我们</h3>
+					<p>文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 col-md-6">
+					<h3 class="text-center">口号二</h3>
+					<p>文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍</p>
+				</div>
+				<div class="col-xs-12 col-md-6">
+					<div style="height: 200px;background: blue;"></div>
 				</div>
 
+			</div>
+			<div class="row">
+
+				<div class="col-xs-12 col-md-6">
+					<div style="height: 200px;background: blue;"></div>
+				</div>
+				<div class="col-xs-12 col-md-6">
+					<h3 class="text-center">口号三</h3>
+					<p>文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍</p>
+				</div>
+			</div>
+			<div class="row space">
+				<div class="col-xs-6 col-md-6 clearfix">
+					<div class="circle pull-right"></div>
+				</div>
+				<div class="col-xs-6 col-md-6">
+					<div class="space">
+						<h3>现在就加入我们吧</h3>
+						<p>请将您的简历与作品</p>
+						<p>发送至：XXXX@qq.com</p>
+					</div>
+				</div>
 			</div>
 
 		</div>
 		<!--内容主体 结束-->
-		
+		<div class="container">
+			<!--招聘需求-->
+			<div class="space box">
+				<ul>
+					<li>
+						<div class='picBox'>
+							<div class='show'>
+								<image height='180px' width='180px' src='img/pic1.png'></image>
+							</div>
+							<div class='hide'>
+								<h3>
+						Picture1
+					</h3>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class='picBox'>
+							<div class='show'>
+								<image height='180px' width='180px' src='img/pic2.png'></image>
+							</div>
+							<div class='hide'>
+								<h3>
+					  Picture2
+					</h3>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class='picBox'>
+							<div class='show'>
+								<image height='180px' width='180px' src='img/pic3.png'></image>
+							</div>
+							<div class='hide'>
+								<h3>
+					   Picture3
+					</h3>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class='picBox'>
+							<div class='show'>
+								<image height='180px' width='180px' src='img/pic4.png'></image>
+							</div>
+							<div class='hide'>
+								<h3>
+						Picture4
+					</h3>
+							</div>
+						</div>
+					</li>
+
+				</ul>
+
+			</div>
+			<!--招聘需求 结束-->
+		</div>
 <!-- footer -->
     <footer>
 		<div class="footer-bg">
@@ -462,6 +481,8 @@
 		<script src="js/bootstrap.min.js"></script>
 		<script src="js/bootsnav.js"></script>
 		<script src="js/velocity.js"></script>
+		<!--图片翻转特效-->
+		<script src="js/demo.js"></script>
 	</body>
 
 </html>

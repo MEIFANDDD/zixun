@@ -1,36 +1,33 @@
-<!DOCTYPE html>
-<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
-<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
-<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
-<!--[if IE 9 ]><html class="ie ie9" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!-->
-<html lang="en">
-	<!--<![endif]-->
+<!--
+	作者：530051607@qq.com
+	时间：2018-04-06
+	描述：
+-->
 
+<!DOCTYPE html>
+<html>
 	<head>
-		<meta charset="utf-8">
-		<title>子询人工智能研究院</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="description" content=" HTML5 Template">
-		<meta name="author" content="zixuncr.com">
-		<link rel="shortcut icon" href="img/ai_logo.png">
-		<!-- Le styles -->
-		<link href="css/bootstrap.min.css" rel="stylesheet">
-		<!--字体图库-->
-		<link rel="stylesheet" href="css/font-awesome.min.css" />
-		<!--animate库组件-->
-		<link href="css/animate.css" rel="stylesheet">
+		<meta charset="UTF-8">
+    		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+   		<meta name="description" content=" HTML5 Template">
+		<title>核心技术</title>
+		<!-- 引入样式 -->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.js"></script>
+	    <link href="css/bootstrap.min.css" rel="stylesheet">
+	    <link href="css/mei.css" rel="stylesheet">
+	    	<link rel="stylesheet" href="css/font-awesome.min.css" />	
+	    	<!--animate库组件-->
+	    <link href="css/animate.css" rel="stylesheet">
 		<link href="css/bootsnav.css" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="css/htmleaf-demo.css">
 		<link href="css/overwrite.css" rel="stylesheet">
 		<link href="css/style.css" rel="stylesheet">
 		<link href="css/color.css" rel="stylesheet">
-		
 		<!--页脚-->
 		<link rel="stylesheet" href="css/footer.css" />
-		<!-- <link href="css/bootstrap-responsive.min.css" rel="stylesheet">-->
-		<!--  <link rel="stylesheet" href="css/main.css" type="text/css">-->
-		<style>
+		
+			<style>
 			.banner {
 				height: 336px;
 				background: url(./img/banner.jpg) center no-repeat;
@@ -72,48 +69,55 @@
 				background: none;
 			}
 			/*公司简介*/
+			
 			.companyDesc h3 {
 				margin: 40px 0;
 				text-align: center;
 			}
+			
 			.companyDesc p {
 				text-indent: 2em;
-				
+			}
+			/*导航条二级菜单图片*/
+			
+			.imgContent {
+				float: left;
+				margin-right: 20px;
 			}
 			
+			.imgContent a {
+				margin-top: 20px;
+				color: #484848;
+				font-size: 14px;
+				text-decoration: none;
+			}
 			
-		/*导航条二级菜单图片*/
-		.imgContent {
-            float: left;
-            margin-right: 20px;
-        }
-        
-        .imgContent a {
-            margin-top: 20px;
-            color: #484848;
-            font-size: 14px;
-            text-decoration: none;
-        }
-        .imgContent a:hover {
-            margin-top: -5px;
-        }
-        .imgContent img {
-            height: 170px;
-        }
-        .imgContent p {
-            text-align: center;
-        }
-			/*页脚 -- footer.css*/
+			.imgContent a:hover {
+				margin-top: -5px;
+			}
+			
+			.imgContent img {
+				height: 170px;
+			}
+			
+			.imgContent p {
+				text-align: center;
+			}
+			/*加入我们旁边的圆圈--临时样式*/
+			
+			.circle {
+				width: 200px;
+				height: 200px;
+				border-radius: 50%;
+				background: blue;
+			}
+			/*加入我们和上面的间距40px margin*/
+			
+			.space {
+				margin-top: 40px;
+			}
 		</style>
-		<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
-		<!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
-		<!-- Le fav and touch icons -->
-
 	</head>
-
 	<body>
 		<!--导航条 开始-->
 		<nav class="navbar navbar-default navbar-mobile bootsnav">
@@ -207,7 +211,7 @@
 											<div class="content">
 												<ul class="menu-col">
 													<li>
-														<a href="#">自然语言合成</a>
+														<a href="#" onclick="alert("没有跳转")">自然语言合成</a>
 													</li>
 													<li>
 														<a href="#">时序控制信号学习</a>
@@ -285,118 +289,93 @@
 			</div>
 		</nav>
 		<!-- End Navigation -->
-
-		<div class="clearfix"></div>
-
-	
-		<!--banner图-->
-		<div class="banner">
+		<!-- 大标题 -->
+		<header class="paddbotm hx paddtp-2">
 			<div class="container">
-
-			</div>
-		</div>
-		<!--banner图 结束-->
-		
-		<!--内容主体-->
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-12">
-					<div class="tab_menu">
-						<ul class="nav nav-tabs">
-							<li role="presentation" class="active">
-								<a href="#companyDesc" data-toggle="tab">公司简介</a>
-							</li>
-							<li role="presentation">
-								<a href="#teamDesc" data-toggle="tab">团队介绍</a>
-							</li>
-						</ul>
-
-						<div class="tab-content">
-							<!-- 公司简介 -->
-							<div id="companyDesc" class="tab-pane fade in active companyDesc">
-								<div class="container">
-									<div class="row">
-										<div class="col-sm-12 col-xs-12">
-											<h3>专业Al+提供商</h3>
-											<p>第一篇文章为置顶文章，后面的所有文章按照时间顺序排放，在后台上传新的文章后按照时间顺序自动排列，排列顺序为从上至下，上面为日期最新的，下面以此类推。 一页只展示十条，超过自动排到下一页。第一篇文章为置顶文章，后面的所有文章按照时间顺序排放，在后台上传新的文章后按照时间顺序自动排列，排列顺序为从上至下，上面为日期最新的，下面以此类推。 一页只展示十条，超过自动排到下一页。第一篇文章为置顶文章，后面的所有文章按照时间顺序排放，在后台上传新的文章后按照时间顺序自动排列，排列顺序</p>
-											<p>第一篇文章为置顶文章，后面的所有文章按照时间顺序排放，在后台上传新的文章后按照时间顺序自动排列，排列顺序为从上至下，上面为日期最新的，下面以此类推。 一页只展示十条，超过自动排到下一页。第一篇文章为置顶文章，后面的所有文章按照时间顺序排放，在后台上传新的文章后按照时间顺序自动排列，排列顺序为从上至下，上面为日期最新的，下面以此类推。 一页只展示十条，超过自动排到下一页。第一篇文章为置顶文章，后面的所有文章按照时间顺序排放，在后台上传新的文章后按照时间顺序自动排列，排列顺序</p>
-										</div>
-									</div>
-								</div>
-								
-							</div>
-							<!-- 公司简介  结束-->
-							<div id="teamDesc" class="tab-pane fade">
-								<div class="container">
-									<div class="row">
-										<h3>技术</h3>
-									</div>
-									<div class="row">
-										<div class="col-xs-6 col-md-2">
-											<img src="img/demo/avatar2.png" class="img-responsive center-block"/>
-											<p class="text-center">描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述</p>
-										</div>
-										<div class="col-xs-6 col-md-2">
-											<img src="img/demo/avatar2.png" class="img-responsive center-block"/>
-											<p class="text-center">描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述</p>
-										</div>
-										<div class="col-xs-6 col-md-2">
-											<img src="img/demo/avatar2.png" class="img-responsive center-block"/>
-											<p class="text-center">描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述</p>
-										</div>
-										<div class="col-xs-6 col-md-2">
-											<img src="img/demo/avatar2.png" class="img-responsive center-block"/>
-											<p class="text-center">描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述</p>
-										</div>
-										<div class="col-xs-6 col-md-2">
-											<img src="img/demo/avatar2.png" class="img-responsive center-block"/>
-											<p class="text-center">描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述</p>
-										</div>
-										<div class="col-xs-6 col-md-2">
-											<img src="img/demo/avatar2.png" class="img-responsive center-block"/>
-											<p class="text-center">描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述</p>
-										</div>
-									</div>
-									<div class="row">
-										<h3>商业</h3>
-									</div>
-									<div class="row">
-										<div class="col-xs-6 col-md-2">
-											<img src="img/demo/avatar2.png" class="img-responsive center-block"/>
-											
-										</div>
-										<div class="col-xs-6 col-md-2">
-											<img src="img/demo/avatar2.png" class="img-responsive center-block"/>
-											
-										</div>
-										<div class="col-xs-6 col-md-2">
-											<img src="img/demo/avatar2.png" class="img-responsive center-block"/>
-											
-										</div>
-										<div class="col-xs-6 col-md-2">
-											<img src="img/demo/avatar2.png" class="img-responsive center-block"/>
-											
-										</div>
-										<div class="col-xs-6 col-md-2">
-											<img src="img/demo/avatar2.png" class="img-responsive center-block"/>
-											
-										</div>
-										<div class="col-xs-6 col-md-2">
-											<img src="img/demo/avatar2.png" class="img-responsive center-block"/>
-											
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
+				<div class="row">
+					<div class="col-xs-12 col-md-6">
+						<img class="img-responsive" src="img/demo/gallery3.png"></img>
+					</div>
+					<div class="col-xs-12 col-md-6 paddtp-3">
+						<h2 class="text-center">语义理解技术</h2>
+						<p>文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍</p>
 					</div>
 				</div>
-
 			</div>
-
-		</div>
-		<!--内容主体 结束-->
+		</header>
+		<!-- 结束 大标题-->
 		
+		<!-- 内容部分 -->
+		<!-- 第一块内容 -->
+		<section class="paddbotm hx">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-md-6">
+						<img class="img-responsive" src="img/demo/yy-kf.jpg"></img>
+					</div>
+					<div class="col-xs-12 col-md-6">
+						<h2 class="text-center paddtp-3">智能客服</h2>
+						<p>文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- 结束 第一块内容 -->
+		
+		<!-- 第二块内容 -->
+		<section class="paddbotm hx">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-md-6">
+						<h2 class="text-center paddtp-3">虚拟人物</h2>
+						<p>文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍</p>
+					</div>
+					<div class="col-xs-12 col-md-6">
+						<img class="img-responsive" src="img/demo/yy-rw.jpg"></img>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- 结束 第二块内容 -->
+		
+		<!-- 第N块内容 -->
+		<section class="paddbotm hx">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-md-6">
+						<img class="img-responsive" src="img/demo/yy-jh.jpg"></img>
+					</div>
+					<div class="col-xs-12 col-md-6">
+							<h2 class="text-center paddtp-3">广告交互</h2>
+							<p>文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- 结束 第N块内容 -->
+		
+		<!-- 应用场景 -->
+		<section class="paddbotm-3">
+			<div class="container">
+				<div class="row paddbotm-2">
+					<div class="col-md-12">
+						<h2 class="text-center">应用场景</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4 paddbotm-3">
+						<img class="img-responsive" src="img/demo/gallery1.png"/>
+					</div>
+					<div class="col-md-4 paddbotm-3">
+						<img class="img-responsive" src="img/demo/gallery1.png"/>
+					</div>
+					<div class="col-md-4 paddbotm-3">
+						<img class="img-responsive" src="img/demo/gallery1.png"/>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- 结束 应用场景 -->
 <!-- footer -->
     <footer>
 		<div class="footer-bg">
@@ -457,11 +436,13 @@
 		</div>
   
     </footer>
+	</body>
+		<!-- 引入样式 -->
 		<script src="js/jquery.min.js"></script>
 		<!--bootstrap导航条-->
 		<script src="js/bootstrap.min.js"></script>
 		<script src="js/bootsnav.js"></script>
 		<script src="js/velocity.js"></script>
-	</body>
-
+		<!--图片翻转特效-->
+		<script src="js/demo.js"></script>
 </html>
