@@ -3222,3 +3222,131 @@ footer .widget h4 {
           transition-duration: 0s;
 }
 
+/**** 梅帆加的 ****/
+.zxlcbnr{
+	widows: 100%;
+	height: 100%;
+}
+.zxlcb h4{
+	color: #FFFFFF;
+}
+.zxlcb ul li{
+	color: #FFFFFF;
+	float: left;
+	width: 140px;
+	padding: 0.7em;
+	list-style-type:none;
+}
+.zxlcbnr-top p{
+	color: #FFFFFF;
+	font-size: 14px;
+	word-break:break-all;"
+}
+.zxlcbnr-top p:before{
+	content: "·";
+	font-size: 25px;
+}
+
+.zxlcbnr-top{
+	height: 550px;
+}
+.zxlcbnr-ball{
+    transform-origin: center bottom;
+    transition: all 0.5s;
+    transform: rotate(0);
+    
+}
+.zxl1 h5{
+	background: #FF3B30;
+}
+.zxl1 span{
+	background: #FF3B30;
+}
+.zxl2 h5{
+	background: #FCB814;
+}
+.zxl2 span{
+	background: #FCB814;
+}
+.zxl3 h5{
+	background: #0DB14B;
+}
+.zxl3 span{
+	background: #0DB14B;
+}
+.zxl4 h5{
+	background: #00BEFF;
+}
+.zxl4 span{
+	background: #00BEFF;
+}
+.zxl5 h5{
+	background: #2577FF;
+}
+.zxl5 span{
+	background: #2577FF;
+}
+.zxl6 h5{
+	background: #9013FE;
+}
+.zxl6 span{
+	background: #9013FE;
+}
+/** 里程碑年历部分 **/
+/*.zxlcb .zxlcbnr{
+	height: 500px;
+}
+.zxl1 .zxlcbnr-ball{
+	margin-top: 400px;
+}
+.zxl2 .zxlcbnr-ball{
+	margin-top: 91px;
+}
+.zxl3 .zxlcbnr-ball{
+	margin-top: 41px;
+}
+.zxl4 .zxlcbnr-ball{
+	margin-top: 331px;
+}
+.zxl5 .zxlcbnr-ball{
+	margin-top: 121px;
+}
+.zxl6 .zxlcbnr-ball{
+	margin-top: 226px;
+}*/
+/** 里程碑年历部分 结束 **/
+.zxlcbnr-ball h5{
+	margin: 0 auto;
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    border: 6px solid #D8D8D8;
+    font-size: 24px;
+    color: #FFFFFF;
+    text-align: center;
+    line-height: 100px;
+    font-weight: bolder;
+}
+.zxlcbnr-ball i{
+	display: block;
+	margin: 0 auto;
+	height: 98px;
+	width: 3px;
+	background-color: #E3E3E3;
+}
+.zxlcbnr-ball span{
+	display: block;
+	margin: 0 auto;
+	width: 30px;
+	height: 30px;
+	border-radius: 30px;
+	border: 6px solid #D8D8D8;
+}
+
+
+@media (max-width: 767px){
+.zxlcbnr-top p:before{
+	content: "·";
+	font-size: 50px;
+}
+}
