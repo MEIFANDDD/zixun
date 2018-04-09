@@ -21,27 +21,27 @@
 }
 
 .footer-bg a.weichart {
-	background-image: url(../img/social/facebook.png);
+	background-image: url(../img/wechat.png);
 }
 
 .footer-bg a.alibaba {
-	background-image: url(../img/social/facebook.png);
+	background-image: url(../img/1688.png);
 }
 
 .footer-bg a.weibo {
-	background-image: url(../img/social/facebook.png);
+	background-image: url(../img/sina.png);
 }
 
 .footer-bg a.a-site {
-	background-image: url(../img/social/facebook.png);
+	background-image: url(../img/AcFun.png);
 }
 
 .footer-bg a.b-site {
-	background-image: url(../img/social/facebook.png);
+	background-image: url(../img/bilibili.png);
 }
 
 .footer-bg a.toutiao {
-	background-image: url(../img/social/facebook.png);
+	background-image: url(../img/toutiao.png);
 }
 
 .footer-bg a.weichart:hover {

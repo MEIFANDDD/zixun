@@ -11,8 +11,8 @@
 		<link rel="shortcut icon" href="img/ai_logo.png">
 		<!-- Le styles -->
 		<link href="css/bootstrap.min.css" rel="stylesheet">
-		
-		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"/>
+
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
 		<!--animate库组件-->
 		<link href="css/animate.css" rel="stylesheet">
 		<link href="css/bootsnav.css" rel="stylesheet">
@@ -20,21 +20,11 @@
 		<link href="css/overwrite.css" rel="stylesheet">
 		<link href="css/style.css" rel="stylesheet">
 		<link href="css/color.css" rel="stylesheet">
+
+		<!--基础样式库-自定义-->
+		<link rel="stylesheet" href="css/comment.css" />
 		
-		<!--页脚-->
-		<link rel="stylesheet" href="css/footer.css" />
-		<!-- <link href="css/bootstrap-responsive.min.css" rel="stylesheet">-->
-		<!--  <link rel="stylesheet" href="css/main.css" type="text/css">-->
 		<style>
-			.banner {
-				height: 336px;
-				background: url(./img/banner.jpg) center no-repeat;
-			}
-			
-			a:hover {
-				text-decoration: none;
-			}
-			
 			.tab_menu {
 				width: 100%;
 				margin: 30px 0;
@@ -66,13 +56,13 @@
 			.nav-tabs li a:hover {
 				background: none;
 			}
+			/*热点--图片*/
 			
-			.left {
-				background: red;
-			}
-			
-			.right {
-				/*background: green;*/
+			.left img {
+				height: 250px;
+				background-repeat: no-repeat;
+				background-size: cover;
+				background-position: center center;
 			}
 			/*热点*/
 			
@@ -89,7 +79,6 @@
 			
 			.page-view,
 			.page-view span {
-				/*color: #FF3B30; 红色*/
 				color: #1B76A5;
 				/*蓝色*/
 			}
@@ -163,7 +152,12 @@
 				float: left;
 				width: 150px;
 				height: 100px;
-				border: 1px solid yellow;
+				overflow: hidden;
+			}
+			.content-list .picture img {
+				width: 100%;
+				height: 100%;
+				cursor: pointer;
 			}
 			/*右边盒子*/
 			
@@ -200,41 +194,37 @@
 			.paging .prev {
 				margin-right: 20px;
 			}
-			
 			/*导航条二级菜单图片*/
-			 .imgContent {
-            float: left;
-            margin-right: 20px;
-            }
-        
-        .imgContent a {
-            margin-top: 20px;
-            color: #484848;
-            font-size: 14px;
-            text-decoration: none;
-        }
-        .imgContent a:hover {
-            margin-top: -5px;
-        }
-        .imgContent img {
-            height: 170px;
-        }
-        .imgContent p {
-            text-align: center;
-        }
-			/*页脚 -- footer.css*/
+			
+			.imgContent {
+				float: left;
+				margin-right: 20px;
+			}
+			
+			.imgContent a {
+				margin-top: 20px;
+				color: #484848;
+				font-size: 14px;
+				text-decoration: none;
+			}
+			
+			.imgContent a:hover {
+				margin-top: -5px;
+			}
+			
+			.imgContent img {
+				height: 170px;
+			}
+			
+			.imgContent p {
+				text-align: center;
+			}
 		</style>
-		<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
-		<!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
-		<!-- Le fav and touch icons -->
-
+		
 	</head>
 
 	<body>
-	<!--导航条 开始-->
+		<!--导航条 开始-->
 		<nav class="navbar navbar-default navbar-mobile bootsnav">
 			<div class="container">
 
@@ -407,7 +397,6 @@
 
 		<div class="clearfix"></div>
 
-	
 		<!--banner图-->
 		<div class="banner">
 			<div class="container">
@@ -415,7 +404,7 @@
 			</div>
 		</div>
 		<!--banner图 结束-->
-		
+
 		<!--内容主体-->
 		<div class="container">
 			<div class="row">
@@ -439,19 +428,25 @@
 								<div class="container">
 									<!-- 热点 -->
 									<div class="row">
-										<div class="col-xs-12 col-sm-5 col-md-5 left">
-											<div style="height: 300px; "></div>
+										<div class="col-xs-12 col-sm-5 col-md-5">
+											<div class="left">
+												<img src="http://p9.pstatp.com/large/pgc-image/15211079230936ac5892fa9" alt="" />
+											</div>
+
 										</div>
 										<div class="col-xs-12 col-sm-7 col-md-7 right">
 											<div class="right-content">
-												<h4 class="hot-title">中国人工智能水平领先全球</h4>
+												<h4 class="hot-title">子询研究院 | 区块链技术去中心化数字货币的上游产业链</h4>
 												<div class="hot-content">
-													第一篇文章为置顶文章，后面的所有文章按照时间顺序排放，在后台上传新的文章后按照时间顺序自动排列，排列顺序为从上至下，上面为日期最新的，下面以此类推。 一页只展示十条，超过自动排到下一页。第一篇文章为置顶文章，后面的所有文章按照时间顺序排放，在后台上传新的文章后按照时间顺序自动排列，排列顺序为从上至下，上面为日期最新的，下面以此类推。 一页只展示十条，超过自动排到下一页。第一篇文章为置顶文章，后面的所有文章按照时间顺序排放，在后台上传新的文章后按照时间顺序自动排列，排列顺序为从上至下，上面为日期最新的，下面以此类推。 一页只展示十条，超过自动排到下一页。
+													<p> 当前大部分地区采用中央系统虚拟货币（中心化机构掌控）这种形式；异地灾备、云存储。正是为了满足市场参与者对信息的需求，使信息的买卖造就了“中介费”（成本），从而衍生出了“中心化”(Centralization)这一概念。
+													</p>
+													<p> 为了解决“中心化”带来的弊端，"去中心化"(Decentralization)这个概念也应运而生，在两个层面发生了变化：信息去中心化与信用去中心化。
+													</p>
 												</div>
 												<div class="hot-footer">
-													<div class="pull-left page-view">浏览量:<span>6689</span></div>
+													<div class="pull-left page-view">浏览量:<span>152</span></div>
 													<div class="pull-right detail">
-														<a href="#">查看详情</a>
+														<a href="mediaPage1.html">查看详情</a>
 													</div>
 												</div>
 											</div>
@@ -463,18 +458,20 @@
 									<div class="content-list">
 										<div class="row">
 											<div class="bottom-line clearfix">
-												<div class="col-xs-12 col-sm-2 col-md-2">
+												<div class="col-xs-12 col-md-2">
 													<div class="date">
 														<div class="day blue">22</div>
 														<div class="year-month blue">2018.03</div>
 													</div>
 												</div>
-												<div class="col-xs-12 col-sm-10 col-md-10">
+												<div class="col-xs-12  col-md-10">
 													<div class="news-list-item">
-														<div class="picture"></div>
+														<div class="picture">
+															<img src="https://p1.pstatp.com/list/190x124/pgc-image/1521616779964f248d156e8" alt="" />
+														</div>
 														<div class="news-title">
 															<div class="news-descript">
-																<a href="#">标题标题标题标题标题标标题标标标题标题标标题标标题标题标题标标题标标标题标标题标标标题标标题标标标题标标题标标标题标标题标标标题标题标标题标标标题标题标标题标标题</a>
+																<a href="#">子询研究院|区块链技术的游戏方向应用</a>
 															</div>
 															<div class="page-view">浏览量 <span>1234</span></div>
 														</div>
@@ -487,18 +484,20 @@
 											<div class="bottom-line clearfix">
 												<div class="col-xs-12 col-sm-2 col-md-2">
 													<div class="date">
-														<div class="day blue">22</div>
+														<div class="day blue">21</div>
 														<div class="year-month blue">2018.03</div>
 													</div>
 												</div>
 												<div class="col-xs-12 col-sm-10 col-md-10">
 													<div class="news-list-item">
-														<div class="picture"></div>
+														<div class="picture">
+															<img src="https://p9.pstatp.com/list/190x124/pgc-image/15216841482416f834a3d68" alt="" />
+														</div>
 														<div class="news-title">
 															<div class="news-descript">
-																<a href="#">标题标题标题标题标题标标题标标标题标题标标题标标题标题标题标标题标标标题标标题标标标题标标题标标标题标标题标标标题标标题标标标题标题标标题标标标题标题标标题标标题</a>
+																<a href="#">子询研究院 | 你看我，如何让AI成为品酒大师</a>
 															</div>
-															<div class="page-view">浏览量 <span>1234</span></div>
+															<div class="page-view">浏览量 <span>2252</span></div>
 														</div>
 													</div>
 
@@ -509,18 +508,20 @@
 											<div class="bottom-line clearfix">
 												<div class="col-xs-12 col-sm-2 col-md-2">
 													<div class="date">
-														<div class="day blue">22</div>
+														<div class="day blue">20</div>
 														<div class="year-month blue">2018.03</div>
 													</div>
 												</div>
 												<div class="col-xs-12 col-sm-10 col-md-10">
 													<div class="news-list-item">
-														<div class="picture"></div>
+														<div class="picture">
+															<img src="https://p1.pstatp.com/list/190x124/pgc-image/15231523302245afad233fd" alt="" />
+														</div>
 														<div class="news-title">
 															<div class="news-descript">
-																<a href="#">标题标题标题标题标题标标题标标标题标题标标题标标题标题标题标标题标标标题标标题标标标题标标题标标标题标标题标标标题标标题标标标题标题标标题标标标题标题标标题标标题</a>
+																<a href="#">子询研究院|长语音解救指南</a>
 															</div>
-															<div class="page-view">浏览量 <span>1234</span></div>
+															<div class="page-view">浏览量 <span>3001</span></div>
 														</div>
 													</div>
 
@@ -531,18 +532,20 @@
 											<div class="bottom-line clearfix">
 												<div class="col-xs-12 col-sm-2 col-md-2">
 													<div class="date">
-														<div class="day blue">22</div>
+														<div class="day blue">19</div>
 														<div class="year-month blue">2018.03</div>
 													</div>
 												</div>
 												<div class="col-xs-12 col-sm-10 col-md-10">
 													<div class="news-list-item">
-														<div class="picture"></div>
+														<div class="picture">
+															<img src="https://p3.pstatp.com/list/190x124/pgc-image/1523152696377752f8105e8" alt="" />
+														</div>
 														<div class="news-title">
 															<div class="news-descript">
-																<a href="#">标题标题标题标题标题标标题标标标题标题标标题标标题标题标题标标题标标标题标标题标标标题标标题标标标题标标题标标标题标标题标标标题标题标标题标标标题标题标标题标标题</a>
+																<a href="#">子询情报局 | 斯皮尔伯格带入《头号玩家》中的现实黑科技</a>
 															</div>
-															<div class="page-view">浏览量 <span>1234</span></div>
+															<div class="page-view">浏览量 <span>1300</span></div>
 														</div>
 													</div>
 
@@ -553,18 +556,20 @@
 											<div class="bottom-line clearfix">
 												<div class="col-xs-12 col-sm-2 col-md-2">
 													<div class="date">
-														<div class="day blue">22</div>
+														<div class="day blue">18</div>
 														<div class="year-month blue">2018.03</div>
 													</div>
 												</div>
 												<div class="col-xs-12 col-sm-10 col-md-10">
 													<div class="news-list-item">
-														<div class="picture"></div>
+														<div class="picture">
+															<img src="https://p3.pstatp.com/list/190x124/pgc-image/1520994312711ce0948f96a" alt="" />
+														</div>
 														<div class="news-title">
 															<div class="news-descript">
-																<a href="#">标题标题标题标题标题标标题标标标题标题标标题标标题标题标题标标题标标标题标标题标标标题标标题标标标题标标题标标标题标标题标标标题标题标标题标标标题标题标标题标标题</a>
+																<a href="#">子询实验室 | 你见过那么可爱的机器人吗</a>
 															</div>
-															<div class="page-view">浏览量 <span>1234</span></div>
+															<div class="page-view">浏览量 <span>2412</span></div>
 														</div>
 													</div>
 
@@ -576,18 +581,20 @@
 											<div class="bottom-line clearfix">
 												<div class="col-xs-12 col-sm-2 col-md-2">
 													<div class="date">
-														<div class="day gray">22</div>
+														<div class="day gray">17</div>
 														<div class="year-month gray">2018.03</div>
 													</div>
 												</div>
 												<div class="col-xs-12 col-sm-10 col-md-10">
 													<div class="news-list-item">
-														<div class="picture"></div>
+														<div class="picture">
+															<img src="https://p1.pstatp.com/list/190x124/pgc-image/1522136177401bd3c100efd" alt="" />
+														</div>
 														<div class="news-title">
 															<div class="news-descript">
-																<a href="#">标题标题标题标题标题标标题标标标题标题标标题标标题标题标题标标题标标标题标标题标标标题标标题标标标题标标题标标标题标标题标标标题标题标标题标标标题标题标标题标标题</a>
+																<a href="#">子询实验室 | 自拍真相之变脸滤镜</a>
 															</div>
-															<div class="page-view">浏览量 <span>1234</span></div>
+															<div class="page-view">浏览量 <span>945</span></div>
 														</div>
 													</div>
 
@@ -599,7 +606,7 @@
 								</div>
 								<!--分页-->
 								<!--给li加 disabled类  可以将按钮变为禁用，用来判断是否是第一页，不能再往前翻-->
-								<nav class="paging">
+								<!--<nav class="paging">
 									<ul class="pager">
 										<li class="prev">
 											<a href="#">上一页</a>
@@ -608,7 +615,7 @@
 											<a href="#">下一页</a>
 										</li>
 									</ul>
-								</nav>
+								</nav>-->
 
 								<!--分页 结束-->
 							</div>
@@ -618,27 +625,26 @@
 							<div id="video" class="tab-pane">
 								<!-- 热点 -->
 								<div class="row">
-									<div class="col-xs-12 col-sm-5 col-md-5 left">
-										<div class="video"></div>
+									<div class="col-xs-12 col-md-5">
+										<!--<div class="video left"></div>-->
+										<embed src='http://player.youku.com/player.php/sid/XMzUxMTg5NDgwNA==/v.swf' allowFullScreen='true' quality='high' width='480' height='400' align='middle' allowScriptAccess='always' type='application/x-shockwave-flash'></embed>
 									</div>
-									<div class="col-xs-12 col-sm-7 col-md-7 right">
+									<div class="col-xs-12 col-md-7 right">
 										<div class="right-content">
-											<h4 class="hot-title">视频标题</h4>
+											<h4 class="hot-title">子询实验室 | 请以你的心跳呼唤我</h4>
 											<div class="hot-content">
-												第一篇文章为置顶文章，后面的所有文章按照时间顺序排放，在后台上传新的文章后按照时间顺序自动排列，排列顺序为从上至下，上面为日期最新的，下面以此类推。 一页只展示十条，超过自动排到下一页。第一篇文章为置顶文章，后面的所有文章按照时间顺序排放，在后台上传新的文章后按照时间顺序自动排列，排列顺序为从上至下，上面为日期最新的，下面以此类推。 一页只展示十条，超过自动排到下一页。第一篇文章为置顶文章，后面的所有文章按照时间顺序排放，在后台上传新的文章后按照时间顺序自动排列，排列顺序为从上至下，上面为日期最新的，下面以此类推。 一页只展示十条，超过自动排到下一页。
+												最近PD因沉迷工作废寝忘食，为公司蓬勃发展兢兢业业，以致于长期睡眠不足。想到生物钟紊乱年老色衰在病床上孤独终老，吓得PD赶紧从零食堆里爬起来去网上找找方法续一下。
 											</div>
 											<div class="hot-footer">
-												<div class="pull-left page-view">浏览量:<span>6689</span></div>
-												<!--<div class="pull-right detail">
-													<a href="#">查看详情</a>
-												</div>-->
+												<div class="pull-left page-view">浏览量:<span>3850</span></div>
+												
 											</div>
 										</div>
 									</div>
 								</div>
 								<!-- 热点  结束-->
 
-								<div class="content-list">
+								<!--<div class="content-list">
 									<div class="row">
 										<div class="bottom-line clearfix">
 											<div class="col-xs-12 col-sm-2 col-md-2">
@@ -649,10 +655,12 @@
 											</div>
 											<div class="col-xs-12 col-sm-10 col-md-10">
 												<div class="news-list-item">
-													<div class="picture"></div>
+													<div class="picture">
+														<img src="" alt="" />
+													</div>
 													<div class="news-title">
 														<div class="news-descript">
-															<a href="#">标题标题标题标题标题标标题标标标题标题标标题标标题标题标题标标题标标标题标标题标标标题标标题标标标题标标题标标标题标标题标标标题标题标标题标标标题标题标标题标标题</a>
+															<a href="#">情报 | 智能客服与语聊机器人的市场调研</a>
 														</div>
 														<div class="page-view">浏览量 <span>1234</span></div>
 													</div>
@@ -729,102 +737,108 @@
 										</div>
 									</div>
 								</div>
-
+-->
 							</div>
 							<!--  视频  结束-->
 
 							<!--  资讯  -->
 							<div id="news" class="tab-pane">
-								<!-- 热点 -->
-								<div class="row">
-									<div class="col-xs-12 col-sm-5 col-md-5 left">
-										<div style="height: 300px; "></div>
-									</div>
-									<div class="col-xs-12 col-sm-7 col-md-7 right">
-										<div class="right-content">
-											<h4 class="hot-title">资讯标题</h4>
-											<div class="hot-content">
-												第一篇文章为置顶文章，后面的所有文章按照时间顺序排放，在后台上传新的文章后按照时间顺序自动排列，排列顺序为从上至下，上面为日期最新的，下面以此类推。 一页只展示十条，超过自动排到下一页。第一篇文章为置顶文章，后面的所有文章按照时间顺序排放，在后台上传新的文章后按照时间顺序自动排列，排列顺序为从上至下，上面为日期最新的，下面以此类推。 一页只展示十条，超过自动排到下一页。第一篇文章为置顶文章，后面的所有文章按照时间顺序排放，在后台上传新的文章后按照时间顺序自动排列，排列顺序为从上至下，上面为日期最新的，下面以此类推。 一页只展示十条，超过自动排到下一页。
+								<div class="container">
+									<!-- 热点 -->
+									<div class="row">
+										<div class="col-xs-12 col-sm-5 col-md-5">
+											<div class="left">
+												<img src="./img/temp.jpg"/>
 											</div>
-											<div class="hot-footer">
-												<div class="pull-left page-view">浏览量:<span>6689</span></div>
-												<div class="pull-right detail">
-													<a href="#">查看详情</a>
+
+										</div>
+										<div class="col-xs-12 col-sm-7 col-md-7 right">
+											<div class="right-content">
+												<h4 class="hot-title">情报 | 智能客服与语聊机器人的市场调研</h4>
+												<div class="hot-content">
+													<p>B2B（Business-to-Business是指企业与企业之间通过专用网络或Internet，进行数据信息的交换、传递，开展交易活动的商业模式）领域的聊天机器人主要是帮助用户和团队更有效率地开展工作、管理任务或解决团队沟通方面出现的问题。</p>
+													
+													<p>对于一些聊天机器人来说，根据你购买的增值服务的不同，那么你能使用到的聊天机器人的功能也是不同的</p>
+												</div>
+												<div class="hot-footer">
+													<div class="pull-left page-view">浏览量:<span>750</span></div>
+													<div class="pull-right detail">
+														<a href="mediaPage2.html">查看详情</a>
+													</div>
 												</div>
 											</div>
 										</div>
 									</div>
+									<!-- 热点  结束-->
+
+									<!-- 列表 10条数据-->
+									<div class="content-list">
+										<div class="row">
+											<div class="bottom-line clearfix">
+												<div class="col-xs-12 col-md-2">
+													<div class="date">
+														<div class="day blue">22</div>
+														<div class="year-month blue">2018.03</div>
+													</div>
+												</div>
+												<div class="col-xs-12  col-md-10">
+													<div class="news-list-item">
+														<div class="picture">
+															<img src="https://p1.pstatp.com/list/190x124/pgc-image/1521616779964f248d156e8" alt="" />
+														</div>
+														<div class="news-title">
+															<div class="news-descript">
+																<a href="#">子询研究院|区块链技术的游戏方向应用</a>
+															</div>
+															<div class="page-view">浏览量 <span>1234</span></div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="row">
+											<div class="bottom-line clearfix">
+												<div class="col-xs-12 col-sm-2 col-md-2">
+													<div class="date">
+														<div class="day blue">21</div>
+														<div class="year-month blue">2018.03</div>
+													</div>
+												</div>
+												<div class="col-xs-12 col-sm-10 col-md-10">
+													<div class="news-list-item">
+														<div class="picture">
+															<img src="https://p9.pstatp.com/list/190x124/pgc-image/15216841482416f834a3d68" alt="" />
+														</div>
+														<div class="news-title">
+															<div class="news-descript">
+																<a href="#">子询研究院 | 你看我，如何让AI成为品酒大师</a>
+															</div>
+															<div class="page-view">浏览量 <span>2252</span></div>
+														</div>
+													</div>
+
+												</div>
+											</div>
+										</div>
+										
+									</div>
+									<!-- 列表 结束-->
 								</div>
-								<!-- 热点  结束-->
-								<div class="content-list">
-									<div class="row">
-										<div class="bottom-line clearfix">
-											<div class="col-xs-12 col-sm-2 col-md-2">
-												<div class="date">
-													<div class="day blue">22</div>
-													<div class="year-month blue">2018.03</div>
-												</div>
-											</div>
-											<div class="col-xs-12 col-sm-10 col-md-10">
-												<div class="news-list-item">
-													<div class="picture"></div>
-													<div class="news-title">
-														<div class="news-descript">
-															<a href="#">标题标题标题标题标题标标题标标标题标题标标题标标题标题标题标标题标标标题标标题标标标题标标题标标标题标标题标标标题标标题标标标题标题标标题标标标题标题标标题标标题</a>
-														</div>
-														<div class="page-view">浏览量 <span>1234</span></div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
+								<!--分页-->
+								<!--给li加 disabled类  可以将按钮变为禁用，用来判断是否是第一页，不能再往前翻-->
+								<!--<nav class="paging">
+									<ul class="pager">
+										<li class="prev">
+											<a href="#">上一页</a>
+										</li>
+										<li class="next">
+											<a href="#">下一页</a>
+										</li>
+									</ul>
+								</nav>-->
 
-									<div class="row">
-										<div class="bottom-line clearfix">
-											<div class="col-xs-12 col-sm-2 col-md-2">
-												<div class="date">
-													<div class="day blue">22</div>
-													<div class="year-month blue">2018.03</div>
-												</div>
-											</div>
-											<div class="col-xs-12 col-sm-10 col-md-10">
-												<div class="news-list-item">
-													<div class="picture"></div>
-													<div class="news-title">
-														<div class="news-descript">
-															<a href="#">标题标题标题标题标题标标题标标标题标题标标题标标题标题标题标标题标标标题标标题标标标题标标题标标标题标标题标标标题标标题标标标题标题标标题标标标题标题标标题标标题</a>
-														</div>
-														<div class="page-view">浏览量 <span>1234</span></div>
-													</div>
-												</div>
-
-											</div>
-										</div>
-									</div>
-
-									<div class="row">
-										<div class="bottom-line clearfix">
-											<div class="col-xs-12 col-sm-2 col-md-2">
-												<div class="date">
-													<div class="day gray">22</div>
-													<div class="year-month gray">2018.03</div>
-												</div>
-											</div>
-											<div class="col-xs-12 col-sm-10 col-md-10">
-												<div class="news-list-item">
-													<div class="picture"></div>
-													<div class="news-title">
-														<div class="news-descript">
-															<a href="#">标题标题标题标题标题标标题标标标题标题标标题标标题标题标题标标题标标标题标标题标标标题标标题标标标题标标题标标标题标标题标标标题标题标标题标标标题标题标标题标标题</a>
-														</div>
-														<div class="page-view">浏览量 <span>1234</span></div>
-													</div>
-												</div>
-
-											</div>
-										</div>
-									</div>
-								</div>
+								<!--分页 结束-->
 							</div>
 							<!--  资讯  结束-->
 						</div>
@@ -835,9 +849,8 @@
 
 		</div>
 		<!--内容主体 结束-->
-		
-<!-- footer -->
-    <footer>
+
+		<!--页脚-->
 		<div class="footer-bg">
 			<div class="container">
 				<div class="row">
@@ -845,38 +858,37 @@
 						<div class="footer-line clearfix">
 							<div class="focus-me pull-left">关注我们：</div>
 							<div class="footer-left pull-left">
-
-								<a href="#" class="weichart"></a>
-								<a href="#" class="alibaba"></a>
-								<a href="#" class="weibo"></a>
-								<a href="#" class="a-site"></a>
-								<a href="#" class="b-site"></a>
-								<a href="#" class="toutiao"></a>
+								<a href="javascript:void(0)" class="weichart"></a>
+								<a href="https://shop370qc5872c052.1688.com/" target="_blank" class="alibaba"></a>
+								<a href="https://weibo.com/u/1765048103" target="_blank" class="weibo"></a>
+								<a href="http://www.acfun.cn/u/13125720.aspx" target="_blank" class="a-site"></a>
+								<a href="https://space.bilibili.com/296327920#/" target="_blank" class="b-site"></a>
+								<a href="https://www.toutiao.com/c/user/5470644862/#mid=1567990361508866" target="_blank" class="toutiao"></a>
 
 							</div>
 
 							<div class="footer-right pull-right">
 								<span>商业合作：</span>
-								<span>sales@zixuncr.com</span>
+								<a style="color: #FFF;" href="mailto:sales@zixuncr.com">sales@zixuncr.com</a>
 							</div>
 						</div>
 					</div>
 				</div>
 
 				<div class="row">
-					<div class="col-sm-12">
+					<div class="col-md-12">
 						<div class="copyright">
 							<div class="pull-left">子询(深圳)人工智能研究院有限公司版权所有 Copyrights All Reserverd &copy;2017.</div>
-							<div class="pull-right">
+							<div class="pull-right visible-md visible-lg">
 								<ul class="footer-menu">
 									<li>
 										<a href="index.html">首页</a>
 									</li>
 									<li>
-										<a href="case.html">核心技术</a>
+										<a href="javascript:void(0)">核心技术</a>
 									</li>
 									<li>
-										<a href="core.html">案例展示</a>
+										<a href="javascript:void(0)">案例展示</a>
 									</li>
 									<li>
 										<a href="media.html">自媒体</a>
@@ -892,17 +904,17 @@
 						</div>
 					</div>
 				</div>
+
 			</div>
 		</div>
-  
-    </footer>
+		<!--页脚 结束-->
+
 		<script src="js/jquery.min.js"></script>
 		<!--bootstrap导航条-->
 		<script src="js/bootstrap.min.js"></script>
 		<script src="js/bootsnav.js"></script>
 		<script src="js/velocity.js"></script>
-		<!--bootstrap导航条-->
-		
+
 	</body>
 
 </html>
