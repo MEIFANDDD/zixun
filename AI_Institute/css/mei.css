@@ -8,6 +8,9 @@
 .paddbotm-3{
 	padding-bottom: 3rem;
 }
+.paddbotm-4{
+	padding-bottom: 1rem;
+}
 .paddlr{
 	padding: 0 10rem;
 }
@@ -20,26 +23,35 @@
 .paddtp-3{
 	padding-top: 3rem;
 }
-/** 核心技术部分 **/
-.hx h2{
-	padding-bottom: 2rem;
+.paddtp-4{
+	padding-top: 1rem;
+}
+.martop{
+	margin-top: 10rem;
+}
+.martop-2{
+	margin-top: 5rem;
+}
+.martop-3{
+	margin-top: 3rem;
+}
+.martop-4{
+	margin-top: 1rem;
+}
+/** 首行缩进 **/
+.fristlineindent{
+	text-indent: 2rem;
 }
 
-/** 案例展示部分 **/
-.casebnner{
-	background: url(../img/demo/blog_post.png);
-	widows: 1000px;
-	height: 300px;
-}
-.al h2{
-	padding-bottom: 2rem;
+.blackstyle .fristlineindent{
+	color: #FFFFFF;
 }
 /** 首页关于子询部分 **/
 .zxlcb h4{
-	color: #FFFFFF;
+	color: #000000;
 }
 .zxlcb p{
-	color: #FFFFFF;
+	color: #000000;
 }
 .zxlcbnr-ball{
     transform-origin: center bottom;
@@ -48,10 +60,12 @@
 }
 .zxlcbnr-top p{
 	word-wrap: break-word;
+	color: #000000;
 }
 .zxlcbnr-top{
 	height: 40rem;
 }
+/** 子询里程碑六个旗子 **/
 .zxl1 h5{
 	background: #FF3B30;
 }
@@ -118,9 +132,30 @@
 	border-radius: 1.87rem;
 	border: 0.37rem solid #D8D8D8;
 }
-
-/** 首页合作伙伴部分 **/
-.hzimg img{
-	height: 100%;
-	width: 100%;
+/** 关于子询文字样式 **/
+.zxabout P{
+	font-size: 1rem;
 }
+/** 子询公司简介样式 **/
+.introduction{
+	width: 47rem;
+}
+.blackstyle{
+	background: #333333;
+}
+.blackstyle h3{
+	color: #FFFFFF;
+}
+.introduction p{
+	font-size: 1.12rem;
+	color: #FFFFFF;
+}
+/** 圆角矩形样式 **/
+.fillet{
+	border-radius: 0.93rem;
+}
+/** 核心技术交互 **/
+.hx p{
+	text-indent: 2rem;
+}
+
