@@ -34,9 +34,93 @@
 .al h2{
 	padding-bottom: 2rem;
 }
-/** 媒体查询 **/
-@media screen and (max-width: 400px){
-	.mp{
-		width: 290px;
-	}
+/** 首页关于子询部分 **/
+.zxlcb h4{
+	color: #FFFFFF;
+}
+.zxlcb p{
+	color: #FFFFFF;
+}
+.zxlcbnr-ball{
+    transform-origin: center bottom;
+    transition: all 0.5s;
+    transform: rotate(0);
+}
+.zxlcbnr-top p{
+	word-wrap: break-word;
+}
+.zxlcbnr-top{
+	height: 40rem;
+}
+.zxl1 h5{
+	background: #FF3B30;
+}
+.zxl1 span{
+	background: #FF3B30;
+}
+.zxl2 h5{
+	background: #FCB814;
+}
+.zxl2 span{
+	background: #FCB814;
+}
+.zxl3 h5{
+	background: #0DB14B;
+}
+.zxl3 span{
+	background: #0DB14B;
+}
+.zxl4 h5{
+	background: #00BEFF;
+}
+.zxl4 span{
+	background: #00BEFF;
+}
+.zxl5 h5{
+	background: #2577FF;
+}
+.zxl5 span{
+	background: #2577FF;
+}
+.zxl6 h5{
+	background: #9013FE;
+}
+.zxl6 span{
+	background: #9013FE;
+}
+.zxlcbnr ul li{
+	list-style: none;
+}
+.zxlcbnr-ball h5{
+	margin: 0 auto;
+    width: 6.25rem;
+    height: 6.25rem;
+    border-radius: 6.25rem;
+    border: 0.37rem solid #D8D8D8;
+    font-size: 1.5rem;
+    color: #FFFFFF;
+    text-align: center;
+    line-height: 6.25rem;
+    font-weight: bolder;
+}
+.zxlcbnr-ball i{
+	display: block;
+	margin: 0 auto;
+	height: 6.12rem;
+	width: 0.18rem;
+	background-color: #E3E3E3;
+}
+.zxlcbnr-ball span{
+	display: block;
+	margin: 0 auto;
+	width: 1.87rem;
+	height: 1.87rem;
+	border-radius: 1.87rem;
+	border: 0.37rem solid #D8D8D8;
+}
+
+/** 首页合作伙伴部分 **/
+.hzimg img{
+	height: 100%;
+	width: 100%;
 }
