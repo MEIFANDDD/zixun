@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<title>子询人工智能研究院</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content=" HTML5 Template">
+		<meta name="author" content="zixuncr.com">
+		<link rel="shortcut icon" href="img/ai_logo.png">
+		<!-- Le styles -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/font-awesome.min.css" />
+		<!--animate库组件-->
+		<link href="css/animate.css" rel="stylesheet">
+		<link href="css/bootsnav.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/htmleaf-demo.css">
+		<link href="css/overwrite.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
+		<link href="css/color.css" rel="stylesheet">
+	
+		<!--图片翻转特效 用这个-->
+		<link rel="stylesheet" href="css/animate-tool.css" />
+		<!--页脚-->
+		<link rel="stylesheet" href="css/footer.css" />
+		<!-- <link href="css/bootstrap-responsive.min.css" rel="stylesheet">-->
+		<!--  <link rel="stylesheet" href="css/main.css" type="text/css">-->
+		<style>
+			.banner {
+				height: 336px;
+				background: url(./img/banner.jpg) center no-repeat;
+			}
+			
+			a:hover {
+				text-decoration: none;
+			}
+			
+			.tab_menu {
+				width: 100%;
+				margin: 30px 0;
+			}
+			
+			.tab-content {
+				margin-top: 20px;
+			}
+			
+			.tab_menu ul {
+				width: 204px;
+				margin: 0 auto;
+				border: none;
+			}
+			
+			.tab_menu>ul>li>a {
+				border: none !important;
+			}
+			
+			.nav-tabs li.active {
+				border-bottom: 4px solid #0C81A0;
+			}
+			
+			.nav-tabs li.active a {
+				color: #0C81A0 !important;
+			}
+			/*去掉hover时li的背景*/
+			
+			.nav-tabs li a:hover {
+				background: none;
+			}
+			/*公司简介*/
+			
+			.companyDesc h3 {
+				margin: 40px 0;
+				text-align: center;
+			}
+			
+			.companyDesc p {
+				text-indent: 2em;
+			}
+			/*导航条二级菜单图片*/
+			
+			.imgContent {
+				float: left;
+				margin-right: 20px;
+			}
+			
+			.imgContent a {
+				margin-top: 20px;
+				color: #484848;
+				font-size: 14px;
+				text-decoration: none;
+			}
+			
+			.imgContent a:hover {
+				margin-top: -5px;
+			}
+			
+			.imgContent img {
+				height: 170px;
+			}
+			
+			.imgContent p {
+				text-align: center;
+			}
+			/*加入我们旁边的圆圈--临时样式*/
+			
+			.circle {
+				width: 150px;
+				height: 150px;
+				border-radius: 50%;
+				background: url(img/demo/znjy.png) center no-repeat;
+				background-size: 150px 150px;
+			}
+			/*加入我们和上面的间距40px margin*/
+			
+			.space {
+				margin-top: 40px;
+			}
+			
+			/*岗位招聘--翻转特效*/
+			.upturn-list {
+				height: 300px;
+			}
+			.upturn-list li {
+				position: relative;
+				float: left;
+				width: 250px;
+				height: 300px;
+				list-style: none;
+			/*	border: 1px solid red;*/
+			}
+			.upturn-list li .flip-box {
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 250px;
+				height: 300px;
+				background: #FFF;
+				overflow: hidden;
+			}
+			.front,.back {
+				border: 1px solid red;
+			}
+		</style>
+	</head>
+
+	<body>
+		<!--导航条 开始-->
+		<nav class="navbar navbar-default navbar-mobile bootsnav">
+			<div class="container">
+
+				<!-- logo -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                    <i class="fa fa-bars"></i>
+                </button>
+					<a class="navbar-brand" href="#brand"><img src="img/logo2.png" class="logo" alt=""></a>
+				</div>
+				<!-- logo -->
+
+				<!-- 导航条开始 -->
+				<div class="collapse navbar-collapse" id="navbar-menu">
+					<ul class="nav navbar-nav navbar-right navbar-fixed" data-in="fadeInDown" data-out="fadeOutUp">
+						<li>
+							<a href="#">主页</a>
+						</li>
+						<li class="dropdown megamenu-fw">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">核心技术</a>
+							<ul class="dropdown-menu megamenu-content" role="menu">
+								<li>
+									<div class="row">
+										<div class="col-menu col-md-3">
+											<h6 class="title">语义理解技术</h6>
+											<div class="content">
+												<ul class="menu-col">
+													<li>
+														<a href="#">智能客服</a>
+													</li>
+													<li>
+														<a href="#">虚拟人物</a>
+													</li>
+													<li>
+														<a href="#">广告交互</a>
+													</li>
+
+												</ul>
+											</div>
+										</div>
+										<!-- end col-3 -->
+										<div class="col-menu col-md-3">
+											<h6 class="title">图像识别技术</h6>
+											<div class="content">
+
+												<ul class="menu-col">
+													<li>
+														<a href="#">癌症筛查 </a>
+													</li>
+													<li>
+														<a href="#">场景识别</a>
+													</li>
+													<li>
+														<a href="#">机器人视觉</a>
+													</li>
+													<li>
+														<a href="#">票据识别</a>
+													</li>
+
+												</ul>
+											</div>
+										</div>
+										<!-- end col-3 -->
+										<div class="col-menu col-md-3">
+											<h6 class="title">数据处理技术</h6>
+											<div class="content">
+												<ul class="menu-col">
+													<li>
+														<a href="#">智能数据库</a>
+													</li>
+													<li>
+														<a href="#">搜索库</a>
+													</li>
+													<li>
+														<a href="#">授信融资与保险定价</a>
+													</li>
+													<li>
+														<a href="#">投资决策系统与智能投资顾问</a>
+													</li>
+													<li>
+														<a href="#">金融预测、反欺诈与风控</a>
+													</li>
+
+												</ul>
+											</div>
+										</div>
+										<div class="col-menu col-md-3">
+											<h6 class="title">其他</h6>
+											<div class="content">
+												<ul class="menu-col">
+													<li>
+														<a href="#">自然语言合成</a>
+													</li>
+													<li>
+														<a href="#">时序控制信号学习</a>
+													</li>
+													<li>
+														<a href="#">近似目标锁定</a>
+													</li>
+												</ul>
+											</div>
+										</div>
+										<!-- end col-3 -->
+									</div>
+									<!-- end row -->
+								</li>
+							</ul>
+						</li>
+						<li class="dropdown megamenu-fw">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">案例展示</a>
+							<ul class="dropdown-menu megamenu-content clearfix" role="menu">
+								<li class="imgContent">
+									<a href="#">
+										<div class="imgDiv">
+											<img src="./img/1.png" alt="" />
+										</div>
+										<p>智能客服</p>
+									</a>
+								</li>
+								<li class="imgContent">
+									<a href="#">
+										<div class="imgDiv">
+											<img src="./img/1.png" alt="" />
+										</div>
+										<p>智能客服</p>
+									</a>
+								</li>
+								<li class="imgContent">
+									<a href="#">
+										<div class="imgDiv">
+											<img src="./img/1.png" alt="" />
+										</div>
+										<p>智能客服</p>
+									</a>
+								</li>
+								<li class="imgContent">
+									<a href="#">
+										<div class="imgDiv">
+											<img src="./img/1.png" alt="" />
+										</div>
+										<p>智能客服</p>
+									</a>
+								</li>
+								<li class="imgContent">
+									<a href="#">
+										<div class="imgDiv">
+											<img src="./img/1.png" alt="" />
+										</div>
+										<p>智能客服</p>
+									</a>
+								</li>
+							</ul>
+
+						</li>
+						<li>
+							<a href="#">自媒体</a>
+						</li>
+						<li>
+							<a href="#">关于子询</a>
+						</li>
+						<li>
+							<a href="#">加入子询</a>
+						</li>
+					</ul>
+				</div>
+				<!--导航条 结束 -->
+			</div>
+
+		</nav>
+		<!-- End Navigation -->
+
+		<div class="clearfix"></div>
+
+		<!--banner图-->
+		<div class="banner">
+			<div class="container">
+
+			</div>
+		</div>
+		<!--banner图 结束-->
+
+		<!--内容主体-->
+		<div class="container space">
+			<div class="row">
+				<div class="col-xs-12 col-md-6">
+					<div style="height: 200px;background: blue;"></div>
+				</div>
+				<div class="col-xs-12 col-md-6">
+					<h3 class="text-center">加入我们</h3>
+					<p>文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 col-md-6">
+					<h3 class="text-center">口号二</h3>
+					<p>文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍</p>
+				</div>
+				<div class="col-xs-12 col-md-6">
+					<div style="height: 200px;background: blue;"></div>
+				</div>
+
+			</div>
+			<div class="row">
+
+				<div class="col-xs-12 col-md-6">
+					<div style="height: 200px;background: blue;"></div>
+				</div>
+				<div class="col-xs-12 col-md-6">
+					<h3 class="text-center">口号三</h3>
+					<p>文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍</p>
+				</div>
+			</div>
+			<div class="row space">
+				<div class="col-xs-6 col-md-6 clearfix">
+					<div class="circle pull-right"></div>
+				</div>
+				<div class="col-xs-6 col-md-6">
+					<div style="margin-top: 10px;">
+						<h3>现在就加入我们吧</h3>
+						<p>请将您的简历与作品</p>
+						<p>发送至：XXXX@qq.com</p>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<!--内容主体 结束-->
+			
+		<div class="container space">
+			<ul class="upturn-list">
+				<li class="viewport-flip">
+					<div class="flip-box flip out"> <!--正面-->
+						<div><strong>岗位职责：</strong></div>
+						<p>参与产品设计和需求评审</p>
+						<p>参与Web前端系统的功能开发、调试、单元测试、部署、维护和文档编写等工作；</p>
+						<p>分析、设计、编写、测试前端组件代码。</p>
+						<div><a href="#">查看详情</a></div>
+					</div>
+					<div class="flip-box flip"><!--反面-->
+						<h4>Web前端开发工程师</h4>
+					</div>
+				</li>
+				<li class="viewport-flip">
+					<div class="flip-box flip out"> <!--正面-->
+						<div><strong>岗位职责：</strong></div>
+						<p>参与产品设计和需求评审</p>
+						<p>参与Web前端系统的功能开发、调试、单元测试、部署、维护和文档编写等工作；</p>
+						<p>分析、设计、编写、测试前端组件代码。</p>
+						<div><a href="#">查看详情</a></div>
+					</div>
+					<div class="flip-box flip"><!--反面-->
+						<h4>Web前端开发工程师</h4>
+					</div>
+				</li>
+				<li class="viewport-flip">
+					<div class="flip-box flip out"> <!--正面-->
+						<div><strong>岗位职责：</strong></div>
+						<p>参与产品设计和需求评审</p>
+						<p>参与Web前端系统的功能开发、调试、单元测试、部署、维护和文档编写等工作；</p>
+						<p>分析、设计、编写、测试前端组件代码。</p>
+						<div><a href="#">查看详情</a></div>
+					</div>
+					<div class="flip-box flip"><!--反面-->
+						<h4>Web前端开发工程师</h4>
+					</div>
+				</li>
+				<li class="viewport-flip">
+					<div class="flip-box flip out front"> <!--正面-->
+						<div><strong>岗位职责：</strong></div>
+						<p>参与产品设计和需求评审</p>
+						<p>参与Web前端系统的功能开发、调试、单元测试、部署、维护和文档编写等工作；</p>
+						<p>分析、设计、编写、测试前端组件代码。</p>
+						<div><a href="#">查看详情</a></div>
+					</div>
+					<div class="flip-box flip back"><!--反面-->
+						<h4>Web前端开发工程师</h4>
+					</div>
+				</li>
+			</ul>
+		</div>	
+		
+			
+		<!--页脚-->
+		<div class="footer-bg">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="footer-line clearfix">
+							<div class="focus-me pull-left">关注我们：</div>
+							<div class="footer-left pull-left">
+
+								<a href="#" class="weichart"></a>
+								<a href="#" class="alibaba"></a>
+								<a href="#" class="weibo"></a>
+								<a href="#" class="a-site"></a>
+								<a href="#" class="b-site"></a>
+								<a href="#" class="toutiao"></a>
+
+							</div>
+
+							<div class="footer-right pull-right">
+								<span>商业合作：</span>
+								<a style="color: #FFF;" href="mailto:sales@zixuncr.com">sales@zixuncr.com</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-12">
+						<div class="copyright">
+							<div class="pull-left">子询(深圳)人工智能研究院有限公司版权所有 Copyrights All Reserverd &copy;2017.</div>
+							<div class="pull-right visible-md visible-lg">
+								<ul class="footer-menu">
+									<li>
+										<a href="">首页</a>
+									</li>
+									<li>
+										<a href="">核心技术</a>
+									</li>
+									<li>
+										<a href="">案例展示</a>
+									</li>
+									<li>
+										<a href="">自媒体</a>
+									</li>
+									<li>
+										<a href="">关于子询</a>
+									</li>
+									<li>
+										<a href="">加入子询</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--页脚 结束-->
+		<script src="js/jquery.min.js"></script>
+		<!--bootstrap导航条-->
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/bootsnav.js"></script>
+		<script src="js/velocity.js"></script>
+		<!--图片翻转特效-->
+		<script src="js/upturn.js"></script>
+	</body>
+
+</html>
