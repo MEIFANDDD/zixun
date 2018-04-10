@@ -1,16 +1,18 @@
 <!DOCTYPE html>
-<html>
+
+<html lang="en">
+
 	<head>
-		<meta charset="UTF-8">
+		<meta charset="utf-8">
+		<title>子询人工智能研究院</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content=" HTML5 Template">
-		<title>核心技术</title>
-		<!-- 引入样式 -->
-		<script src="js/jquery.min.js"></script>
-		<script src="js/bootstrap.js"></script>
+		<meta name="author" content="zixuncr.com">
+		<link rel="shortcut icon" href="img/ai_logo.png">
+		<!-- Le styles -->
 		<link href="css/bootstrap.min.css" rel="stylesheet">
-		<link href="css/mei.css" rel="stylesheet">
-		<link rel="stylesheet" href="css/font-awesome.min.css" />
+
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
 		<!--animate库组件-->
 		<link href="css/animate.css" rel="stylesheet">
 		<link href="css/bootsnav.css" rel="stylesheet">
@@ -18,13 +20,211 @@
 		<link href="css/overwrite.css" rel="stylesheet">
 		<link href="css/style.css" rel="stylesheet">
 		<link href="css/color.css" rel="stylesheet">
-		<!--页脚-->
 
+		<!--基础样式库-自定义-->
 		<link rel="stylesheet" href="css/comment.css" />
-
+		
+		<style>
+			.tab_menu {
+				width: 100%;
+				margin: 30px 0;
+			}
+			
+			.tab-content {
+				margin-top: 20px;
+			}
+			
+			.tab_menu ul {
+				width: 204px;
+				margin: 0 auto;
+				border: none;
+			}
+			
+			.tab_menu>ul>li>a {
+				border: none !important;
+			}
+			
+			.nav-tabs li.active {
+				border-bottom: 4px solid #0C81A0;
+			}
+			
+			.nav-tabs li.active a {
+				color: #0C81A0 !important;
+			}
+			/*去掉hover时li的背景*/
+			
+			.nav-tabs li a:hover {
+				background: none;
+			}
+			/*热点--图片*/
+			
+			.left img {
+				height: 250px;
+				background-repeat: no-repeat;
+				background-size: cover;
+				background-position: center center;
+			}
+			/*热点*/
+			
+			.right-content {
+				margin-left: 20px;
+			}
+			
+			.hot-content {
+				margin-top: 30px;
+				margin-bottom: 20px;
+				text-indent: 2em;
+			}
+			/*浏览量和查看详情*/
+			
+			.page-view,
+			.page-view span {
+				color: #1B76A5;
+				/*蓝色*/
+			}
+			
+			.hot-footer span {
+				margin-left: 4px;
+			}
+			/*查看详情*/
+			
+			.hot-footer .detail {
+				margin-top: -5px;
+				padding: 6px 10px;
+				background-color: #1B76A5;
+				border-radius: 20px;
+			}
+			
+			.hot-footer .detail a {
+				font-size: 12px;
+				color: #FFF;
+			}
+			/*新闻列表*/
+			
+			.content-list {
+				max-width: 600px;
+				margin: 0 auto;
+				margin-top: 50px;
+			}
+			
+			.content-list .bottom-line {
+				border-bottom: 2px dashed #ccc;
+				padding: 20px 0;
+			}
+			/*日期*/
+			
+			.content-list .date .day,
+			.content-list .date .year-month {
+				text-align: center;
+				color: #FFF;
+			}
+			
+			.content-list .date .blue,
+			.content-list .date .blue {
+				background: #1B76A5;
+				/*蓝色*/
+			}
+			/*新闻到第5条，日期为灰色*/
+			
+			.content-list .date .gray,
+			.content-list .date .gray {
+				text-align: center;
+				background: #ccc;
+				color: #FFF;
+			}
+			
+			.content-list .date .day {
+				font-size: 36px;
+				padding: 10px 0;
+			}
+			
+			.content-list .date .year-month {
+				margin-top: 10px;
+			}
+			/*父盒子*/
+			
+			.news-list-item {
+				overflow: hidden;
+			}
+			/*左边盒子*/
+			
+			.content-list .picture {
+				float: left;
+				width: 150px;
+				height: 100px;
+				overflow: hidden;
+			}
+			.content-list .picture img {
+				width: 100%;
+				height: 100%;
+				cursor: pointer;
+			}
+			/*右边盒子*/
+			
+			.content-list .news-title {
+				max-width: 280px;
+				/*需要转变成rem或者em*/
+				float: left;
+				margin-left: 20px;
+				/*background-color: green;*/
+			}
+			/*新闻简介*/
+			
+			.content-list .news-title .news-descript {
+				display: -webkit-box;
+				-webkit-box-orient: vertical;
+				-webkit-line-clamp: 2;
+				overflow: hidden;
+			}
+			
+			.content-list .news-title .news-descript a {
+				font-size: 20px;
+				color: #000;
+			}
+			
+			.content-list .news-title .page-view {
+				margin-top: 22px;
+			}
+			/*分页*/
+			
+			.paging {
+				margin-top: 30px;
+			}
+			
+			.paging .prev {
+				margin-right: 20px;
+			}
+			/*导航条二级菜单图片*/
+			
+			.imgContent {
+				float: left;
+				margin-right: 20px;
+			}
+			
+			.imgContent a {
+				margin-top: 20px;
+				color: #484848;
+				font-size: 14px;
+				text-decoration: none;
+			}
+			
+			.imgContent a:hover {
+				margin-top: -5px;
+			}
+			
+			.imgContent img {
+				height: 170px;
+			}
+			
+			.imgContent p {
+				text-align: center;
+			}
+		</style>
+		
 	</head>
+
 	<body>
-<!--导航条 开始-->
+		<!--导航条 开始-->
 		<nav class="navbar navbar-default navbar-mobile bootsnav">
 			<div class="container">
 
@@ -187,128 +387,48 @@
 		</nav>
 		<!-- End Navigation -->
 		
-		<!-- 大标题 -->
-		<header class="hx paddtp-3">
-			<div class="container">
-				<div class="row">
-					<div class="col-xs-12 col-md-6">
-						<img class="img-responsive" src="img/demo/dataProcessing.jpg"></img>
-					</div>
-					<div class="col-xs-12 col-md-6 paddtp-3">
-						<div>
-							<h3 class="text-center">数据处理技术</h3>
-							<p>通过业内领先的深度学习技术，可以快速完成一系列复杂且繁多的数据处理、分析与归类。在智能数据管理、海量信息检索、投资决策辅助、授信融资保险定价与金融反欺诈风控等领域都有着出色地表现。</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</header>
-		<!-- 结束 大标题-->
+		<div class="clearfix"></div>
 
-		<!-- 内容部分 -->
-		<!-- 第一块内容 -->
-		<section class="martop hx">
+		<!--banner图-->
+		<div class="banner">
 			<div class="container">
-				<div class="row">
-					<div class="col-xs-12 col-md-6">
-						<img class="img-responsive" src="img/demo/idata.jpg"></img>
-					</div>
-					<div class="col-xs-12 col-md-6  paddtp-3">
-						<h3 class="text-center">智能数据库</h3>
-						<p>智能管理系统实现了关键词自动提取、标签分类、模糊语义检索等功能，极大方便用户的日常检索与文件归类。辅以AI自我学习算法，不需要人为在后台多次修正设定；是通过系统的自身修正，实现智能化文档库的管理。极大节约公司运营成本.实现企业运营所需的规范化文档传递流程。提高员工间的工作效率，提高管理人员的决策效率。系统可对任务进程监督，每月、季、年数据挖掘、分析，生成公司运营报告。提高公司运营效率，辅助管理层战略性决策。</p>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- 结束 第一块内容 -->
 
-		<!-- 第二块内容 -->
-		<section class="martop-3 hx">
-			<div class="container">
-				<div class="row">
-					<div class="col-xs-12 col-md-6 paddtp-3">
-						<h3 class="text-center">搜索库</h3>
-						<p>该系统会根据数据库内容自动分析抓取关键信息，生成标签，明确分类管理。并搭配模糊语义检索模型，提升系统信息传输与储存效率，优化用户体验。</p>
-					</div>
-					<div class="col-xs-12 col-md-6">
-						<img class="img-responsive" src="img/demo/searchk.jpg"></img>
-					</div>
-				</div>
 			</div>
-		</section>
-		<!-- 结束 第二块内容 -->
+		</div>
+		<!--banner图 结束-->
 
-		<!-- 第N块内容 -->
-		<section class="martop-3 hx">
+	<!--内容主体-->
+		<section>
 			<div class="container">
-				<div class="row">
-					<div class="col-xs-12 col-md-6">
-						<img class="img-responsive" src="img/demo/cfalp.jpg"></img>
-					</div>
-					<div class="col-xs-12 col-md-6 paddtp-3">
-						<h3 class="text-center">授信融资与保险定价</h3>
-						<p>授信融资：通过整合多来源及不同性质的数据，做到在几分钟内运算出结果，并且贷款系统可以自动判断贷款要求是否合理。在贷后监控方面，通过数据筛选、建模和预测等方式进行打分。保险定价：可以通过对车的定位信息、跟踪驾驶速度，结合其它的非保险领域的数据，通过模型算法自动化地分析其风险因子分数（车祸发生的机率等），可以使保险定价个性化和动态化。</p>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- 结束 第N块内容 -->
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="tab_menu">
+						<ul class="nav nav-tabs" style="width: 105px;">
+							<li role="presentation" class="active">
+								<a href="#A" data-toggle="tab">智能机器人</a>
+							</li>
+						</ul>
 
-		<!-- 第N块内容 -->
-		<section class="martop-3 hx">
-			<div class="container">
-				<div class="row">
-					<div class="col-xs-12 col-md-6  paddtp-3">
-						<h3 class="text-center">投资决策系统与智能投资顾问</h3>
-						<p>辅助决策系统：提供金融交易历史数据，利用深度强化学习技术（AlphaGo核心技术），给出当前经济形势预测、银行某项关键数据趋势预测，辅助做出金融决策。智能投资顾问：根据Markowitz的现代资产组合理论（MPT），结合个人客户的风险偏好和理财目标，利用人工智能算法和互联网技术为客户提供资产管理和在线投资建议服务，实现个人客户的批量投资顾问。</p>
-					</div>
-					<div class="col-xs-12 col-md-6">
-						<img class="img-responsive" src="img/demo/sj-gw.jpg"></img>
+						<div class="tab-content">
+							<!-- 智能机器人 -->
+							<div id="A" class="tab-pane active">
+								<div class="text-center">
+									<img class="center-block" src="img/demo/znjqr.png" />
+									<img class="center-block" src="img/demo/znjqr2.png" />
+									<img class="center-block" src="img/demo/znjqr3.png" />
+									<img class="center-block" src="img/demo/znjqr5.png" />
+									<img class="center-block" src="img/demo/znjqr4.png" />
+								</div>
+							</div>
+							<!--智能机器人 结束-->
 					</div>
 				</div>
 			</div>
-		</section>
-		<!-- 结束 第N块内容 -->
+		</div>
+	</section>
+		<!--内容主体 结束-->
 
-		<!-- 第N块内容 -->
-		<section class="martop-3 hx">
-			<div class="container">
-				<div class="row">
-					<div class="col-xs-12 col-md-6">
-						<img class="img-responsive" src="img/demo/ffafarc.jpg"></img>
-					</div>
-					<div class="col-xs-12 col-md-6 paddtp-3">
-						<h3 class="text-center">金融预测,反欺诈与风控</h3>
-						<p>大规模采用机器学习，导入海量金融交易数据，使用深度学习技术，从金融数据中自动发现模式，如分析信用卡数据，识别欺诈交易，并提前预测交易变化趋势，提前做出相应对策。基于大数据的风控需要把不同来源数据（结构化，非结构化）整合到一起，它可以检测数据当中的不一致性，分析企业的上下游、合作、竞争对手、子母公司、投资、对标等关系。</p>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- 结束 第N块内容 -->
-
-		<!-- 应用场景 -->
-		<section class="martop">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12">
-						<h2 class="text-center">应用场景</h2>
-					</div>
-				</div>
-				<div class="row martop-3">
-					<div class="col-md-4 paddbotm-3">
-						<img class="img-responsive" src="img/demo/gallery1.png" />
-					</div>
-					<div class="col-md-4 paddbotm-3">
-						<img class="img-responsive" src="img/demo/gallery1.png" />
-					</div>
-					<div class="col-md-4 paddbotm-3">
-						<img class="img-responsive" src="img/demo/gallery1.png" />
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- 结束 应用场景 -->
-<!--页脚-->
+		<!--页脚-->
   <div class="footer-bg">
    <div class="container">
     <div class="row">
@@ -376,13 +496,13 @@
          </li>
          <li>
           <a href="joinUs.html">加入子询</a >
-         </li</body>
-	<!-- 引入样式 -->
-	<script src="js/jquery.min.js"></script>
-	<!--bootstrap导航条-->
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/bootsnav.js"></script>
-	<script src="js/velocity.js"></script>
-	
+         </li
+		<script src="js/jquery.min.js"></script>
+		<!--bootstrap导航条-->
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/bootsnav.js"></script>
+		<script src="js/velocity.js"></script>
+
+	</body>
 
 </html>
