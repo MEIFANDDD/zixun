@@ -1,17 +1,18 @@
 <!DOCTYPE html>
-<html>
+
+<html lang="en">
 
 	<head>
-		<meta charset="UTF-8">
+		<meta charset="utf-8">
+		<title>子询人工智能研究院</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content=" HTML5 Template">
-		<title>核心技术</title>
-		<!-- 引入样式 -->
-		<script src="js/jquery.min.js"></script>
-		<script src="js/bootstrap.js"></script>
+		<meta name="author" content="zixuncr.com">
+		<link rel="shortcut icon" href="img/ai_logo.png">
+		<!-- Le styles -->
 		<link href="css/bootstrap.min.css" rel="stylesheet">
-		<link href="css/mei.css" rel="stylesheet">
-		<link rel="stylesheet" href="css/font-awesome.min.css" />
+
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
 		<!--animate库组件-->
 		<link href="css/animate.css" rel="stylesheet">
 		<link href="css/bootsnav.css" rel="stylesheet">
@@ -19,13 +20,211 @@
 		<link href="css/overwrite.css" rel="stylesheet">
 		<link href="css/style.css" rel="stylesheet">
 		<link href="css/color.css" rel="stylesheet">
-		<!--公共样式-->
-		<link rel="stylesheet" href="css/comment.css" />
 
+		<!--基础样式库-自定义-->
+		<link rel="stylesheet" href="css/comment.css" />
+		
+		<style>
+			.tab_menu {
+				width: 100%;
+				margin: 30px 0;
+			}
+			
+			.tab-content {
+				margin-top: 20px;
+			}
+			
+			.tab_menu ul {
+				width: 204px;
+				margin: 0 auto;
+				border: none;
+			}
+			
+			.tab_menu>ul>li>a {
+				border: none !important;
+			}
+			
+			.nav-tabs li.active {
+				border-bottom: 4px solid #0C81A0;
+			}
+			
+			.nav-tabs li.active a {
+				color: #0C81A0 !important;
+			}
+			/*去掉hover时li的背景*/
+			
+			.nav-tabs li a:hover {
+				background: none;
+			}
+			/*热点--图片*/
+			
+			.left img {
+				height: 250px;
+				background-repeat: no-repeat;
+				background-size: cover;
+				background-position: center center;
+			}
+			/*热点*/
+			
+			.right-content {
+				margin-left: 20px;
+			}
+			
+			.hot-content {
+				margin-top: 30px;
+				margin-bottom: 20px;
+				text-indent: 2em;
+			}
+			/*浏览量和查看详情*/
+			
+			.page-view,
+			.page-view span {
+				color: #1B76A5;
+				/*蓝色*/
+			}
+			
+			.hot-footer span {
+				margin-left: 4px;
+			}
+			/*查看详情*/
+			
+			.hot-footer .detail {
+				margin-top: -5px;
+				padding: 6px 10px;
+				background-color: #1B76A5;
+				border-radius: 20px;
+			}
+			
+			.hot-footer .detail a {
+				font-size: 12px;
+				color: #FFF;
+			}
+			/*新闻列表*/
+			
+			.content-list {
+				max-width: 600px;
+				margin: 0 auto;
+				margin-top: 50px;
+			}
+			
+			.content-list .bottom-line {
+				border-bottom: 2px dashed #ccc;
+				padding: 20px 0;
+			}
+			/*日期*/
+			
+			.content-list .date .day,
+			.content-list .date .year-month {
+				text-align: center;
+				color: #FFF;
+			}
+			
+			.content-list .date .blue,
+			.content-list .date .blue {
+				background: #1B76A5;
+				/*蓝色*/
+			}
+			/*新闻到第5条，日期为灰色*/
+			
+			.content-list .date .gray,
+			.content-list .date .gray {
+				text-align: center;
+				background: #ccc;
+				color: #FFF;
+			}
+			
+			.content-list .date .day {
+				font-size: 36px;
+				padding: 10px 0;
+			}
+			
+			.content-list .date .year-month {
+				margin-top: 10px;
+			}
+			/*父盒子*/
+			
+			.news-list-item {
+				overflow: hidden;
+			}
+			/*左边盒子*/
+			
+			.content-list .picture {
+				float: left;
+				width: 150px;
+				height: 100px;
+				overflow: hidden;
+			}
+			.content-list .picture img {
+				width: 100%;
+				height: 100%;
+				cursor: pointer;
+			}
+			/*右边盒子*/
+			
+			.content-list .news-title {
+				max-width: 280px;
+				/*需要转变成rem或者em*/
+				float: left;
+				margin-left: 20px;
+				/*background-color: green;*/
+			}
+			/*新闻简介*/
+			
+			.content-list .news-title .news-descript {
+				display: -webkit-box;
+				-webkit-box-orient: vertical;
+				-webkit-line-clamp: 2;
+				overflow: hidden;
+			}
+			
+			.content-list .news-title .news-descript a {
+				font-size: 20px;
+				color: #000;
+			}
+			
+			.content-list .news-title .page-view {
+				margin-top: 22px;
+			}
+			/*分页*/
+			
+			.paging {
+				margin-top: 30px;
+			}
+			
+			.paging .prev {
+				margin-right: 20px;
+			}
+			/*导航条二级菜单图片*/
+			
+			.imgContent {
+				float: left;
+				margin-right: 20px;
+			}
+			
+			.imgContent a {
+				margin-top: 20px;
+				color: #484848;
+				font-size: 14px;
+				text-decoration: none;
+			}
+			
+			.imgContent a:hover {
+				margin-top: -5px;
+			}
+			
+			.imgContent img {
+				height: 170px;
+			}
+			
+			.imgContent p {
+				text-align: center;
+			}
+		</style>
+		
 	</head>
 
 	<body>
-<!--导航条 开始-->
+		<<!--导航条 开始-->
 		<nav class="navbar navbar-default navbar-mobile bootsnav">
 			<div class="container">
 
@@ -187,94 +386,50 @@
 			</div>
 		</nav>
 		<!-- End Navigation -->
+		
 
-		<!-- 大标题 -->
-		<header class="hx paddtp-3">
-			<div class="container">
-				<div class="row">
-					<div class="col-xs-12 col-md-6">
-						<img class="img-responsive" src="img/demo/other.jpeg"></img>
-					</div>
-					<div class="col-xs-12 col-md-6 paddtp-3">
-						<h3 class="text-center">其他</h3>
-						<p>这里的文案还没有</p>
-					</div>
-				</div>
-			</div>
-		</header>
-		<!-- 结束 大标题-->
+		<div class="clearfix"></div>
 
-		<!-- 内容部分 -->
-		<!-- 第一块内容 -->
-		<section class="hx martop">
+		<!--banner图-->
+		<div class="banner">
 			<div class="container">
-				<div class="row">
-					<div class="col-xs-12 col-md-6">
-						<img class="img-responsive" src="img/demo/speech.jpg"></img>
-					</div>
-					<div class="col-xs-12 col-md-6  paddtp-3">
-						<h3 class="text-center">自然语言合成</h3>
-						<p>已发展到第三代的语音合成技术，利用深度神经网络，直接从原始发音语料中构建语音模型、情感模型和场景模型，进而能够模拟任意语料的发音效果，实现定制化发音和情感仿真。</p>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- 结束 第一块内容 -->
 
-		<!-- 第二块内容 -->
-		<section class="martop-3 hx">
-			<div class="container">
-				<div class="row">
-					<div class="col-xs-12 col-md-6 paddtp-3">
-						<h3 class="text-center">时序信号控制</h3>
-						<p>子询的工业控制系统，通过神经元网络化的改造后，可以准确的实现错误操作的自动化处理流程；此外还能在线进行精度补偿，从而为大多数CNC企业而言提供了一个低成本、高附加值的明智之选。</p>
-					</div>
-					<div class="col-xs-12 col-md-6">
-						<img class="img-responsive" src="img/demo/scontrol.jpg"></img>
-					</div>
-				</div>
 			</div>
-		</section>
-		<!-- 结束 第二块内容 -->
+		</div>
+		<!--banner图 结束-->
 
-		<!-- 第N块内容 -->
-		<section class="martop-3 hx">
+		<!--内容主体-->
+		<section>
 			<div class="container">
-				<div class="row">
-					<div class="col-xs-12 col-md-6">
-						<img class="img-responsive" src="img/demo/stlocak.jpg"></img>
-					</div>
-					<div class="col-xs-12 col-md-6 paddtp-3">
-						<h3 class="text-center">近似目标锁定</h3>
-						<p>通过模版信息在图像中的匹配可以完成2ms内特征点的辨别。将辨别的结果通过图像标记的方式表现出来；此外通过神经元网络进行目标跟踪协同，以及进行目标捕捉再学习和历史轨迹学习。</p>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- 结束 第N块内容 -->
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="tab_menu">
+						<ul class="nav nav-tabs" style="width: 88px;">
+							<li role="presentation" class="active">
+								<a href="#A" data-toggle="tab">智能手表</a>
+							</li>
+						</ul>
 
-		<!-- 应用场景 -->
-		<section class="martop">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12">
-						<h2 class="text-center">应用场景</h2>
+						<div class="tab-content">
+							<!-- 智能手表 -->
+							<div id="A" class="tab-pane active">
+								<div class="text-center">
+									<img class="center-block" src="img/demo/znsb5.png" />
+									<img class="center-block" src="img/demo/znsb.png" />
+									<img class="center-block" src="img/demo/znsb2.png" />
+									<img class="center-block" src="img/demo/znsb4.png" />
+									<img class="center-block" src="img/demo/znsb3.png" />
+								</div>
+							</div>
+							<!--智能手表 结束-->
 					</div>
 				</div>
-				<div class="row martop-3">
-					<div class="col-md-4 paddbotm-3">
-						<img class="img-responsive" src="img/demo/gallery1.png" />
-					</div>
-					<div class="col-md-4 paddbotm-3">
-						<img class="img-responsive" src="img/demo/gallery1.png" />
-					</div>
-					<div class="col-md-4 paddbotm-3">
-						<img class="img-responsive" src="img/demo/gallery1.png" />
-					</div>
-				</div>
+
 			</div>
-		</section>
-		<!-- 结束 应用场景 -->
+
+		</div>
+	</section>
+		<!--内容主体 结束-->
 
 		<!--页脚-->
   <div class="footer-bg">
@@ -344,13 +499,14 @@
          </li>
          <li>
           <a href="joinUs.html">加入子询</a >
-         </li</body>
+         </li
 
-	<!-- 引入样式 -->
-	<script src="js/jquery.min.js"></script>
-	<!--bootstrap导航条-->
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/bootsnav.js"></script>
-	<script src="js/velocity.js"></script>
+		<script src="js/jquery.min.js"></script>
+		<!--bootstrap导航条-->
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/bootsnav.js"></script>
+		<script src="js/velocity.js"></script>
+
+	</body>
 
 </html>
