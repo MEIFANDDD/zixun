@@ -1,53 +1,55 @@
+/**
+ * 说明：公共样式库 
+ * 详细：样式库是只处理了导航条和footer部分
+ * 创建人： 夏麒麟
+ * 时间： 2018-04-09
+ * */
+
 .banner {
 	height: 336px;
-	background: url(./img/banner.jpg) center no-repeat;
+	background: url(../img/banner.jpg) center no-repeat;
+	background-size: cover;
 }
 
 a:hover {
 	text-decoration: none;
 }
 
-.tab_menu {
-	width: 100%;
-	margin: 30px 0;
+
+/*间距*/
+
+.space {
+	margin-top: 40px;
 }
 
-.tab-content {
+/*导航条二级菜单图片*/
+
+.imgContent {
+	float: left;
+	margin-right: 20px;
+}
+
+.imgContent a {
 	margin-top: 20px;
+	color: #484848;
+	font-size: 14px;
+	text-decoration: none;
 }
 
-.tab_menu ul {
-	width: 204px;
-	margin: 0 auto;
-	border: none;
+.imgContent a:hover {
+	margin-top: -5px;
 }
 
-.tab_menu>ul>li>a {
-	border: none !important;
+.imgContent img {
+	height: 170px;
 }
 
-.nav-tabs li.active {
-	border-bottom: 4px solid #0C81A0;
-}
-
-.nav-tabs li.active a {
-	color: #0C81A0 !important;
+.imgContent p {
+	text-align: center;
 }
 
 
-/*去掉hover时li的背景*/
-
-.nav-tabs li a:hover {
-	background: none;
-}
-
-.left {
-	background: red;
-}
-
-.right {
-	/*background: green;*/
-}
+/*导航条结束*/
 
 
 /*热点*/
@@ -198,6 +200,9 @@ a:hover {
 }
 
 
+/*新闻简介 结束*/
+
+
 /*页脚*/
 
 .footer-bg {
@@ -223,27 +228,27 @@ a:hover {
 }
 
 .footer-bg a.weichart {
-	background-image: url(../img/social/facebook.png);
+	background-image: url(../img/wechat.png);
 }
 
 .footer-bg a.alibaba {
-	background-image: url(../img/social/facebook.png);
+	background-image: url(../img/1688.png);
 }
 
 .footer-bg a.weibo {
-	background-image: url(../img/social/facebook.png);
+	background-image: url(../img/sina.png);
 }
 
 .footer-bg a.a-site {
-	background-image: url(../img/social/facebook.png);
+	background-image: url(../img/AcFun.png);
 }
 
 .footer-bg a.b-site {
-	background-image: url(../img/social/facebook.png);
+	background-image: url(../img/bilibili.png);
 }
 
 .footer-bg a.toutiao {
-	background-image: url(../img/social/facebook.png);
+	background-image: url(../img/toutiao.png);
 }
 
 .footer-bg a.weichart:hover {
@@ -316,3 +321,6 @@ a:hover {
 .footer-menu li a:hover {
 	color: #0078a4;
 }
+
+
+/*页脚 结束*/

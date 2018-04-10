@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<title>子询人工智能研究院</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content=" HTML5 Template">
+		<meta name="author" content="zixuncr.com">
+		<link rel="shortcut icon" href="img/ai_logo.png">
+		<!-- Le styles -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/font-awesome.min.css" />
+		<!--animate库组件-->
+		<link href="css/animate.css" rel="stylesheet">
+		<link href="css/bootsnav.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/htmleaf-demo.css">
+		<link href="css/overwrite.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
+		<link href="css/color.css" rel="stylesheet">
+
+		<!--页脚-->
+		<link rel="stylesheet" href="css/footer.css" />
+
+		<style>
+			.banner {
+				height: 336px;
+				background: url(./img/banner.jpg) center no-repeat;
+			}
+			
+			a:hover {
+				text-decoration: none;
+			}
+			
+			.tab_menu {
+				width: 100%;
+				margin: 30px 0;
+			}
+			
+			.tab-content {
+				margin-top: 20px;
+			}
+			
+			.tab_menu ul {
+				width: 204px;
+				margin: 0 auto;
+				border: none;
+			}
+			
+			.tab_menu>ul>li>a {
+				border: none !important;
+			}
+			
+			.nav-tabs li.active {
+				border-bottom: 4px solid #0C81A0;
+			}
+			
+			.nav-tabs li.active a {
+				color: #0C81A0 !important;
+			}
+			/*去掉hover时li的背景*/
+			
+			.nav-tabs li a:hover {
+				background: none;
+			}
+			/*公司简介*/
+			
+			.companyDesc h3 {
+				margin: 40px 0;
+				text-align: center;
+			}
+			
+			.companyDesc p {
+				text-indent: 2em;
+			}
+			/*导航条二级菜单图片*/
+			
+			.imgContent {
+				float: left;
+				margin-right: 20px;
+			}
+			
+			.imgContent a {
+				margin-top: 20px;
+				color: #484848;
+				font-size: 14px;
+				text-decoration: none;
+			}
+			
+			.imgContent a:hover {
+				margin-top: -5px;
+			}
+			
+			.imgContent img {
+				height: 170px;
+			}
+			
+			.imgContent p {
+				text-align: center;
+			}
+			/*文章详情模板*/
+			
+			.article_detail {
+				margin-top: 40px;
+			}
+			
+			.article_detail .subtitle {
+				margin: 20px 0 40px 0;
+			}
+			
+			.article_detail p {
+				text-indent: 2em;
+			}
+		</style>
+	</head>
+
+	<body>
+		<!--导航条 开始-->
+		<nav class="navbar navbar-default navbar-mobile bootsnav">
+			<div class="container">
+
+				<!-- logo -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                    <i class="fa fa-bars"></i>
+                </button>
+					<a class="navbar-brand" href="#brand"><img src="img/logo2.png" class="logo" alt=""></a>
+				</div>
+				<!-- logo -->
+
+				<!-- 导航条开始 -->
+				<div class="collapse navbar-collapse" id="navbar-menu">
+					<ul class="nav navbar-nav navbar-right navbar-fixed" data-in="fadeInDown" data-out="fadeOutUp">
+						<li>
+							<a href="index.html">主页</a>
+						</li>
+						<li class="dropdown megamenu-fw">
+							<a href="core.html" class="dropdown-toggle" data-toggle="dropdown">核心技术</a>
+							<ul class="dropdown-menu megamenu-content" role="menu">
+								<li>
+									<div class="row">
+										<div class="col-menu col-md-3">
+											<h6 class="title">语义理解技术</h6>
+											<div class="content">
+												<ul class="menu-col">
+													<li>
+														<a href="core.html">智能客服</a>
+													</li>
+													<li>
+														<a href="core.html">虚拟人物</a>
+													</li>
+													<li>
+														<a href="core.html">广告交互</a>
+													</li>
+
+												</ul>
+											</div>
+										</div>
+										<!-- end col-3 -->
+										<div class="col-menu col-md-3">
+											<h6 class="title">图像识别技术</h6>
+											<div class="content">
+
+												<ul class="menu-col">
+													<li>
+														<a href="core2.html">癌症筛查 </a>
+													</li>
+													<li>
+														<a href="core2.html">场景识别</a>
+													</li>
+													<li>
+														<a href="core2.html">机器人视觉</a>
+													</li>
+													<li>
+														<a href="core2.html">票据识别</a>
+													</li>
+
+												</ul>
+											</div>
+										</div>
+										<!-- end col-3 -->
+										<div class="col-menu col-md-3">
+											<h6 class="title">数据处理技术</h6>
+											<div class="content">
+												<ul class="menu-col">
+													<li>
+														<a href="core3.html">智能数据库</a>
+													</li>
+													<li>
+														<a href="core3.html">搜索库</a>
+													</li>
+													<li>
+														<a href="core3.html">授信融资与保险定价</a>
+													</li>
+													<li>
+														<a href="core3.html">投资决策系统与智能投资顾问</a>
+													</li>
+													<li>
+														<a href="core3.html">金融预测、反欺诈与风控</a>
+													</li>
+
+												</ul>
+											</div>
+										</div>
+										<div class="col-menu col-md-3">
+											<h6 class="title">其他</h6>
+											<div class="content">
+												<ul class="menu-col">
+													<li>
+														<a href="#">自然语言合成</a>
+													</li>
+													<li>
+														<a href="#">时序控制信号学习</a>
+													</li>
+													<li>
+														<a href="#">近似目标锁定</a>
+													</li>
+												</ul>
+											</div>
+										</div>
+										<!-- end col-3 -->
+									</div>
+									<!-- end row -->
+								</li>
+							</ul>
+						</li>
+						<li class="dropdown megamenu-fw">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">案例展示</a>
+							<ul class="dropdown-menu megamenu-content clearfix" role="menu">
+								<li class="imgContent">
+									<a href="case.html">
+										<div class="imgDiv">
+											<img src="./img/1.png" alt="" />
+										</div>
+										<p>智能客服</p>
+									</a>
+								</li>
+								<li class="imgContent">
+									<a href="case.html">
+										<div class="imgDiv">
+											<img src="./img/1.png" alt="" />
+										</div>
+										<p>智能客服</p>
+									</a>
+								</li>
+								<li class="imgContent">
+									<a href="case.html">
+										<div class="imgDiv">
+											<img src="./img/1.png" alt="" />
+										</div>
+										<p>智能客服</p>
+									</a>
+								</li>
+								<li class="imgContent">
+									<a href="case.html">
+										<div class="imgDiv">
+											<img src="./img/1.png" alt="" />
+										</div>
+										<p>智能客服</p>
+									</a>
+								</li>
+								<li class="imgContent">
+									<a href="case.html">
+										<div class="imgDiv">
+											<img src="./img/1.png" alt="" />
+										</div>
+										<p>智能客服</p>
+									</a>
+								</li>
+							</ul>
+
+						</li>
+						<li>
+							<a href="media.html">自媒体</a>
+						</li>
+						<li>
+							<a href="about.html">关于子询</a>
+						</li>
+						<li>
+							<a href="joinUs.html">加入子询</a>
+						</li>
+					</ul>
+				</div>
+				<!--导航条 结束 -->
+			</div>
+		</nav>
+		<!-- End Navigation -->
+
+		<div class="clearfix"></div>
+
+		<div class="container article_detail">
+			<h3 class="text-center">子询研究院 | 区块链技术去中心化数字货币的上游产业链</h3>
+			<div class="text-center subtitle">
+				<span class="time">2018-03-16 17:44:37</span> 浏览量:
+				<span class="pageview">80</span>
+				<span class="author">作者：子询人工智能研究院</span>
+			</div>
+			<div>
+				<h4>01中心化数字货币</h4>
+				<h5>- 背景 -</h5>
+				<p>当前大部分地区采用中央系统虚拟货币（中心化机构掌控）这种形式；异地灾备、云存储。正是为了满足市场参与者对信息的需求，使信息的买卖造就了“中介费”（成本），从而衍生出了“中心化”(Centralization)这一概念。</p>
+				<p>在时间的检验下，“中心化”也慢慢浮现了如下弊端：</p>
+				<p>- 分散性：信息分散在各中心手中，打通成本非常大。</p>
+				<p>- 集中性：信息要按照中心化机构的体系要求进行运作（全球汇款）。</p>
+				<p>- 脆弱性：内部人员的篡改，黑客攻击，自然灾害等。</p>
+
+				<div class="text-center">
+					<img src="http://p9.pstatp.com/large/pgc-image/15211079230936ac5892fa9" alt="" />
+				</div>
+				<h5>- 改革 -</h5>
+				<p>为了解决“中心化”带来的弊端，"去中心化"(Decentralization)这个概念也应运而生，在两个层面发生了变化：信息去中心化与信用去中心化。</p>
+				<p>第一代互联网已经成功实现了信息去中心化：生活信息、知识、新闻、资料…</p>
+				<p>互联网的起点是TCP/IP 协议（执行一个网络上所有节点统一格式对等传输信息的开放代码），使得信息能做到分享与实时更新。</p>
+				<p>如果没有“中介”的信用背书，很难实现陌生人间的信用交易：银行，结算机构，淘宝…</p>
+				<p>而中心化带来的成本也与日俱增，如果要对其进行改革也势必会带来另外一笔高昂的费用。</p>
+				<p>那么，能否在互联网中创造一种技术，这种技术在无法保证人们互相信任的前提下，还可以从事价值交换的活动？</p>
+				<p>答案是肯定的，“区块链”的出现填补了这个瓶颈。</p>
+				<h4>02区块链技术</h4>
+				<h5>- 定义 -</h5>
+				<p>“区块链”(Blockchain)技术是指通过去中心化和去信任的方式集体维护一个可靠数据库的技术。并不是一种单一的、全新的技术，而是多种现有技术（加密算法、P2P文件传输等）整合的结果。</p>
+				<p>从数据的角度来看：分布式数据库（存储与记录），P2P 的自组织网络。</p>
+				<p>从效果的角度来看：时间顺序、不可篡改的、可信任的数据库。</p>
+				<p>多种现有技术的整合：加密算法，P2P文件传输，时间戳，数据库等。</p>
+				
+				<h4>03去中心化数字货币</h4>
+				<h5>- 背景 -</h5>
+				<p>2008年， ⼀位化名为中本聪的⼈， 在⼀篇名为《比特币：一种对点式货币体制(Bitcoin: A Peer-to-Peer Electronic Cash System)》 的论⽂中⾸先提出了比特币。</p>
+				<p>中本聪结合以前的多个数字货币发明， 如B-money和HashCash， 创建了⼀个完全去中心化的电子货币系统， 不依赖于通货保障或是结算交易验证保障的中央权威。</p>
+				<p>关键的创新是利用分布式计算系统（ 称为“工作量证明”算法） 每隔10分钟进行⼀次的全网“选拔”， 能够使去中心化的网络同步交易记录。</p>
+				
+				<div class="text-center">
+					<img src="http://p1.pstatp.com/large/pgc-image/1521107491410aa4f94cd25" alt="" />
+				</div>
+				<h4>04上游产业链</h4>
+				<h5>- 现状 -</h5>
+				<p>目前获取比特币的方式只有三种：</p>
+				<p>- 买入 - 获赠 - 挖矿</p>
+				<p>显而易见，在提倡自己动手，丰衣足食的现代社会，“挖矿”成为了大家趋之若鹜的无上之选。</p>
+				<h5>- 挖矿 -</h5>
+				<p>挖矿考验的是电脑的CPU与GPU性能。</p>
+				<p>从2013年起很多公司已经研发并生产出专业的比特币矿机，用户用矿机下载软件然后运行特定算法，与远方服务器通讯后才可得到相应比特币。</p>
+				<p>挖矿的本质上：是用计算机解决一项复杂的数学问题，来生成新的比特币。</p>
+				<h5>- 矿池 -</h5>
+				<p>矿池是一个虚拟概念，它指一群矿工合作挖矿，他们同意按其贡献的挖矿算力多少来共享分配奖励。</p>
+				<p>- 优势：矿池能使得回报变得更平滑，预测性更强。</p>
+				<p>- 劣势：需要集中在某些矿池所有者那进行挖矿，导致资源分配不均衡.</p>
+				<h5>- 矿机 -</h5>
+				<p>专门用来挖矿的计算机被称为“矿机”，目前其呈现专业化趋势。</p>
+				<p>比特币矿工最早都是通过Intel或AMD的CPU产品来挖矿。但由于挖矿是运算密集型应用，且随着挖矿人数与设备性能的不断提升难度逐渐增加，使用CPU挖矿逐渐不见收益甚至负收益。</p>
+				<p>自2013年开始，比特币爱好者谈论较多的话题就是ASIC芯片以及基于这种芯片生产的矿机。 ASIC（Application Specific Integrated Circuit，应用专用集成电路）专业挖矿机已成为当前主流，是因为ASIC是专门为Hash运算设计的，性能虽然不一定能秒杀显卡，但是也已经相当强劲，而且由于它们的功耗远比显卡低，因此更容易形成规模，电费开销也更低，单张独显很难与专业比特币矿机竞争。</p>
+				<div class="text-center">
+					<img src="http://p1.pstatp.com/large/pgc-image/1521107491422c86d4c79d3" alt="" />
+				</div>
+				<h5>- 矿机的发展趋势 -</h5>
+				<p>CPU挖矿 → GPU挖矿 → FPGA挖矿 → ASIC挖矿 → 大规模集群挖矿</p>
+				<h5>- 矿场 -</h5>
+				<p>大规模矿机生产比特币的实体场所。</p>
+				<h5>- 挖矿的收益计算 -</h5>
+				<p>矿机挖矿收益可观、直接，可以通过相关算法直接计算。除此之外，还应考虑的因素有：比特币池的产值、比特币挖矿机的价格及性能和硬件支出。</p>
+				<p>矿机收益=收益产生的比特币*币价 - 矿机成本 - 电费 - 维护费及人工成本 - 矿场折旧费等</p>
+				<h5>- 上游产业链特征 -</h5>
+				<p>根据五道口金融学院互联网金融实验室与火币网的《比特币发展研究报告》认为，比特币挖矿环节中，整体算力、挖矿成本以及比特币价格决定挖矿收益。</p>
+				<p>因此上游产业链具有如下特征：</p>
+				<p>- 算力越大，对比特币网络整体的稳定性和安全性越好。</p>
+				<p>- 单个挖矿单位，算力占比决定能挖到的比特币数量占比。</p>
+				<p>- 系统算力总量、单位算力成本、比特币价格决定挖矿收益。</p>
+				<p>- 降低挖矿成本可以提高挖矿的收益。</p>
+				<p>- 只有比特币价格提升才能让挖矿收益更高。</p>
+				<h5>- 挖矿风险 -</h5>
+				<p>比特币产量减半。2016年7月，比特币网络将面临比特币减半，即每10分钟，每个区块只包含12.5个比特币，意味着相同算力挖出的比特币也会相应减少。但另一方面，币价也有上升可能。</p>
+				<p>比特币币价和计算难度不稳定，导致用户收益也不稳定。</p>
+				<p>此外还有断电、机器维护等风险。</p>
+				<p>当然了，至少矿场不会塌方。</p>
+			</div>
+		</div>
+
+	<!--页脚-->
+		<div class="footer-bg">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="footer-line clearfix">
+							<div class="focus-me pull-left">关注我们：</div>
+							<div class="footer-left pull-left">
+								<a href="javascript:void(0)" class="weichart"></a>
+								<a href="https://shop370qc5872c052.1688.com/" target="_blank" class="alibaba"></a>
+								<a href="https://weibo.com/u/1765048103" target="_blank" class="weibo"></a>
+								<a href="http://www.acfun.cn/u/13125720.aspx" target="_blank" class="a-site"></a>
+								<a href="https://space.bilibili.com/296327920#/" target="_blank" class="b-site"></a>
+								<a href="https://www.toutiao.com/c/user/5470644862/#mid=1567990361508866" target="_blank" class="toutiao"></a>
+
+							</div>
+
+							<div class="footer-right pull-right">
+								<span>商业合作：</span>
+								<a style="color: #FFF;" href="mailto:sales@zixuncr.com">sales@zixuncr.com</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-12">
+						<div class="copyright">
+							<div class="pull-left">子询(深圳)人工智能研究院有限公司版权所有 Copyrights All Reserverd &copy;2017.</div>
+							<div class="pull-right visible-md visible-lg">
+								<ul class="footer-menu">
+									<li>
+										<a href="index.html">首页</a>
+									</li>
+									<li>
+										<a href="javascript:void(0)">核心技术</a>
+									</li>
+									<li>
+										<a href="javascript:void(0)">案例展示</a>
+									</li>
+									<li>
+										<a href="media.html">自媒体</a>
+									</li>
+									<li>
+										<a href="about.html">关于子询</a>
+									</li>
+									<li>
+										<a href="joinUs.html">加入子询</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<!--页脚 结束-->
+		<script src="js/jquery.min.js"></script>
+		<!--bootstrap导航条-->
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/bootsnav.js"></script>
+		<script src="js/velocity.js"></script>
+		<!--图片翻转特效-->
+		<script src="js/demo.js"></script>
+	</body>
+
+</html>
