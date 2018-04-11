@@ -264,14 +264,15 @@ a:hover {
 
 .link-3 .wechat-hover img {
 	position: absolute;
-	top: -50px;
+	top: -80px;
+	left: 30px;
 	height: auto;
 	transform: scale(0);
 	transform-origin: bottom left;
-	-webkit-transition: all .4s ease-in-out;
-	-o-transition: all .4s ease-in-out;
-	transition: all .4s ease-in-out;
-	z-index: 2000;
+	-webkit-transition: all .5s ease-in-out;
+	-o-transition: all .5s ease-in-out;
+	transition: all .5s ease-in-out;
+	z-index: 20;
 }
 
 .link-3 .wechat-hover:hover img.qrcode {
@@ -292,31 +293,32 @@ a:hover {
 	height: 50px;
 	background-repeat: no-repeat;
 	cursor: pointer;
+	background-image: url(../img/icon.png);
 }
 
 .link-3 li .alibaba {
-	background-image: url(../img/16882.png);
+	background-position: -150px 0;
 }
 
 .link-3 li .weibo {
-	background-image: url(../img/weibo2.png);
+	background-position: -50px 0;
 }
 
 .link-3 li .toutiao {
-	background-position: center center;
-	background-image: url(../img/toutiao2.png);
+	background-position: 0 12px;
 }
 
 .link-3 li .acfun {
-	background-image: url(../img/AcFun.png);
+	
+	background-position: -200px 0;
 }
 
 .link-3 li .bilibili {
-	background-image: url(../img/bilibili2.png);
+	background-position: -100px 0;
 }
 
 .link-3 li .wechat {
-	background-image: url(../img/wechat2.png);
+	background-position: -250px 0;
 }
 
 .link-3 li a {
