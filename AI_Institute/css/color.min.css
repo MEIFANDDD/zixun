@@ -1,0 +1,14 @@
+/* ==============================================================
+
+Template name : Bootsnav - Multi Purpose Header
+Categorie : Bootstrap Menu in CSS
+Author : adamnurdin01
+Version : v1.0.0
+Created : 02 Juni  2016
+Last update : 02 Juni  2016
+
+============================================================== */
+/*
+Color
+=========================== */
+.attr-nav > ul > li > a:focus,.attr-nav > ul > li > a:hover,.check-list li:before,.side .widget ul.link li a:focus,.side .widget ul.link li a:hover,nav.navbar .dropdown .megamenu-content .col-menu.on .title,nav.navbar li.dropdown ul.dropdown-menu > li a:hover,nav.navbar ul.nav > li > a:hover,nav.navbar ul.nav li.active > a,nav.navbar ul.nav li.dropdown.on > a,nav.navbar-sidebar .dropdown .megamenu-content .col-menu.on .title,nav.navbar-sidebar ul.nav li.dropdown ul.dropdown-menu li a:hover,nav.navbar-sidebar ul.nav li.dropdown.on > a,nav.navbar-sidebar ul.nav li.dropdown.on ul.dropdown-menu li.dropdown.on > a,nav.navbar.bootsnav ul.dropdown-menu.megamenu-content .content ul.menu-col li a:hover,nav.navbar.navbar-inverse ul.nav li.dropdown.on > a,ul.cart-list > li > h6 > a{color:#0078a4}nav.navbar ul.nav li.dropdown.on > a,nav.navbar ul.nav li.scroll.active > a,nav.navbar-dark ul.nav li.dropdown.on > a,nav.navbar.navbar-dark ul.nav li.dropdown ul.dropdown-menu > li > a:hover,nav.navbar.navbar-transparent ul.nav > li > a:hover,nav.navbar.no-background ul.nav > li > a:hover{color:#0078a4 !important}@media(max-width:920px){nav.navbar .dropdown .megamenu-content .col-menu ul > li > a:hover,nav.navbar.navbar-dark .dropdown .megamenu-content .col-menu .title:hover{color:#0078a4 !important}}ul.cart-list > li.total > .btn{border-color:#0078a4}nav.navbar li.dropdown ul.dropdown-menu{border-top-color:#0078a4 !important}.attr-nav > ul > li > a span.badge,nav.navbar .share ul > li > a:focus,nav.navbar .share ul > li > a:hover,ul.cart-list > li.total > .btn{background-color:#f43438}ul.cart-list > li.total > .btn:focus,ul.cart-list > li.total > .btn:hover{background-color:#dc3236 !important}

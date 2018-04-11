@@ -63,7 +63,12 @@
 	color: #000000;
 }
 .zxlcbnr-top{
-	height: 40rem;
+	height: 22rem;
+}
+
+.zxlcbnr-top ul li {
+	list-style-type: circle !important;
+	color: #4A4A4A;
 }
 /** 子询里程碑六个旗子 **/
 .zxl1 h5{
@@ -159,3 +164,11 @@
 	text-indent: 2rem;
 }
 
+/** 案例展示 **/
+.case img{
+	height: 23.8rem;
+}
+ul {
+	padding: 0;
+	
+}
