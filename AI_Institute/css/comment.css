@@ -5,6 +5,12 @@
  * 时间： 2018-04-09
  * */
 
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
 .banner {
 	height: 336px;
 	background: url(../img/banner.jpg) center no-repeat;
@@ -21,6 +27,7 @@ a:hover {
 .space {
 	margin-top: 40px;
 }
+
 
 /*导航条二级菜单图片*/
 
@@ -206,84 +213,123 @@ a:hover {
 /*页脚*/
 
 .footer-bg {
-	padding: 20px 0;
+	margin-top: 20px;
+	padding: 10px 0;
 	background-color: #2d2d2d;
 	color: #FFF;
 }
 
-.footer-bg .focus-me {
+
+/*=============底部图标链接=======================*/
+
+.link-3 li {
 	height: 50px;
-	line-height: 50px;
-	vertical-align: middle;
+	margin-right: 20px;
 }
 
-.footer-bg a[class] {
+
+/*css3文字渐变*/
+
+.link-3 a:hover {
+	background-image: -webkit-gradient(linear, 0 0, 0 bottom, from(#B2DFEE), to(#4876FF));
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+
+/*.link-3 .wechat-hover {
+	position: relative;
+}
+
+.link-3 .wechat-hover img {
+	position: absolute;
+	top: -50px;
+	width: 0;
+	height: auto;
+	z-index: 2000;
+	
+}
+
+.link-3 .wechat-hover:hover .link-3 .wechat-hover img.qrcode {
+	transform: scale(1);
+	opacity: 1;
+	left: 0;
+	top: 0;
+	width: 50px;
+}*/
+
+.link-3 .wechat-hover {
+	position: relative;
+}
+
+.link-3 .wechat-hover img {
+	position: absolute;
+	top: -80px;
+	left: 30px;
+	height: auto;
+	transform: scale(0);
+	transform-origin: bottom left;
+	-webkit-transition: all .5s ease-in-out;
+	-o-transition: all .5s ease-in-out;
+	transition: all .5s ease-in-out;
+	z-index: 20;
+}
+
+.link-3 .wechat-hover:hover img.qrcode {
+	transform: scale(1);
+	opacity: 1;
+	left: 30px;
+	top: -100px;
+	width: 100px;
+}
+
+
+/*图标*/
+
+.link-3 li i,
+.link-2 li i {
 	display: inline-block;
 	width: 50px;
 	height: 50px;
-	background-color: #353535;
-	background-position: center center;
 	background-repeat: no-repeat;
-	transition: background-color 0.4s;
+	cursor: pointer;
+	background-image: url(../img/icon.png);
 }
 
-.footer-bg a.weichart {
-	background-image: url(../img/wechat.png);
+.link-3 li .alibaba {
+	background-position: -150px 0;
 }
 
-.footer-bg a.alibaba {
-	background-image: url(../img/1688.png);
+.link-3 li .weibo {
+	background-position: -50px 0;
 }
 
-.footer-bg a.weibo {
-	background-image: url(../img/sina.png);
+.link-3 li .toutiao {
+	background-position: 0 12px;
 }
 
-.footer-bg a.a-site {
-	background-image: url(../img/AcFun.png);
+.link-3 li .acfun {
+	
+	background-position: -200px 0;
 }
 
-.footer-bg a.b-site {
-	background-image: url(../img/bilibili.png);
+.link-3 li .bilibili {
+	background-position: -100px 0;
 }
 
-.footer-bg a.toutiao {
-	background-image: url(../img/toutiao.png);
+.link-3 li .wechat {
+	background-position: -250px 0;
 }
 
-.footer-bg a.weichart:hover {
-	background-color: #4265b9;
-}
-
-.footer-bg a.alibaba:hover {
-	background-color: #4265b9;
-}
-
-.footer-bg a.weibo:hover {
-	background-color: #4265b9;
-}
-
-.footer-bg a.a-site:hover {
-	background-color: #4265b9;
-}
-
-.footer-bg a.b-site:hover {
-	background-color: #4265b9;
-}
-
-.footer-bg a.toutiao:hover {
-	background-color: #4265b9;
+.link-3 li a {
+	position: relative;
+	top: -40%;
+	margin-left: 20px;
+	color: #FFF;
 }
 
 
-/*商业合作*/
-
-.footer-right {
-	display: inline-block;
-	height: 50px;
-	line-height: 50px;
-	margin-right: 20px;
-}
+/*===================================*/
 
 
 /*版权部分*/

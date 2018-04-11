@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Document</title>
+		<style type="text/css">
+			.weixin {
+				position: relative;
+			}
+			
+			.weixin img {
+				position: absolute;
+				left: -135px;
+				top: -100px;
+				width: 100px;
+				height: 100px;
+				transform: scale(0);
+				transform-origin: bottom left;
+				opacity: 0;
+				-webkit-transition: all .4s ease-in-out;
+				-o-transition: all .4s ease-in-out;
+				transition: all .4s ease-in-out;
+				z-index: 99;
+			}
+			
+			.weixin:hover img.qrcode {
+				transform: scale(1);
+				opacity: 1;
+				left: 0;
+				top: 0;
+			}
+		</style>
+	</head>
+
+	<body>
+		<a href="javascript:;" class="weixin">
+			<img src="qrcode.png" class="qrcode" alt="" /> 
+			<div>微信</div>
+		</a>
+	</body>
+
+</html>
