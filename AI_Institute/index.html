@@ -21,7 +21,11 @@
 		<!--页脚-->
 		<link rel="stylesheet" href="css/comment.css" />
 		<!-- 轮播组件样式 -->
-		<link rel="stylesheet" href="css/shutter.css">
+		<link rel="stylesheet" href="css/carousel.css">
+		<!--图片翻转特效 用这个-->
+		<link rel="stylesheet" href="css/animate-tool.css" />
+		
+			
 	</head>
 	
 	<body>
@@ -50,17 +54,37 @@
 								<li>
 									<div class="row">
 										<div class="col-menu col-md-3">
-											<h6 class="title">语义理解技术</h6>
-											<div class="content">
+											<a href="core.html" style="color: #000000;font-size: 1rem;">语义理解技术</a>
+											<div class="content martop-4">
 												<ul class="menu-col">
 													<li>
-														<a href="core.html">智能客服</a>
+														<a href="core.html#znkf">智能客服</a>
 													</li>
 													<li>
-														<a href="core.html">虚拟人物</a>
+														<a href="core.html#xnrw">虚拟人物</a>
 													</li>
 													<li>
-														<a href="core.html">广告交互</a>
+														<a href="core.html#ggjh">广告交互</a>
+													</li>
+												</ul>
+											</div>
+										</div>
+										<!-- end col-3 -->
+										<div class="col-menu col-md-3">
+											<a href="core2.html" style="color: #000000;font-size: 1rem;">图像识别技术</a>
+											<div class="content martop-4">
+												<ul class="menu-col">
+													<li>
+														<a href="core2.html#azsc">癌症筛查 </a>
+													</li>
+													<li>
+														<a href="core2.html#cjsb">场景识别</a>
+													</li>
+													<li>
+														<a href="core2.html#jqrsj">机器人视觉</a>
+													</li>
+													<li>
+														<a href="core2.html#pjsb">票据识别</a>
 													</li>
 
 												</ul>
@@ -68,64 +92,40 @@
 										</div>
 										<!-- end col-3 -->
 										<div class="col-menu col-md-3">
-											<h6 class="title">图像识别技术</h6>
-											<div class="content">
-
+											<a href="core3.html" style="color: #000000;font-size: 1rem;">数据处理技术</a>
+											<div class="content martop-4">
 												<ul class="menu-col">
 													<li>
-														<a href="core2.html">癌症筛查 </a>
+														<a href="core3.html#znsjk">智能数据库</a>
 													</li>
 													<li>
-														<a href="core2.html">场景识别</a>
+														<a href="core3.html#ssk">搜索库</a>
 													</li>
 													<li>
-														<a href="core2.html">机器人视觉</a>
+														<a href="core3.html#sxrz">授信融资与保险定价</a>
 													</li>
 													<li>
-														<a href="core2.html">票据识别</a>
-													</li>
-
-												</ul>
-											</div>
-										</div>
-										<!-- end col-3 -->
-										<div class="col-menu col-md-3">
-											<h6 class="title">数据处理技术</h6>
-											<div class="content">
-												<ul class="menu-col">
-													<li>
-														<a href="core3.html">智能数据库</a>
+														<a href="core3.html#tzjc">投资决策系统与智能投资顾问</a>
 													</li>
 													<li>
-														<a href="core3.html">搜索库</a>
-													</li>
-													<li>
-														<a href="core3.html">授信融资与保险定价</a>
-													</li>
-													<li>
-														<a href="core3.html">投资决策系统与智能投资顾问</a>
-													</li>
-													<li>
-														<a href="core3.html">金融预测、反欺诈与风控</a>
+														<a href="core3.html#jryc">金融预测、反欺诈与风控</a>
 													</li>
 
 												</ul>
 											</div>
 										</div>
 										<div class="col-menu col-md-3">
-											<h6 class="title">其他</h6>
-											<div class="content">
+											<a href="core4.html" style="color: #000000;font-size: 1rem;">其他</a>
+											<div class="content martop-4">
 												<ul class="menu-col">
 													<li>
-
-														<a href="core4.html">自然语言合成</a>
+														<a href="core4.html#zryy">自然语言合成</a>
 													</li>
 													<li>
-														<a href="core4.html">时序控制信号学习</a>
+														<a href="core4.html#sxkz">时序控制信号学习</a>
 													</li>
 													<li>
-														<a href="core4.html">近似目标锁定</a>
-
+														<a href="core4.html#jsmb">近似目标锁定</a>
 													</li>
 												</ul>
 											</div>
@@ -192,22 +192,39 @@
 		<!-- End Navigation -->
 		
 		<!-- 轮播开始 -->
-		<div class="shutter">
-            <div class="shutter-img">
-                <a href="#" data-shutter-title="Iron Man"><img src="img/shutter_1.jpg" alt="#"></a>
-                <a href="#" data-shutter-title="Super Man"><img src="img/shutter_2.jpg" alt="#"></a>
-                <a href="#" data-shutter-title="The Hulk"><img src="img/shutter_3.jpg" alt="#"></a>
-                <a href="#" data-shutter-title="The your"><img src="img/shutter_4.jpg" alt="#"></a>
-            </div>
-            <ul class="shutter-btn">
-                <li class="prev"></li>
-                <li class="next"></li>
-            </ul>
-            <div class="shutter-desc">
-                <p>Iron Man</p>
-            </div>
-        </div>
-        <!--轮播结束-->
+		<div class="banner-carousel has-dots" id="b06" style="overflow: hidden; width: 100%;">
+			<ul>
+				<li>
+					<a href="http://guangfu.bjx.com.cn/news/20171208/866605.shtml">
+						<img src="img/demo/banner1.jpg" alt="">
+						<div class="craousel-dom"><p>2017中国(深圳)Solar Plus国际高峰论坛，创始人刘东屏博士“机器学习与太阳能的应用”演讲。</p></div>
+					</a>
+				</li>
+
+				<li>
+					<img src="img/demo/banner3.jpg" alt="">
+					<div class="craousel-dom"><p>2018中日创新企业高峰论坛，陈昊天（Hunter）关于“子询AI的商业发展“演讲。</p></div>
+				</li>
+
+				<li>
+					<img src="img/demo/banner4.jpg" alt="">
+					<div class="craousel-dom"><p>2018中日创新企业高峰论坛，陈昊天（Hunter）关于“子询AI的商业发展“演讲。</p></div>
+				</li>
+
+				<li>
+					<a href="http://news.sjtu.edu.cn/info/1010/1527980.htm">
+						<img src="img/demo/banner2.jpg" alt="">
+						<div class="craousel-dom"><p>上海交通大学，创始人赵永红博士关于“机器学习技术及其在材料研究中的应用”的讲座。</p></div>
+					</a></li>
+			</ul>
+
+			<a href="javascript:void(0);" class="unslider-arrow06 prev"><img class="arrow" id="al" src="img/arrowl.png" alt="prev" width="20" height="35"></a>
+
+			<a href="javascript:void(0);" class="unslider-arrow06 next"><img class="arrow" id="ar" src="img/arrowr.png" alt="next" width="20" height="37"></a>
+
+			
+		</div>
+		<!-- 轮播结束 -->
 
 
 		<!-- 核心技术 -->
@@ -216,27 +233,80 @@
 				<div class="row text-center paddbotm-4">
 					<h3>核心技术</h3>
 				</div>
-				<div class="row">
-					<div class="col-xs-12 col-md-4 paddbotm-4">
-						<a href="core3.html">
-							<img src="img/demo/dataProcessing.jpg" class="img-responsive"/>
-						</a>
-					</div>
-					<div class="col-xs-12 col-md-4 paddbotm-4">
-						<a href="core2.html">
-							<img src="img/demo/imgRecognition.jpg" class="img-responsive"/>
-						</a>
-					</div>
-					<div class="col-xs-12 col-md-4 paddbotm-4">
-						<a href="core.html">
-							<img src="img/demo/Semantic.jpg" class="img-responsive"/>
-						</a>
-					</div>
-				</div>
+				<ul class="upturn-list row">
+					<li class="viewport-flip col-md-4">
+						<div class="flip-box flip out" style="background: #b5b5b5;">
+							<div calss="xzys" style="margin-left: 7.7rem; margin-top: 3rem;">
+								<div>
+									<a href="core.html"><h5>语义理解技术</h5></a>
+								</div>
+								<div>
+									<ul>
+										<li><a href="core.html#znkf">智能客服</a></li>
+										<li><a href="core.html#xnrw">虚拟人物</a></li>
+										<li><a href="core.html#ggjh">广告交互</a></li>
+									</ul>
+								</div>
+							</div>
+						<!--正面-->
+						</div>
+						<div class="flip-box flip">
+							<!--反面-->
+							<img class="img-responsive" src="img/demo/dataProcessing.jpeg">
+						</div>
+					</li>
+					<li class="viewport-flip col-md-4">
+						<div class="flip-box flip out" style="background: #b5b5b5;">
+							<div style="margin-left: 7.7rem; margin-top: 3rem;">
+								<!--正面-->
+								<div>
+									<a href="core2.html"><h5 style="color: #FFFFFF;">图像识别技术</h5></a>
+								</div>
+								<div>
+									<ul>
+										<li><a href="core2.html#azsc">癌症筛查</a></li>
+										<li><a href="core2.html#cjsb">场景识别</a></li>
+										<li><a href="core2.html#jqrsj">机器人视觉</a></li>
+										<li><a href="core2.html#pjsb">票据识别</a></li>
+									</ul>
+								</div>
+							</div>							
+						</div>
+						<div class="flip-box flip">
+							<!--反面-->
+							<img class="img-responsive" src="img/demo/imgRecognition.jpeg">
+						</div>
+					</li>
+					<li class="viewport-flip col-md-4">
+						<div class="flip-box flip out" style="background: #b5b5b5;">
+							<div style="margin-left: 7.7rem; margin-top: 3rem;">
+							<!--正面-->
+							<div>
+								<a href="core3.html" style="color: #FFFFFF;"><h5 style="color: #FFFFFF;">数据处理技术</h5></a>
+							</div>
+								<div>
+									<ul>
+										<li><a href="core3.html#znsjk">智能数据库</a></li>
+										<li><a href="core3.html#ssk">搜索库</a></li>
+										<li><a href="core3.html#sxrz">授信融资与保险定价</a></li>
+										<li><a href="core3.html#tzjc">投资决策系统与智能投资顾问</a></li>
+										<li><a href="core3.html#jryc">金融预测、反欺诈与风控</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="flip-box flip">
+							<!--反面-->
+							<img class="img-responsive" src="img/demo/Semantic.jpeg">
+						</div>
+					</li>
+				</ul>
 			</div>
+			<div class="clearfix"></div>
 		</section>
         <!-- 核心技术结束 -->
         
+        	
         <!-- 案例展示 -->
       	 <section class="paddtp case">
 			<div class="container">
@@ -244,31 +314,49 @@
 					<h3>案例展示</h3>
 				</div>
 				<div class="row">
-
-					<div class="col-xs-12 col-md-3 paddbotm-4">
-						<a href="case.html">
-							<img src="img/demo/znyxs.png" class="img-responsive fillet"/>
+					<div class="col-xs-12 col-md-3 paddbotm-4 casetop" style="transition:top 1s;-moz-transition:top 1s;-webkit-transition:top 1s;-o-transition:top 1s;">
+						<a href="caseshow.html">
+							<div style="position: relative;">
+								<img src="img/demo/znyxs.png" class="fillet"/>
+								<div class="case-top-p">
+									<p>智能家居</p>
+									<div class="clearfix"></div>
+								</div>
+							</div>
 						</a>
-						<p class="text-center martop-4">智能家居</p>
 					</div>
-					<div class="col-xs-12 col-md-3 paddbotm-4">
-						<a href="case.html">
-							<img src="img/demo/zncdbs.png" class="img-responsive fillet"/>
+					<div class="col-xs-12 col-md-3 paddbotm-4 casetop" style="transition:top 1s;-moz-transition:top 1s;-webkit-transition:top 1s;-o-transition:top 1s;">
+						<a href="caseshow.html">
+							<div style="position: relative;">
+								<img src="img/demo/zncdbs.png" class="fillet"/>
+								<div class="case-top-p">
+									<p>智能共享</p>
+									<div class="clearfix"></div>
+								</div>
+							</div>
 						</a>
-						<p class="text-center martop-4">智能共享</p>
 					</div>
-					<div class="col-xs-12 col-md-3 paddbotm-4">
-						<a href="case.html">
-							<img src="img/demo/znsbs.png" class="img-responsive fillet"/>
+					<div class="col-xs-12 col-md-3 paddbotm-4 casetop" style="transition:top 1s;-moz-transition:top 1s;-webkit-transition:top 1s;-o-transition:top 1s;">
+						<a href="caseshow.html">
+							<div style="position: relative;">
+								<img src="img/demo/znsbs.png" class="fillet"/>
+								<div class="case-top-p">
+									<p>智能穿戴</p>
+									<div class="clearfix"></div>
+								</div>
+							</div>
 						</a>
-						<p class="text-center martop-4">智能穿戴</p>
 					</div>
-					<div class="col-xs-12 col-md-3 paddbotm-4">
-						<a href="case.html">
-							<img src="img/demo/znjqrs.png" class="img-responsive fillet"/>
+					<div class="col-xs-12 col-md-3 paddbotm-4 casetop" style="transition:top 1s;-moz-transition:top 1s;-webkit-transition:top 1s;-o-transition:top 1s;">
+						<a href="caseshow.html">
+							<div style="position: relative;">
+								<img src="img/demo/znjqrs.png" class="fillet"/>
+								<div class="case-top-p">
+									<p>智能教育</p>
+									<div class="clearfix"></div>
+								</div>
+							</div>
 						</a>
-						<p class="text-center martop-4">智能教育</p>
-
 					</div>
 				</div>
 			</div>
@@ -276,27 +364,26 @@
         <!-- 结束案例展示 -->
         
         <!-- 自媒体 -->
-      	<section class="paddtp">
+      	<section class="paddtp zmt">
 			<div class="container">
-
 				<div class="row text-center">
 					<h3>自媒体</h3>
 				</div>
 				<div class="row">
 					<div class="col-xs-12 col-md-4">
-						<a href="media.html#article">
-							<img src="./img/demo/article.jpg" class="img-responsive fillet"/>
-						</a>
-					</div>
-					<div class="col-xs-12 col-md-4">
 
-						<a href="media.html#video">
-							<img src="img/demo/video.jpg" class="img-responsive fillet"/>
+						<a href="media.html">
+							<img src="./img/demo/article.jpeg" class="img-responsive fillet2"/>
 						</a>
 					</div>
 					<div class="col-xs-12 col-md-4">
-						<a href="media.html#news">
-							<img src="./img/demo/advisory.jpg" class="img-responsive fillet"/>
+						<a href="media.html">
+							<img src="img/demo/video.jpeg" class="img-responsive fillet2"/>
+						</a>
+					</div>
+					<div class="col-xs-12 col-md-4">
+						<a href="media.html">
+							<img src="./img/demo/advisory.jpeg" class="img-responsive fillet2"/>
 
 						</a>
 					</div>
@@ -310,16 +397,15 @@
         		<!-- 黑色背景部分内容 -->
        	 	<div class="blackstyle">
        	 		<div class="container">
-	    			<div class="paddtp-4"></div>
+		    			<div class="paddtp-4">
+		    				<img class="center-block" src="img/logo-icon.png"/>
+		    			</div>
 	    				<div class="row martop-4">
-		               <div class="col-xs-12 col-md-12 text-center paddbotm-4">
-		               	   <h3>公司简介</h3>
-
-		               	   	<p class="fristlineindent">
-		               	   		子询(深圳)人工智能研究院成立于2016年，是中国一家致力于自然语义处理，计算机视觉，数据处理原创技术的新型公司。公司主营业务为AI+技术解决方案，现已应用于医疗、工业、金融等多个领域。创始人团队2005年开始从事人工智能领域研究工作。由中科院物理所赵永红博士，加拿大麦吉尔大学刘东屏博士，四川师范大学刘翔教授等人工智能专家组成。学术委员会主席为加拿大麦吉尔大学郭鸿院士。目前公司规模53人。子询二字取自于“子有所需，询有所得”，子询以“创造一流的AI产品、构建一流AI人才团队、建设一流AI企业”为愿景，立志发展特色、自主、高效的人工智能应用生态系统。
-		               	   	</p>
-
-
+		               <div class="col-xs-12 col-md-12 paddbotm-4">
+		               	   <h3 class="text-center">公司简介</h3>
+		               	   	<p class="fristlineindent">子询(深圳)人工智能研究院成立于2016年，是中国一家致力于自然语义处理，计算机视觉，数据处理原创技术的新型公司。公司主营业务为AI+技术解决方案，现已应用于医疗、工业、金融等多个领域。</p>
+		               	   	<p class="fristlineindent">创始人团队2005年开始从事人工智能领域研究工作。由中科院物理所赵永红博士，加拿大麦吉尔大学刘东屏博士，四川师范大学刘翔教授等人工智能专家组成。学术委员会主席为加拿大麦吉尔大学郭鸿院士。目前公司规模53人。</p>
+		               	   	<p class="fristlineindent">子询二字取自于“子有所需，询有所得”，子询以“创造一流的AI产品、构建一流AI人才团队、建设一流AI企业”为愿景，立志发展特色、自主、高效的人工智能应用生态系统。</p>
 		               </div>
 		           </div>
 	    			</div>
@@ -331,13 +417,12 @@
 						<div class="text-center col-xs-12 col-md-12 paddbotm-4">
 							<h4>子询里程碑</h4>
 						</div>
-						<ul class="zxlcbnr row">
+						<ul class="zxlcbnr row" style="color: #4A4A4A;">
 							<li class="zxl1 col-md-2 col-xs-12">
 								<div class="zxlcbnr-top">
 									<ul>
 										<li>技术创始团队在加拿大麦吉尔大学，中国科学院等最高技术研发中心开展AI领域的研究。</li>
 									</ul>
-									
 								</div>
 								<div class="zxlcbnr-ball">
 									<h5>2005</h5>
@@ -355,7 +440,7 @@
 								</div>
 								<div class="zxlcbnr-ball">
 									<h5 style="line-height: 1rem;font-size: 1.4rem;">
-										<div style="margin-top: 1.2rem;">
+										<div style="margin-top: 1.3rem;">
 											<div>2006</div>
 											<div>~</div>
 											<div>2009</div>
@@ -368,16 +453,16 @@
 							<li class="zxl3 col-md-2 col-xs-12">
 								<div class="zxlcbnr-top">
 									<ul>
-									<li>北京市科学技术奖一等奖</li>
-									<li>纳米环磁性隧道结及新纳米环磁随机储存器的基础研究。</li>
-									<li>发明专利：复合半导体。公开号：CN103000613B</li>
-									<li>发明专利：基于多铁或铁电材料的自旋体晶管</br>公开号：CN103515426A</li>
-									<li>发明专利：新型电场调控的互补场效应管及其逻辑电路</br>公开号：CN102593129A</li>
+										<li>北京市科学技术奖一等奖</li>
+										<li>纳米环磁性隧道结及新纳米环磁随机储存器的基础研究。</li>
+										<li>发明专利：复合半导体。公开号：CN103000613B</li>
+										<li>发明专利：基于多铁或铁电材料的自旋体晶管</br>公开号：CN103515426A</li>
+										<li>发明专利：新型电场调控的互补场效应管及其逻辑电路</br>公开号：CN102593129A</li>
 									</ul>
 								</div>
 								<div class="zxlcbnr-ball">
 									<h5 style="line-height: 1rem;font-size: 1.4rem;">
-										<div style="margin-top: 1.2rem;">
+										<div style="margin-top: 1.3rem;">
 											<div>2010</div>
 											<div>~</div>
 											<div>2015</div>
@@ -431,18 +516,19 @@
 									<i></i>
 									<span></span>
 								</div>
-							</li class="zxl6"><div class="clearfix"></div></div>
+							</li>
+							<div class="clearfix"></div>
 		        		  		<div class="clearfix"></div>
-						</ul>	
+						</ul>
 					</div>	
 	        		</div>
-	        </div>
+	      </div>
         </section>
         <!-- 结束关于子询 -->
         
         <!-- 合作伙伴及客户 -->
         <section>
-        		<div class="container">
+        		<div class="container martop-2">
         			<div class="row">
         				<img class="img-responsive" src="img/demo/Partner.jpg"/>
         			</div>
@@ -538,21 +624,10 @@
 		<script src="js/bootstrap.min.js"></script>
 		<script src="js/bootsnav.js"></script>
 		<script src="js/velocity.js"></script>
+        	<!--图片翻转特效-->
+		<script src="js/upturn.js"></script>
 		<!-- 轮播组件js -->
-        <script src="js/shutter.js"></script>
-
-        <script>
-            $(function() {
-                $('.shutter').shutter({
-                    shutterW: 1000, // 容器宽度
-                    shutterH: 358, // 容器高度
-                    isAutoPlay: true, // 是否自动播放
-                    playInterval: 3000, // 自动播放时间
-                    curDisplay: 3, // 当前显示页
-                    fullPage: true // 是否全屏展示
-                });
-            });
-        </script>
-		<!-- 轮播组件的样式 -->
+		<script src="js/carousel.js"></script>
+		<script src="js/unslider.min.js"></script>
 </html>
 
