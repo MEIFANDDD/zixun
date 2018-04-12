@@ -27,6 +27,9 @@ a:hover {
 .space {
 	margin-top: 40px;
 }
+.space-20 {
+	margin-top: 20px;
+}
 
 
 /*导航条二级菜单图片*/
@@ -215,7 +218,7 @@ a:hover {
 .footer-bg {
 	margin-top: 20px;
 	padding: 10px 0;
-	background-color: #2d2d2d;
+	background-color: #000;
 	color: #FFF;
 }
 

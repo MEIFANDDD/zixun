@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<title>子询人工智能研究院</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content=" HTML5 Template">
+		<meta name="author" content="zixuncr.com">
+		<link rel="shortcut icon" href="img/ai_logo.png">
+		<!-- Le styles -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/font-awesome.min.css" />
+		<!--animate库组件-->
+		<link href="css/animate.css" rel="stylesheet">
+		<link href="css/bootsnav.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/htmleaf-demo.css">
+		<link href="css/overwrite.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
+		<link href="css/color.css" rel="stylesheet">
+
+		<!--基础样式库-自定义-->
+		<link rel="stylesheet" href="css/comment.css" />
+		<style type="text/css">
+			html {
+				font-size: 14px;
+			}
+			
+			.jobs_container {
+				border: 1px solid #ddd;
+				background: #4a4a4a;
+			}
+			
+			.job_title {
+				height: 60px;
+				color: #b3b3b3;
+				margin: 0 20px;
+			}
+			
+			.job_title span {
+				display: inline-block;
+				width: 25rem;
+				line-height: 60px;
+			}
+			
+			.jobs_list .job {
+				cursor: pointer;
+			}
+			
+			.jobs_list .job .intro {
+				line-height: 60px;
+				border-bottom: 1px solid #DDD;
+				color: #4A4A4A;
+				padding: 0 20px;
+				font-size: 14px;
+				background: #FFF;
+				transition: all 0.3s ease;
+			}
+			
+			.jobs_list .job .intro:hover {
+				background: #EAEAEA;
+			}
+			
+			.jobs_list .job .intro .detial_title,
+			.jobs_list .job .intro>span {
+				display: inline-block;
+				width: 25rem;
+			}
+			
+			.jobs_list .job .intro .arrow {
+				display: inline-block;
+				width: 9px;
+				height: 5px;
+				margin-left: 20px;
+				background: url(./img/arrow.png) no-repeat;
+			}
+			
+			.rotate {
+				transform: rotate(180deg);
+			}
+			/*展开的面板*/
+			
+			.job .content {
+				color: #4A4A4A;
+				/*灰色*/
+				background: #F4F4F4;
+				padding: 0 50px 20px 50px;
+			}
+			
+			.job .content .header {
+				padding-top: 10px;
+				margin-bottom: 20px;
+				font-weight: 700;
+			}
+			
+			.job .content .ability {
+				border-bottom: 1px solid #ddd;
+			}
+			
+			.job .content ul {
+				padding-left: 13px;
+				padding-bottom: 20px;
+			}
+			
+			.job .content ul li {
+				line-height: 32px;
+			}
+			/*现在申请*/
+			
+			.job .content>.apply {
+				display: block;
+				width: 140px;
+				height: 50px;
+				line-height: 50px;
+				font-weight: 700;
+				text-align: center;
+				border: 2px solid #FFF;
+				border-radius: 5px;
+				background: #1b75a5;
+			}
+			.job .content>.apply>a {
+				color: #FFF;
+			}
+		</style>
+
+	</head>
+
+	<body>
+		<!--导航条 开始-->
+		<nav class="navbar navbar-default navbar-mobile bootsnav">
+			<div class="container">
+
+				<!-- logo -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                    <i class="fa fa-bars"></i>
+                </button>
+					<a class="navbar-brand" href="#brand"><img src="img/logo2.png" class="logo" alt=""></a>
+				</div>
+				<!-- logo -->
+
+				<!-- 导航条开始 -->
+				<div class="collapse navbar-collapse" id="navbar-menu">
+					<ul class="nav navbar-nav navbar-right navbar-fixed" data-in="fadeInDown" data-out="fadeOutUp">
+						<li>
+							<a href="index.html">主页</a>
+						</li>
+						<li class="dropdown megamenu-fw">
+							<a href="case.html" class="dropdown-toggle" data-toggle="dropdown">核心技术</a>
+							<ul class="dropdown-menu megamenu-content" role="menu">
+								<li>
+									<div class="row">
+										<div class="col-menu col-md-3">
+											<h6 class="title">语义理解技术</h6>
+											<div class="content">
+												<ul class="menu-col">
+													<li>
+														<a href="core.html">智能客服</a>
+													</li>
+													<li>
+														<a href="core.html">虚拟人物</a>
+													</li>
+													<li>
+														<a href="core.html">广告交互</a>
+													</li>
+
+												</ul>
+											</div>
+										</div>
+										<!-- end col-3 -->
+										<div class="col-menu col-md-3">
+											<h6 class="title">图像识别技术</h6>
+											<div class="content">
+
+												<ul class="menu-col">
+													<li>
+														<a href="core2.html">癌症筛查 </a>
+													</li>
+													<li>
+														<a href="core2.html">场景识别</a>
+													</li>
+													<li>
+														<a href="core2.html">机器人视觉</a>
+													</li>
+													<li>
+														<a href="core2.html">票据识别</a>
+													</li>
+
+												</ul>
+											</div>
+										</div>
+										<!-- end col-3 -->
+										<div class="col-menu col-md-3">
+											<h6 class="title">数据处理技术</h6>
+											<div class="content">
+												<ul class="menu-col">
+													<li>
+														<a href="core3.html">智能数据库</a>
+													</li>
+													<li>
+														<a href="core3.html">搜索库</a>
+													</li>
+													<li>
+														<a href="core3.html">授信融资与保险定价</a>
+													</li>
+													<li>
+														<a href="core3.html">投资决策系统与智能投资顾问</a>
+													</li>
+													<li>
+														<a href="core3.html">金融预测、反欺诈与风控</a>
+													</li>
+
+												</ul>
+											</div>
+										</div>
+										<div class="col-menu col-md-3">
+											<h6 class="title">其他</h6>
+											<div class="content">
+												<ul class="menu-col">
+													<li>
+														<a href="core4.html">自然语言合成</a>
+													</li>
+													<li>
+														<a href="core4.html">时序控制信号学习</a>
+													</li>
+													<li>
+														<a href="core4.html">近似目标锁定</a>
+													</li>
+												</ul>
+											</div>
+										</div>
+										<!-- end col-3 -->
+									</div>
+									<!-- end row -->
+								</li>
+							</ul>
+						</li>
+						<li class="dropdown megamenu-fw">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">案例展示</a>
+							<ul class="dropdown-menu megamenu-content clearfix" role="menu">
+								<li class="imgContent">
+									<a href="caseshow.html">
+										<div class="imgDiv">
+											<img src="img/demo/znyx.png" alt="" />
+										</div>
+										<p>智能家具</p>
+									</a>
+								</li>
+								<li class="imgContent">
+									<a href="caseshow2.html">
+										<div class="imgDiv">
+											<img src="img/demo/zncdb4.png" alt="" />
+										</div>
+										<p>智能共享</p>
+									</a>
+								</li>
+								<li class="imgContent">
+									<a href="caseshow3.html">
+										<div class="imgDiv">
+											<img src="img/demo/znsb5.png" alt="" />
+										</div>
+										<p>智能穿戴</p>
+									</a>
+								</li>
+								<li class="imgContent">
+									<a href="caseshow4.html">
+										<div class="imgDiv">
+											<img src="img/demo/znjqr5.png" alt="" />
+										</div>
+										<p>智能教育</p>
+									</a>
+								</li>
+							</ul>
+
+						</li>
+						<li>
+							<a href="media.html">自媒体</a>
+						</li>
+						<li>
+							<a href="about.html">关于子询</a>
+						</li>
+						<li>
+							<a href="joinUs.html">加入子询</a>
+						</li>
+					</ul>
+				</div>
+				<!--导航条 结束 -->
+			</div>
+		</nav>
+		<!-- 导航栏 结束 -->
+
+		<!--banner图-->
+		<div class="banner">
+			<div class="container">
+
+			</div>
+		</div>
+		<!--banner图 结束-->
+		<div class="container space">
+			<div class="jobs_container">
+				<div class="job_title">
+					<span class="title">职位</span>
+					<span class="type">职位类别</span>
+					<span class="location">工作地点</span>
+				</div>
+				<ul class="jobs_list">
+					
+
+				</ul>
+			</div>
+
+		</div>
+
+		<!--页脚-->
+		<div class="footer-bg">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12 col-md-6 space">
+						<div>商业邮箱：sales@zixuncr.com</div>
+						<div>微信号&nbsp;&nbsp;&nbsp;：zixun-Al</div>
+						<div>咨询电话： 156-2576-6807</div>
+						<div>联系地址：广东省深圳市南山市太子路111号深圳自贸中心6J</div>
+					</div>
+					<div class="hidden-xs col-md-6">
+
+						<ul class="link-3 pull-right">
+							<li>
+								<i class="alibaba"></i>
+								<a href="https://shop370qc5872c052.1688.com/" target="_blank">阿里巴巴</a>
+							</li>
+							<li>
+								<i class="weibo"></i>
+								<a href="https://weibo.com/u/1765048103" target="_blank">微博</a>
+							</li>
+							<li>
+								<i class="toutiao"></i>
+								<a href="https://www.toutiao.com/c/user/5470644862/#mid=1567990361508866" target="_blank">今日头条</a>
+							</li>
+						</ul>
+						<ul class="link-3 pull-right">
+							<li class="wechat-hover">
+								<img class="qrcode" src="img/qrcode.png" alt="" />
+								<i class="wechat"></i>
+								<a href="javascript:void(0);">微信</a>
+							</li>
+							<li>
+								<i class="acfun"></i>
+								<a href="http://www.acfun.cn/u/13125720.aspx" target="_blank">AcFun</a>
+							</li>
+							<li>
+								<i class="bilibili"></i>
+								<a href="https://space.bilibili.com/296327920#/" target="_blank">哔哩哔哩</a>
+							</li>
+						</ul>
+					</div>
+
+				</div>
+
+				<div class="row">
+					<div class="col-md-12">
+						<div class="copyright">
+							<div class="pull-left">子询(深圳)人工智能研究院有限公司版权所有 Copyrights All Reserverd &copy;2017.</div>
+							<div class="pull-right visible-md visible-lg">
+								<ul class="footer-menu">
+									<li>
+										<a href="index.html">首页</a>
+									</li>
+									<li>
+										<a href="javascript:void(0)">核心技术</a>
+									</li>
+									<li>
+										<a href="javascript:void(0)">案例展示</a>
+									</li>
+									<li>
+										<a href="media.html">自媒体</a>
+									</li>
+									<li>
+										<a href="about.html">关于子询</a>
+									</li>
+									<li>
+										<a href="joinUs.html">加入子询</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<!--页脚 结束-->
+		<script src="js/jquery.min.js"></script>
+	
+		<!--bootstrap导航条-->
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/bootsnav.js"></script>
+		<script src="js/velocity.js"></script>
+		<script type="text/javascript">
+			let data = [{
+					title: "软件系统工程师",
+					abilities: ["1.学历要求：本科或以上学历，有相关工作经验者优先；", "2.专业要求：软件工程、通讯工程等相关专业；", "3.精通主从C/S、S/S框架设计及实现者优先；", "4.熟练掌握HTTP、HTTPS、WebSocket等通讯协议；", "5.熟练使用前端技术开发单页面应用（SPA）；", "6. 勤奋好学，有创新意识，工作严谨，具备团队合作精神。", "7. 熟悉前端和服务端开发语言（例如Python、C/C++、Java、H5、C#、PHP等）优先；", "8.勤奋好学，有创新意识，工作严谨，具备团队合作精神。"],
+					jobNumber: "4人",
+					workDay: "一周工作6天",
+					excepts: ["1.	参与公司软件项目的架构设计、模块拆解、编程标准和规范的制定；", "2.	编写各种软件模块间的通讯协议、通讯接口、通讯例程；","3.	编写各种基于标准通讯协议的App的通讯服务器程序", "4.	积极主导软件项目的开发，有团队合作精神和责任心；","5.	可以独立完成各种软件模块的测试，和整体软件的联合调试；","6.	能够快速、高效的对产品经理提出的需求给出技术评估和解决方案。"],
+					category: "软件类"
+				},
+				{
+					title: "UI设计工程师",
+					abilities: ["1.学历要求：本科及本科以上；","2.专业要求：艺术设计、美术相关专业优先；","3.专业技能要求:有交互设计能力、熟练使用平面处理软件；","4.	软件技能要求：Photoshop、Illustrator等。"],
+					jobNumber: "5人",
+					workDay: "5天",
+					excepts: ["1.	负责根据产品原型设计产出相关软件UI页面；","2.	负责保证软件的功能性和美观性；","3.	负责制…的规范和规定；","4.	协助软件前端工程师进行页面设计与调整；","5.	完成上级领导交办的其他工作。"],
+					category: "软件类"
+				}, {
+					title: "通讯系统工程师",
+					abilities: ["1.	学历要求：本科或以上学历，有相关工作经验者优先", "2.	专业要求：软件工程、通讯工程等相关专业", "3.	精通主从C/S、S/S框架设计及实现者优先", "4.	熟练掌握HTTP、HTTPS、WebSocket等通讯协议", "5.	熟悉服务端开发语言（例如Python、C/C++、Java等）优先", "6.	勤奋好学，有创新意识，工作严谨，具备团队合作精神。"],
+					jobNumber: "6人",
+					workDay: "6天",
+					excepts:  ["1.	参与公司App的通讯中间件架构设计和标准的规范制定", "2.	编写各种基于标准通讯协议的App的通讯服务器程序", "3.	能够积极参与项目开发，有团队合作精神和责任心", "4.	可以独立完成各种标准协议的通讯测试试验", "5.	对产品经理、系统架构师提出的需求给出技术评估和解决方案。"],
+					category: "软件类"
+				}, {
+					title: "前端开发工程师",
+					abilities:  ["1.	学历要求：本科或以上学历，有相关工作经验者优先", "2.	熟悉前端开发框架者优先", "3.	熟练使用前端技术开发单页面应用（SPA）", "4.	熟悉服务端开发语言（例如H5、C#、Java、PHP等）优先", "5.	勤奋好学，有创新意识，工作严谨，具备团队合作精神。"],
+					jobNumber: "10人",
+					workDay: "6天",
+					excepts: ["1.	参与公司Web前端的架构设计和标准的规范制定；", "2.	掌握各种基于Web的产品交互效果，能够积极参与项目开发", "3.可以独立完成各种Web技术的试验；","4.	对产品经理、设计师提出的需求给出技术评估和解决方案。"],
+					category: "软件类"
+				}, {
+					title: "机电控制高级工程师",
+					abilities: ["1.	学历要求：本科或以上学历，有相关工作经验者优先", "2.	专业要求：电子信息工程、单片机、物联网IOT专业", "3.	精通HDL编程、有FPGA编程经验，有FPGA项目经验", "4.	掌握Matlab Simulink编程与FPGA相结合的开发流程者优先", "5.	具有单片机实际应用开发经验，熟悉各种开发工具和开发环境，具有芯片编程的学习能力", "6.	能独立应用8位、16位、32位单片机，熟练掌握STC、树莓派等单片机开发板，熟练掌握各类RS485、RS232、SPI等接口协议，独立完成软件开发", "7.	精通Python或C语言", "8.	能够编写电路原理图", "9.	熟悉电机驱动以及自动化控制", "10.	有负责过单片机项目整体设计的工作经验者优先。"],
+					jobNumber: "2人",
+					workDay: "6天",
+					excepts: ["1.	实现产品的机电一体自动化控制", "2.	编写芯片编程的技术规范，研究各种芯片的接口方案并编写例程，指导团队成员写作开发", "3.	完成产品的硬件设计、硬件开发，并配合项目整体进度，以最合理的方案，按工期实施", "4.	完成开发过程的测试、软硬件联合调试", "5.	自动化产品的升级和维护等", "6.	有带领团队成员紧密配合的能力，积极协作完成项目的时间点要求。"],
+					category: "自动化"
+				}, {
+					title: "机电控制工程师",
+					abilities: ["1.	学历要求：本科或以上学历，有相关工作经验者优先", "2.	专业要求：电子信息工程、单片机、物联网IOT专业", "3.	掌握Matlab Simulink编程、FPGA编程技术者优先", "4.	具有单片机实际应用开发经验，熟悉各种开发工具和开发环境", "5.	能独立应用8位、16位、32位单片机，熟练掌握STC、树莓派等单片机开发板，熟练掌握各类RS485、RS232、SPI等接口协议，独立完成软件开发", "6.	精通Python或C语言，并能读懂电路原理图", "7.	熟悉电机驱动以及自动化控制", "8.	如有利用FPGA进行过图像处理项目经验的人员，请提供项目的效果视频，将优先考虑", "9.	有负责项目工作经验者优先。"],
+					jobNumber: "2人",
+					workDay: "6天",
+					excepts:  ["1.	实现产品的机电一体自动化控制", "2.	完成产品的设计、开发，并配合任务进度，按工期实施", "3.	完成开发过程的测试、软硬件联合调试", "4.	自动化产品的升级和维护等", "5.	与团队成员紧密配合，积极协作完成项目的时间点要求。"],
+					category: "自动化"
+				}, {
+					title: "机电控制助理",
+					abilities:  ["1.	学历要求：本科或以上学历，有相关工作经验者优先", "2.	专业要求：电子信息工程、单片机、物联网IOT专业", "3.	精通Python或C语言，并能读懂电路原理图", "4.	熟练掌握电机驱动、自动化控制技术", "5.	抗压能力强、学习能力强、执行力强。"],
+					jobNumber: "5人",
+					workDay: "6天",
+					excepts: ["1.	实现产品的机电一体自动化控制", "2.	完成产品的设计、开发，并配合任务进度，按工期实施", "3.	完成开发过程的测试、软硬件联合调试", "4.	协助高级工程师完成其他工作", "5.	与团队成员紧密配合，积极协作完成项目的时间点要求。"],
+					category: "自动化"
+				}, {
+					title: "机电控制实习生",
+					abilities: ["1.	学历要求：本科或以上学历，有相关实习经验者优先", "2.	专业要求：电气工程及自动化控制相关专业应届毕业生", "3.	专业基础知识扎实，在学校期间品学兼优", "4.	具有团队合作意识，勤奋好学、沟通能力强", "5.	熟练掌握电动机控制技术", "6.	能实现电力拖动及控制（如机械臂、平衡车等的控制）。"],
+					jobNumber: "10人",
+					workDay: "6天",
+					excepts:  ["1.	负责研发部新产品设计、开发工作", "2.	编制电动机控制电路档案，及电动机驱动编写", "3.	实现电机相关产品的运转并优化产品。"],
+					category: "自动化"
+				}, {
+					title: "机械设计高级工程师",
+					abilities:  ["1.	学历要求：硕士及以上学历，有相关实习经验者优先", "2.	专业要求：机械设计相关专业、3D打印、模具成型相关专业等", "3.	有机械结构和人体工程学项目经验者优先", "4.	熟练掌握3D建模（3DMax、Maya、Zbrush等）、CAD等结构和机械设计软件", "5.	熟悉3D打印的制作工艺流程，掌握3D打印的物料特性", "6.	熟悉塑料产品生产工程，熟悉塑料材料特性", "7.	有良好的文案能力，团队协作能力，团队带领能力", "8.	如有美工背景请在简历附件中附上相关案例，将优先考虑。"],
+					jobNumber: "3人",
+					workDay: "6天",
+					excepts: ["1.	新产品的机械结构设计与开发，以及持续改善", "2.	产品机械部分的开模及生产流程管理控制，以降低成本，提升效率为产品生产原则", "3.	阅读英文文献，能够讲解国际前沿技术", "4.	产品机械部分与电控部分的组装", "5.	产品机械部分生产过程中的异常分析与改善", "6.	产品机械生产过程红的良品率提升与改善方案", "7.	SOP文件的制定/修订，团队人才培训，带领团队攻坚。"],
+					category: "机械设计"
+				}, {
+					title: "机械设计工程师",
+					abilities: ["1.	学历要求：硕士及以上学历，有相关实习经验者优先", "2.	专业要求：机械设计相关专业、3D打印、模具成型相关专业等", "3.	有机械结构和人体工程学项目经验者优先", "4.	熟练掌握3D建模（3DMax、Maya、Zbrush等）、CAD等结构和机械设计软件", "5.	熟悉3D打印的制作工艺流程，掌握3D打印的物料特性", "6.	及时跟进3D打印工艺的发展信息，同时致力于公司3D打印工艺的优化升级", "7.	如有美工背景请在简历附件中附上相关案例，将优先考虑。"],
+					jobNumber: "6人",
+					workDay: "6天",
+					excepts:  ["1.	能够独立完成项目的定制化建模要求", "2.	熟悉3D打印机的工艺和材料选用", "3.	熟练使用3D软件（Geomagic、CAD/CAM、UG、Solidwork、3DMax等）完成最后效果呈现", "4.	熟悉数3D打印机的编程与控制", "5.	有创新意识和较强的学习能力，乐于接受新鲜事物。"],
+					category: "机械设计"
+				},
+				{
+					title: "工业设计高级工程师",
+					abilities: ["1.	学历要求：研究生及以上学历", "2.	专业要求：工业设计/美术专业等相关专业", "3.	具有2年以上设计经验和较高设计水准，有医疗仪器、电子消费类产品设计工作经验优先考虑", "4.	对金属、塑胶、纸类等材料、机械成型工艺和表面处理工艺有所了解", "5.	有产品设计和建模所需要的三维构图能力，掌握产品研发所必需的软件，精通犀牛（Rhino）/Solidworks、Keyshot、熟悉CAD、Photoshop", "6.	熟悉产品效果的动画视频制作软件", ""],
+					jobNumber: "2人",
+					workDay: "6天",
+					excepts: ["1.	确定产品的设计概念、型态、材质定义、色彩计划、制造方案、新材质与工艺、易用性等", "2.	负责产品外观造型设计和结构设计", "3.	负责调研与分析报告、效果图、工艺说明、配色方案、贴纸、丝印设计的工作。"],
+					category: "工业设计"
+				},
+				{
+					title: "工业设计实习",
+					abilities:  ["1.	学历要求：本科及以上学历", "2.	专业要求：工业设计及相关专业", "3.	具有良好的艺术功底和设计意识，具有较好的草绘能力", " 4.	相关二维和三维设计软件能熟练运用", " 5.	性格开朗，积极主动，有很好的团队合作意识和学习提高能力"],
+					jobNumber: "4人",
+					workDay: "6天",
+					excepts: ["1.	在协助或合作条件下完成产品设计", "2.	独立完成产品部件的设计工作", "3.	参与概念设计和头脑风暴有自己主张。"],
+					category: "工业设计"
+				}, {
+					title: "人工智能高级工程师 ",
+					abilities: ["1.	学历要求：研究生及以上学历，博士学历者优先", "2.	专业要求：数学、物理、计算机等", "3.	研究经历要求：对机器学习、深度学习、自然语言理解、图像处理、时间序列、并行化计算等至少一个领域有所研究和了解", "4.	作为第一作者发表过一份专利或一片学术研究文章", "5.	投递简历者需提交研究生或博士毕业论文电子版，及答辩委员会意见函复印件", "6.	熟练掌握一种机器学习模型，如CNN或RNN", "7.	熟练掌握一种机器学习框架，如TensorFlow、Caffe或MxNet等", "8.	熟练掌握至少一门常用编程语言如Python、JAVA或C/C++", "9.	熟练掌握至少一门数据库编程技术，如Spark、MySQL等", "10.	图像处理方向的工程师，要求熟悉OpenCV、有深度学习处理图像、目标追踪、人像追踪或图像质量检测方面的实践经验", "11.	具有良好的团队合作精神，有良好的中文和英文文案能力。"],
+					jobNumber: "10人",
+					workDay: "6天",
+					excepts:  ["1.	新算法的设计与开发，以及持续改善", "2.	产品人工智能部分的开发、训练流程管理、算法训练效率的优化、降低训练的计算成本，提升产品的人工智能识别效率", "3.	阅读英文文献，能够讲解国际前沿技术", "4.	产品人工智能部分的著作权专利撰写", "5.	产品人工智能部分的异常分析与改善", "6.	产品人工智能部分的代码管理、撰写试验报告、工作周报、团队人才培训，以及带领团队攻坚。"],
+					additionTerm:  ["1.	发表过人工智能领域高水平论文的优先 ，包括但不限于NIPS，ICML，ICLR，AAAI，IJ…I，KDD，WWW，CVPR，ICCV，ACL，EMNLP，ICASSP，INTERSPEECH等", "2.	有机器学习人工智能竞赛算法得奖经验者优先，如ImageNet、Kaggle、ACM/ICPC。"],
+					category: "人工智能设计"
+				}, {
+					title: "人工智能工程师",
+					abilities:  ["1.	学历要求：研究生及以上学历，博士学历者优先", "2.	专业要求：数学、物理、材料、计算机等", "3.	研究经历要求：对机器学习、深度学习、自然语言理解、图像处理、时间序列、并行化计算等至少一个领域有所研究和了解", "4.	投递简历者需提交研究生或博士毕业论文电子版，及答辩委员会意见函复印件", "5.	熟练掌握一种机器学习模型，如CNN或RNN", "6.	熟练掌握一种机器学习框架，如TensorFlow、Caffe或MxNet等", "7.	熟练掌握至少一门常用编程语言如Python、JAVA或C/C++", "8.	熟练掌握至少一门数据库编程技术，如Spark、MySQL等", "9.	具有良好的团队合作精神，有良好的中文文案能力。"],
+					jobNumber: "10人",
+					workDay: "6天",
+					excepts: ["1.	新算法的开发，以及持续改善", "2.	产品人工智能部分的开发、算法训练效率的优化、降低训练的计算成本，提升产品的人工智能识别效率", "3.	产品人工智能部分的异常分析与改善", "4.	产品人工智能部分的代码管理、撰写试验报告。"],
+					additionTerm: ["1.	发表过人工智能领域高水平论文的优先 ，包括但不限于NIPS，ICML，ICLR，AAAI，IJ…I，KDD，WWW，CVPR，ICCV，ACL，EMNLP，ICASSP，INTERSPEECH等", "2.	有机器学习人工智能竞赛算法得奖经验者优先，如ImageNet、Kaggle、ACM/ICPC。"],
+					category: "人工智能设计"
+				},
+				{
+					title: "人工智能助理工程师",
+					abilities:  ["1.	学历要求：本科及以上学历，有相关工作或实习经验者优先", "2.	专业要求：数学、物理、材料、计算机等", "3.	研究经历要求：对机器学习、深度学习、自然语言理解、图像处理、时间序列、并行化计算等至少一个领域有所研究和了解", "4.	熟练掌握一种机器学习模型，如CNN或RNN", "5.	熟练掌握一种机器学习框架，如TensorFlow、Caffe或MxNet等", "6.	熟练掌握至少一门常用编程语言如Python、JAVA或C/C++", "7.	具有良好的团队合作精神。"],
+					jobNumber: "10人",
+					workDay: "6天",
+					excepts:  ["1.	新算法的开发，以及持续改善", "2.	产品人工智能部分的开发、算法训练效率的优化，提升产品的人工智能识别效率", "3.	产品人工智能部分的代码管理、撰写试验报告。"],
+					additionTerm: ["1.	发表过人工智能领域高水平论文的优先 ，包括但不限于NIPS，ICML，ICLR，AAAI，IJ…I，KDD，WWW，CVPR，ICCV，ACL，EMNLP，ICASSP，INTERSPEECH等", "2.	有机器学习人工智能竞赛算法得奖经验者优先，如ImageNet、Kaggle、ACM/ICPC。"],
+					category: "人工智能设计"
+				}
+
+			];
+
+			$(function() {
+				
+				let job_list = $(".jobs_list");
+				let template="";
+				let abilities = "";
+				let excepts = "";
+				let len = data.length;
+				let tmpl = "";
+				data.reverse();
+				for(let i=len-1; i>=0; i--) {
+					// 岗位要求
+					excepts = data[i].excepts;
+					// 期望
+					abilities = data[i].abilities;
+					// 加分项
+					additionTerm = data[i].additionTerm?data[i].additionTerm:"";
+				
+					// 处理嵌套数组
+					tmpl = items => `
+					  ${items.map(item => `
+					    <li>${item}</li>
+					  `).join('')}
+					  
+					`;
+				
+					template += `
+						<li class="job">
+							<div class="intro">
+									<div class="detial_title">
+										${data[i].title}
+										<span class="arrow"></span>
+									</div>
+									<span class="type">${data[i].category}</span>
+									<span class="location">深圳</span>
+								</div>
+								<div class="content" style="display: none;">
+									<div class="header">岗位要求：</div>
+									<ul class="ability">
+										${tmpl(abilities)}
+									</ul>
+									<div class="header">我们对您的期望</div>
+									<ul class="except">
+										${tmpl(excepts)}
+									</ul>
+									${additionTerm!=""?`<div class="header">加分项</div>`:""}
+									<ul>
+										${additionTerm==""?"":tmpl(additionTerm)}
+									</ul>
+									<div class="header">招聘人数: ${data[i].jobNumber}</div>
+									<div class="header">工作天数: 一周工作${data[i].workDay}</div>
+									<div class="apply">
+										<a href="">现在申请</a>
+									</div>
+								</div>
+							</li>
+					`;
+				}
+				job_list.append(template);
+				let intro = $(".intro");
+				// 职位标题
+				let detial_title = intro.children(".detial_title")[0];
+				// 倒三角图标
+				let arrow = $(".arrow");
+				// 职位类型
+				let type = intro.children(".type")[0];
+				// 工作地点
+				let workPlace = intro.children(".location")[0];
+
+				intro.click(function() {
+					if($(this).next().is(":hidden")) {
+						$(".content").hide();
+						$(this).next().slideDown().show();
+						$(this).find(".arrow").addClass("rotate");
+					} else {
+						$(this).next().slideUp().hide();
+						$(this).find(".arrow").removeClass("rotate");
+					}
+				});
+			});
+		</script>
+	</body>
+
+</html>
