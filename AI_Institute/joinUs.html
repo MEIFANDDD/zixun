@@ -46,13 +46,15 @@
 			/*岗位招聘--翻转特效*/
 			
 			.upturn-list {
+				float: left;
 				height: 300px;
 			}
 			
 			.upturn-list>li {
 				position: relative;
 				float: left;
-				width: 284px;
+				/*width: 284px;*/
+				width: 234px;
 				height: 300px;
 				list-style: none;
 			}
@@ -71,20 +73,6 @@
 				margin-bottom: 60px;
 			}
 			
-			.upturn-list .flip-box h4~div {
-				width: 100px;
-				height: 30px;
-				line-height: 30px;
-				margin: 0 auto;
-				background: #337ab7;
-				color: #FFF;
-				border-radius: 30px;
-				text-align: center;
-			}
-			
-			.upturn-list .flip-box strong {
-				margin: 0 auto;
-			}
 			
 			.job_bg_1 {
 				background-size: 284px 300px;
@@ -132,14 +120,19 @@
 				bottom: 0;
 				transform: translate(-50%,-50%);
 			}
-			
+			.more_job {
+				float: left;
+				height: 150px;
+				margin-top: 150px;
+				margin-left: 30px;
+			}
+			/*更多职位--按钮*/
 			a.joinBtn:hover,
 			a.joinBtn:link,
 			a.joinBtn:active,
 			a.joinBtn:visited {
 				color: #FFF;
 			}
-			
 			.joinBtn::before {
 				background-color: #2591b4;
 				background-image: url(./img/right_arrow.png);
@@ -391,7 +384,7 @@
 		</div>
 		<!--内容主体 结束-->
 
-		<div class="container space">
+		<div class="container space clearfix">
 			<ul class="upturn-list">
 				<li class="viewport-flip">
 					<div class="flip-box flip out">
@@ -424,7 +417,7 @@
 								<li>2. 熟练掌握一种机器学习模型，如CNN或RNN；</li>
 
 								<li>3. 熟练掌握一种机器学习框架，如TensorFlow、Caffe或MxNet等；</li>
-								<li>4. 熟练掌握至少一门常用编程语言如Python、JAVA或C/C++</li>
+							
 							</ul>
 							<div class="detail">
 								<a class="btn btn-primary" href="jobApplications.html">查看详情</a>
@@ -441,10 +434,10 @@
 							<!--正面-->
 							<h6 class="text-center">岗位职责：</h6>
 							<ul>
-								<li>1年以上人力资源管理经验者优先，有互联网或科技类行业人力资源管理经验者优先；</li>
-								<li>招聘系列流程跟进；</li>
-								<li>员工离职、入职、其他变动的办理；</li>
-								<li>员工绩效考核统计</li>
+								<li>1、1年以上人力资源管理经验者优先，有互联网或科技类行业人力资源管理经验者优先；</li>
+								<li>2、招聘系列流程跟进；</li>
+								<li>3、员工离职、入职、其他变动的办理；</li>
+								<li>4、员工绩效考核统计</li>
 							</ul>
 							<div class="detail">
 								<a class="btn btn-primary" href="jobApplications.html">查看详情</a>
@@ -461,9 +454,9 @@
 							<!--正面-->
 							<h6 class="text-center">岗位职责：</h6>
 							<ul>
-								<li>1年及以上阿里巴巴运营工作经验，熟悉各种线上活动的推广手段，并具备实际操作经验；</li>
-								<li>精通阿里巴巴关键词策略、熟悉阿里巴巴的搜索排名及优化；</li>
-								<li>熟悉阿里运营环境、阿里交易规则、阿里推广、阿里站内广告论坛资源</li>
+								<li>1、1年及以上阿里巴巴运营工作经验，熟悉各种线上活动的推广手段，并具备实际操作经验；</li>
+								<li>2、精通阿里巴巴关键词策略、熟悉阿里巴巴的搜索排名及优化；</li>
+								<li>3、熟悉阿里运营环境、阿里交易规则、阿里推广、阿里站内广告论坛资源</li>
 							</ul>
 							<div class="detail">
 								<a class="btn btn-primary" href="jobApplications.html">查看详情</a>
@@ -475,9 +468,8 @@
 					</div>
 				</li>
 			</ul>
-			
-			<div class="row">
-				<div class="col-xs-12 col-md-12 text-center">
+			<div class="more_job">
+				<div>
 					<a class="joinBtn" href="jobApplications.html">更多职位</a>
 				</div>
 			</div>
