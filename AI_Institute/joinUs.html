@@ -33,11 +33,13 @@
 				background: url(img/znjy_150.png) center no-repeat;
 				background-size: 150px 150px;
 			}
+			
 			.joinImg img {
 				width: 400px;
 				height: 300px;
 				background: #C0C0C0;
 			}
+			
 			.slogan {
 				line-height: 2rem;
 			}
@@ -50,7 +52,7 @@
 			.upturn-list>li {
 				position: relative;
 				float: left;
-				width: 250px;
+				width: 284px;
 				height: 300px;
 				list-style: none;
 			}
@@ -59,18 +61,16 @@
 				position: absolute;
 				left: 0;
 				top: 0;
-				width: 250px;
+				width: 100%;
 				height: 300px;
-				background: #FFF;
-				
 				overflow: hidden;
 			}
 			
-		
 			.upturn-list .flip-box h4 {
 				margin-top: 100px;
 				margin-bottom: 60px;
 			}
+			
 			.upturn-list .flip-box h4~div {
 				width: 100px;
 				height: 30px;
@@ -81,15 +81,86 @@
 				border-radius: 30px;
 				text-align: center;
 			}
+			
 			.upturn-list .flip-box strong {
 				margin: 0 auto;
+			}
+			
+			.job_bg_1 {
+				background-size: 284px 300px;
+				background-image: url(./img/job/al.jpg) !important;
+			}
+			
+			.job_bg_2 {
+				background-size: 284px 300px;
+				background-image: url(./img/job/al_fu.jpg) !important;
+			}
+			
+			.job_bg_3 {
+				background-size: 284px 300px;
+				background-image: url(./img/job/hr.jpg) !important;
+			}
+			
+			.job_bg_4 {
+				background-size: 284px 300px;
+				background-image: url(./img/job/seo.jpg) !important;
+			}
+			/*招聘*/
+			
+			.joinBtn {
+				position: relative;
+				color: #FFF;
+				padding: 10px 20px;
+				padding-right: 50px;
+				background-color: #1375FF;
+				border-radius: 5px;
+				box-shadow: inset 0px 1px 0px #5898D0, 0px 5px 0px 0px #156785, 0px 10px 5px #88B5DD;
+				font-weight: 700;
+			}
+			
+			.joinBtn:hover {
+				background-color: #2fa0ec;
+			}
+			/*岗位描述*/
+			.job_desc {
+				height: 100%;
+				position: relative;
+			}
+			.job_desc .detail {
+				position: absolute;
+				left: 50%;
+				bottom: 0;
+				transform: translate(-50%,-50%);
+			}
+			
+			a.joinBtn:hover,
+			a.joinBtn:link,
+			a.joinBtn:active,
+			a.joinBtn:visited {
+				color: #FFF;
+			}
+			
+			.joinBtn::before {
+				background-color: #2591b4;
+				background-image: url(./img/right_arrow.png);
+				background-repeat: no-repeat;
+				background-position: center center;
+				content: "";
+				width: 20px;
+				height: 20px;
+				border-radius: 50%;
+				position: absolute;
+				right: 15px;
+				top: 50%;
+				margin-top: -9px;
+				box-shadow: inset 0px 1px 0px #052756, 0px 1px 0px #60c9f0;
 			}
 		</style>
 
 	</head>
 
 	<body>
-<!--导航条 开始-->
+		<!--导航条 开始-->
 		<nav class="navbar navbar-default navbar-mobile bootsnav">
 			<div class="container">
 
@@ -251,8 +322,6 @@
 			</div>
 		</nav>
 		<!-- End Navigation -->
-		
-	<div class="clearfix"></div>
 
 		<!--banner图-->
 		<div class="banner">
@@ -273,9 +342,9 @@
 				<div class="col-xs-12 col-md-6">
 					<div class="text-center space ">
 						<h3>加入我们</h3>
-					<p class="slogan">高大上的办公大楼、舒适优雅的办公环境、便利的交通让你带着愉悦的心情上班；平均年龄在25岁的年轻化团队让你不会觉得沉闷；扁平化管理制度让你有自由发挥的空间，更有中科院博士及世界各地大牛给你提供帮助、一对一指导！心动不如行动，快来加入我们吧！</p>
+						<p class="slogan">高大上的办公大楼、舒适优雅的办公环境、便利的交通让你带着愉悦的心情上班；平均年龄在25岁的年轻化团队让你不会觉得沉闷；扁平化管理制度让你有自由发挥的空间，更有中科院博士及世界各地大牛给你提供帮助、一对一指导！心动不如行动，快来加入我们吧！</p>
 					</div>
-					
+
 				</div>
 			</div>
 			<div class="row">
@@ -301,8 +370,8 @@
 				</div>
 				<div class="col-xs-12 col-md-6">
 					<div class="text-center space">
-						<h3 >口号</h3>
-					<p class="slogan">子询以“创造一流的AI产品、构建一流AI人才、建设一流AI企业”为愿景，立志发展特色、自主、高效的人工智能应用生态体系。我们会以匠人精神尽量做出最好的产品；以采光剖璞的态度招揽人才，以爱才好士的心态对待人才；以恪尽职守的职业精神建设人工智能公司。</p>
+						<h3>口号</h3>
+						<p class="slogan">子询以“创造一流的AI产品、构建一流AI人才、建设一流AI企业”为愿景，立志发展特色、自主、高效的人工智能应用生态体系。我们会以匠人精神尽量做出最好的产品；以采光剖璞的态度招揽人才，以爱才好士的心态对待人才；以恪尽职守的职业精神建设人工智能公司。</p>
 					</div>
 				</div>
 			</div>
@@ -314,7 +383,7 @@
 					<div style="margin-top: 10px;">
 						<h3>现在就加入我们吧</h3>
 						<p>请将您的简历与作品</p>
-						<p>发送至：sales@zixuncr.com</p>
+						<p>发送至：jzhong@zixuncr.com</p>
 					</div>
 				</div>
 			</div>
@@ -326,88 +395,92 @@
 			<ul class="upturn-list">
 				<li class="viewport-flip">
 					<div class="flip-box flip out">
-						<!--正面-->
-
-						<div><strong>岗位职责：</strong></div>
-
-						<div>
+						<div class="job_desc">
+							<!--正面-->
+							<h6 class="text-center">岗位职责：</h6>
 							<ul>
-								<li>学历要求：本科或以上学历，有相关工作经验者优先</li>
-								<li>专业要求：电子信息工程、单片机、物联网IOT专业</li>
-								<li>精通HDL编程、有FPGA编程经验，有FPGA项目经验；</li>
-								<li>掌握Matlab Simulink编程与FPGA相结合的开发流程者优先；</li>
+								<li>1. 熟练掌握一种机器学习模型，如CNN或RNN；</li>
+								<li>2. 熟练掌握一种机器学习框架，如TensorFlow、Caffe或MxNet等；</li>
+								<li>3. 熟练掌握至少一门常用编程语言如Python、JAVA或C/C++；</li>
+								<li>4. 熟练掌握至少一门数据库编程技术，如Spark、MySQL等</li>
 							</ul>
-							<a href="#">查看详情</a>
+							<div class="detail">
+								<a class="btn btn-primary" href="jobApplications.html">查看详情</a>
+							</div>
 						</div>
-
 					</div>
-					<div class="flip-box flip">
-						<!--反面-->
-						<h4>机电控制高级工程师</h4>
-						<div>查看职位要求</div>
+					<div class="flip-box flip job_bg_1">
+
 					</div>
 				</li>
 				<li class="viewport-flip">
 					<div class="flip-box flip out">
-						<!--正面-->
-						<div><strong>岗位职责：</strong></div>
-						<div>
+						<div class="job_desc">
+							<!--正面-->
+							<h6 class="text-center">岗位职责：</h6>
+
 							<ul>
-								<li>学历要求：硕士及以上学历，有相关实习经验者优先；</li>
-								<li>专业要求：机械设计相关专业、3D打印、模具成型相关专业等；</li>
-								<li>有机械结构和人体工程学项目经验者优先；</li>
-								<li>熟练掌握3D建模（3DMax、Maya、Zbrush等）、CAD等结构和机械设计软件；</li>
+								<li>1. 研究经历要求：对机器学习、深度学习、自然语言理解、图像处理、时间序列、并行化计算等至少一个领域有所研究和了解；</li>
+								<li>2. 熟练掌握一种机器学习模型，如CNN或RNN；</li>
+
+								<li>3. 熟练掌握一种机器学习框架，如TensorFlow、Caffe或MxNet等；</li>
+								<li>4. 熟练掌握至少一门常用编程语言如Python、JAVA或C/C++</li>
 							</ul>
-							<a href="#">查看详情</a>
+							<div class="detail">
+								<a class="btn btn-primary" href="jobApplications.html">查看详情</a>
+							</div>
 						</div>
 					</div>
-					<div class="flip-box flip">
-						<!--反面-->
-						<h4>机械设计高级工程师</h4>
-						<div>查看职位要求</div>
+					<div class="flip-box flip job_bg_2">
+
 					</div>
 				</li>
 				<li class="viewport-flip">
 					<div class="flip-box flip out">
-						<!--正面-->
-						<div><strong>岗位职责：</strong></div>
-						<div>
+						<div class="job_desc">
+							<!--正面-->
+							<h6 class="text-center">岗位职责：</h6>
 							<ul>
-								<li>学历要求：研究生及以上学历，博士学历者优先；</li>
-								<li>专业要求：数学、物理、计算机等；</li>
-								<li>研究经历要求：对机器学习、深度学习、自然语言理解、图像处理、时间序列、并行化计算等至少一个领域有所研究和了解；</li>
-								<li>作为第一作者发表过一份专利或一片学术研究文章；</li>
+								<li>1年以上人力资源管理经验者优先，有互联网或科技类行业人力资源管理经验者优先；</li>
+								<li>招聘系列流程跟进；</li>
+								<li>员工离职、入职、其他变动的办理；</li>
+								<li>员工绩效考核统计</li>
 							</ul>
-							<a href="#">查看详情</a>
+							<div class="detail">
+								<a class="btn btn-primary" href="jobApplications.html">查看详情</a>
+							</div>
 						</div>
 					</div>
-					<div class="flip-box flip">
-						<!--反面-->
-						<h4>人工智能高级工程师</h4>
-						<div>查看职位要求</div>
+					<div class="flip-box flip job_bg_3">
+
 					</div>
 				</li>
 				<li class="viewport-flip">
 					<div class="flip-box flip out front">
-						<!--正面-->
-						<div><strong>岗位职责：</strong></div>
-						<div>
+						<div class="job_desc">
+							<!--正面-->
+							<h6 class="text-center">岗位职责：</h6>
 							<ul>
-								<li>学历要求：研究生及以上学历，博士学历者优先；</li>
-								<li>专业要求：数学、物理、材料、计算机等；</li>
-								<li>研究经历要求：对机器学习、深度学习、自然语言理解、图像处理、时间序列、并行化计算等至少一个领域有所研究和了解；</li>
-								<li>投递简历者需提交研究生或博士毕业论文电子版，及答辩委员会意见函复印件；</li>
+								<li>1年及以上阿里巴巴运营工作经验，熟悉各种线上活动的推广手段，并具备实际操作经验；</li>
+								<li>精通阿里巴巴关键词策略、熟悉阿里巴巴的搜索排名及优化；</li>
+								<li>熟悉阿里运营环境、阿里交易规则、阿里推广、阿里站内广告论坛资源</li>
 							</ul>
-							<a href="#">查看详情</a>
+							<div class="detail">
+								<a class="btn btn-primary" href="jobApplications.html">查看详情</a>
+							</div>
 						</div>
 					</div>
-					<div class="flip-box flip back">
-						<!--反面-->
-						<h4>人工智能工程师</h4>
-						<div>查看职位要求</div>
+					<div class="flip-box flip back job_bg_4">
+
 					</div>
 				</li>
 			</ul>
+			
+			<div class="row">
+				<div class="col-xs-12 col-md-12 text-center">
+					<a class="joinBtn" href="jobApplications.html">更多职位</a>
+				</div>
+			</div>
 		</div>
 
 		<!--页脚-->
