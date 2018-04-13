@@ -15,14 +15,10 @@
 			}
 			.craousel-dom{
 				position: absolute;
-				z-index: 2;
 				top: 35rem;
 				width: 89rem;
-				height: 5rem;
-				background: #00BEFF;
-				filter:alpha(Opacity=80);
-				-moz-opacity:0.5;
-				opacity: 0.5;
+				height: 4rem;
+				opacity: 0.8;
 				z-index:100;
 				background-color:#000000;
 			}
@@ -30,6 +26,7 @@
 				color: #FFFFFF;
 				margin-bottom: 0px;
 				margin-top: 1rem;
+				font-size: 1.3rem;
 			}
 			
 			.banner-carousel li {
