@@ -148,6 +148,12 @@
 .blackstyle{
 	background: #333333;
 }
+.blackstyle2{
+	background: #000000;
+}
+.blackstyle2 h3{
+	color: #FFFFFF;
+}
 .blackstyle h3{
 	color: #FFFFFF;
 }
