@@ -219,19 +219,20 @@ a:hover {
 
 
 /*=============底部图标链接=======================*/
-
+.link-3 {
+	margin-top: 25px;
+}
 .link-3 li {
 	height: 50px;
 	margin-right: 20px;
+	
 }
 
 
 /*css3文字渐变*/
 
 .link-3 a:hover {
-	background-image: -webkit-gradient(linear, 0 0, 0 bottom, from(#B2DFEE), to(#4876FF));
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+	color: #116891;
 }
 
 
@@ -277,7 +278,7 @@ a:hover {
 	transform: scale(1);
 	opacity: 1;
 	left: 30px;
-	top: -100px;
+	top: -120px;
 	width: 100px;
 }
 
@@ -289,9 +290,17 @@ a:hover {
 	display: inline-block;
 	width: 50px;
 	height: 50px;
+	margin-right: 20px;
+	vertical-align: top;
 	background-repeat: no-repeat;
 	cursor: pointer;
 	background-image: url(../img/icon.png);
+}
+.link-3 li span {
+	display: inline-block;
+	height: 50px;
+	line-height: 50px;
+	vertical-align: top;
 }
 
 .link-3 li .alibaba {
@@ -303,7 +312,7 @@ a:hover {
 }
 
 .link-3 li .toutiao {
-	background-position: 0 12px;
+	background-position: 0 3px;
 }
 
 .link-3 li .acfun {
@@ -322,7 +331,7 @@ a:hover {
 .link-3 li a {
 	position: relative;
 	top: -40%;
-	margin-left: 20px;
+	/*margin-left: 20px;*/
 	color: #FFF;
 }
 
