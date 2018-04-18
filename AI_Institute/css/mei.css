@@ -197,7 +197,7 @@
 				position: relative;
 				float: left;
 				width: 22.5rem;
-				height: 12.3rem;
+				height: 15.3rem;
 				list-style: none;
 				margin-left: 1.47rem;
 			}
@@ -211,7 +211,9 @@
 				background: #FFF;
 				overflow: hidden;
 			}
-			
+			.upturn-list li .flip-box img {
+				height: 100%;
+			}
 		
 			.upturn-list .flip-box h4 {
 				margin-top: 100px;
@@ -226,6 +228,9 @@
 				color: #FFF;
 				border-radius: 30px;
 				text-align: center;
+			}
+			.upturn-list .flip-box li {
+				line-height: 30px;
 			}
 			.upturn-list .flip-box strong {
 				margin: 0 auto;
