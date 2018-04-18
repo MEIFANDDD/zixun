@@ -47,15 +47,16 @@
 			
 			.upturn-list {
 				float: left;
-				height: 300px;
 			}
 			
 			.upturn-list>li {
 				position: relative;
 				float: left;
 				/*width: 284px;*/
-				width: 234px;
-				height: 300px;
+				/*width: 234px;*/
+				width: 14.625rem;
+				height: 18.75rem;
+				/*height: 300px*/
 				list-style: none;
 			}
 			
@@ -64,7 +65,8 @@
 				left: 0;
 				top: 0;
 				width: 100%;
-				height: 300px;
+				/*height: 300px;*/
+				height: 18.75rem;
 				overflow: hidden;
 			}
 			
@@ -74,37 +76,52 @@
 			}
 			
 			.job_bg_1 {
-				background-size: 284px 300px;
+				/*background-size: 284px 300px;*/
+				background-size: cover;
 				background-image: url(./img/job/al_300.jpg) !important;
+				background-repeat: no-repeat;
 			}
 			
 			.job_bg_2 {
-				background-size: 284px 300px;
+				/*background-size: 284px 300px;*/
 				background-image: url(./img/job/al_fu_300.jpg) !important;
 			}
 			
 			.job_bg_3 {
-				background-size: 284px 300px;
+				/*background-size: 284px 300px;*/
 				background-image: url(./img/job/hr_300.jpg) !important;
 			}
 			
 			.job_bg_4 {
-				background-size: 284px 300px;
+				/*background-size: 284px 300px;*/
 				background-image: url(./img/job/seo_300.jpg) !important;
 			}
 			/*招聘*/
 			
 			.more_job {
+				position: relative;
 				float: left;
+			
+				/*float: left;*/
+				width: 120px;
 				height: 150px;
-				margin-top: 150px;
-				margin-left: 50px;
+				/*height: 100%;*/
+				/*height: 150px;*/
+/*				margin-top: 150px;
+*/
+				/*margin-left: 50px;*/
+				/*margin-top: 9.375rem;*/
 			}
 			
 			.joinBtn {
-				position: relative;
+				
+				position: absolute;
+				top: 75%;
+				
+				display: block;
 				color: #FFF;
 				padding: 10px 20px;
+				margin-left: 20px;
 				background-color: #1375FF;
 				border-radius: 5px;
 				box-shadow: inset 0px 1px 0px #5898D0, 0px 5px 0px 0px #156785, 0px 10px 5px #88B5DD;
@@ -113,6 +130,20 @@
 			
 			.joinBtn:hover {
 				background-color: #2fa0ec;
+			}
+			
+			@media screen and (max-width: 375px) {
+				.more_job {
+					width: 100%;
+					height: 50px;
+				}
+				.joinBtn {
+					top: 15%;
+					margin-left: 100px;
+				}
+				.viewport-flip {
+					margin-left: 30px;
+				}
 			}
 			/*岗位描述*/
 			
@@ -370,8 +401,8 @@
 		</div>
 		<!--内容主体 结束-->
 
-		<div class="container space clearfix">
-			<ul class="upturn-list">
+		<div class="container space">
+			<ul class="upturn-list clearfix">
 				<li class="viewport-flip">
 					<div class="flip-box flip out">
 						<div class="job_desc">
@@ -455,9 +486,7 @@
 				</li>
 			</ul>
 			<div class="more_job">
-				<div>
-					<a class="joinBtn" href="jobApplications.html">更多职位</a>
-				</div>
+				<a class="joinBtn" href="jobApplications.html">更多职位</a>
 			</div>
 		</div>
 
