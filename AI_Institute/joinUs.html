@@ -47,15 +47,16 @@
 			
 			.upturn-list {
 				float: left;
-				height: 300px;
 			}
 			
 			.upturn-list>li {
 				position: relative;
 				float: left;
 				/*width: 284px;*/
-				width: 234px;
-				height: 300px;
+				/*width: 234px;*/
+				width: 14.625rem;
+				height: 18.75rem;
+				/*height: 300px*/
 				list-style: none;
 			}
 			
@@ -64,7 +65,8 @@
 				left: 0;
 				top: 0;
 				width: 100%;
-				height: 300px;
+				/*height: 300px;*/
+				height: 18.75rem;
 				overflow: hidden;
 			}
 			
@@ -74,37 +76,52 @@
 			}
 			
 			.job_bg_1 {
-				background-size: 284px 300px;
+				/*background-size: 284px 300px;*/
+				background-size: cover;
 				background-image: url(./img/job/al_300.jpg) !important;
+				background-repeat: no-repeat;
 			}
 			
 			.job_bg_2 {
-				background-size: 284px 300px;
+				/*background-size: 284px 300px;*/
 				background-image: url(./img/job/al_fu_300.jpg) !important;
 			}
 			
 			.job_bg_3 {
-				background-size: 284px 300px;
+				/*background-size: 284px 300px;*/
 				background-image: url(./img/job/hr_300.jpg) !important;
 			}
 			
 			.job_bg_4 {
-				background-size: 284px 300px;
+				/*background-size: 284px 300px;*/
 				background-image: url(./img/job/seo_300.jpg) !important;
 			}
 			/*招聘*/
 			
 			.more_job {
+				position: relative;
 				float: left;
+			
+				/*float: left;*/
+				width: 120px;
 				height: 150px;
-				margin-top: 150px;
-				margin-left: 50px;
+				/*height: 100%;*/
+				/*height: 150px;*/
+/*				margin-top: 150px;
+*/
+				/*margin-left: 50px;*/
+				/*margin-top: 9.375rem;*/
 			}
 			
 			.joinBtn {
-				position: relative;
+				
+				position: absolute;
+				top: 75%;
+				
+				display: block;
 				color: #FFF;
 				padding: 10px 20px;
+				margin-left: 20px;
 				background-color: #1375FF;
 				border-radius: 5px;
 				box-shadow: inset 0px 1px 0px #5898D0, 0px 5px 0px 0px #156785, 0px 10px 5px #88B5DD;
@@ -113,6 +130,20 @@
 			
 			.joinBtn:hover {
 				background-color: #2fa0ec;
+			}
+			
+			@media screen and (max-width: 375px) {
+				.more_job {
+					width: 100%;
+					height: 50px;
+				}
+				.joinBtn {
+					top: 15%;
+					margin-left: 100px;
+				}
+				.viewport-flip {
+					margin-left: 30px;
+				}
 			}
 			/*岗位描述*/
 			
@@ -370,8 +401,8 @@
 		</div>
 		<!--内容主体 结束-->
 
-		<div class="container space clearfix">
-			<ul class="upturn-list">
+		<div class="container space">
+			<ul class="upturn-list clearfix">
 				<li class="viewport-flip">
 					<div class="flip-box flip out">
 						<div class="job_desc">
@@ -455,9 +486,7 @@
 				</li>
 			</ul>
 			<div class="more_job">
-				<div>
-					<a class="joinBtn" href="jobApplications.html">更多职位</a>
-				</div>
+				<a class="joinBtn" href="jobApplications.html">更多职位</a>
 			</div>
 		</div>
 
@@ -467,7 +496,7 @@
 				<div class="row">
 					<div class="col-sm-12 col-md-6 space">
 						<div>商业邮箱：sales@zixuncr.com</div>
-						<div>微信号：zixun-Al</div>
+						<div>微信号：szzixun_Al</div>
 						<div>咨询电话： 156-2576-6807</div>
 						<div>联系地址：广东省深圳市南山市太子路111号深圳自贸中心6J</div>
 					</div>
@@ -475,31 +504,34 @@
 
 						<ul class="link-3 pull-right">
 							<li>
-								<i class="alibaba"></i>
-								<a href="https://shop370qc5872c052.1688.com/" target="_blank">阿里巴巴</a>
+								<a href="https://shop370qc5872c052.1688.com/" target="_blank"><i class="alibaba"></i><span>阿里巴巴</span></a>
 							</li>
 							<li>
-								<i class="weibo"></i>
-								<a href="https://weibo.com/u/1765048103" target="_blank">微博</a>
+								
+								<a href="https://weibo.com/u/1765048103" target="_blank"><i class="weibo"></i><span>微博</span></a>
 							</li>
 							<li>
-								<i class="toutiao"></i>
-								<a href="https://www.toutiao.com/c/user/5470644862/#mid=1567990361508866" target="_blank">今日头条</a>
+								
+								<a href="https://www.toutiao.com/c/user/5470644862/#mid=1567990361508866" target="_blank">
+									<i class="toutiao"></i>
+									<span>今日头条</span>
+								</a>
 							</li>
 						</ul>
 						<ul class="link-3 pull-right">
 							<li class="wechat-hover">
 								<img class="qrcode" src="img/qrcode.png" alt="" />
-								<i class="wechat"></i>
-								<a href="javascript:void(0);">微信</a>
+								
+								<a href="javascript:void(0);">
+									<i class="wechat"></i><span>微信</span></a>
 							</li>
 							<li>
-								<i class="acfun"></i>
-								<a href="http://www.acfun.cn/u/13125720.aspx" target="_blank">AcFun</a>
+								
+								<a href="http://www.acfun.cn/u/13125720.aspx" target="_blank"><i class="acfun"></i><span>AcFun</span></a>
 							</li>
 							<li>
-								<i class="bilibili"></i>
-								<a href="https://space.bilibili.com/296327920#/" target="_blank">哔哩哔哩</a>
+								
+								<a href="https://space.bilibili.com/296327920#/" target="_blank"><i class="bilibili"></i><span>哔哩哔哩</span></a>
 							</li>
 						</ul>
 					</div>
@@ -539,6 +571,7 @@
 			</div>
 		</div>
 		<!--页脚 结束-->
+
 		<script src="js/jquery.min.js"></script>
 		<!--bootstrap导航条-->
 		<script src="js/bootstrap.min.js"></script>
