@@ -235,28 +235,6 @@ a:hover {
 	color: #116891;
 }
 
-
-/*.link-3 .wechat-hover {
-	position: relative;
-}
-
-.link-3 .wechat-hover img {
-	position: absolute;
-	top: -50px;
-	width: 0;
-	height: auto;
-	z-index: 2000;
-	
-}
-
-.link-3 .wechat-hover:hover .link-3 .wechat-hover img.qrcode {
-	transform: scale(1);
-	opacity: 1;
-	left: 0;
-	top: 0;
-	width: 50px;
-}*/
-
 .link-3 .wechat-hover {
 	position: relative;
 }
