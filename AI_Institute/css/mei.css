@@ -166,33 +166,14 @@
 	width: 18rem;
 	height: 18rem;
 }
-.fillet2{
-	border-radius: 0.93rem;
-}
+
 /** 核心技术交互 **/
 .hx p{
 	text-indent: 2rem;
 }
-			/*首页案例展示交互*/
 			
-			.circle {
-				width: 150px;
-				height: 150px;
-				/*border-radius: 50%;*/
-				background: url(img/znjy_150.png) center no-repeat;
-				background-size: 150px 150px;
-			}
-			.joinImg img {
-				width: 400px;
-				height: 300px;
-				background: #C0C0C0;
-			}
-			/*岗位招聘--翻转特效*/
-			
-			.upturn-list {
-				
-			}
-			
+		
+			/*核心技术--翻转特效*/
 			.upturn-list>li {
 				position: relative;
 				float: left;
@@ -229,9 +210,7 @@
 				border-radius: 30px;
 				text-align: center;
 			}
-			.upturn-list .flip-box li {
-				line-height: 30px;
-			}
+			
 			.upturn-list .flip-box strong {
 				margin: 0 auto;
 			}
@@ -266,4 +245,103 @@
 /** 案例展示 **/
 
 /** 自媒体 **/
+.selfMedia a {
+	display: block;
+	width: 22.5rem;
+	height: 15.25rem;
+	border-radius: 0.5rem;
+	overflow: hidden;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.selfMedia .article{
+	background: url(../img/demo/article2.jpg);
+}
+.selfMedia .video{
+	background: url(../img/demo/video2.jpg);
+}
+.selfMedia .advisory{
+	background: url(../img/demo/advisory2.jpg);
+}
+.selfMedia a div {
+	width: 100%;
+	height: 100%;
+	background: transparent;
+	transition: all .3s ease;
+}
+.selfMedia a:hover div{
+	background: #2fa0ec;
+}
 
+/*标题字样*/
+.selfMedia a div p {
+	position: relative;
+	top: 40%;
+	height: 3rem;
+	line-height: 3rem;
+	font-size: 18px;
+	color: #FFF;
+	background: rgba(0,0,0,.7);
+	text-align: center;
+	/*overwrite.min.css的样式影响了这里*/
+	margin-bottom: 0;
+	transition: all 0.6s ease;
+}
+.selfMedia a div p:before {
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	content: "";
+	width: 90%;
+	height: 1px;
+	background: #FFF;
+	transform: translateX(-50%) scale(0);
+	transition: all 0.6s ease;
+}
+.selfMedia a div p:after {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	content: "";
+	width: 90%;
+	height: 1px;
+	background: #FFF;
+	transform: translateX(-50%) scale(0);
+	transition: all 0.6s ease;
+}
+/*鼠标hover时的交互*/
+
+.selfMedia a:hover p {
+	/*p一开始有一个半透明的黑色*/
+	background: transparent;
+}
+
+/*文字hover*/
+.selfMedia a:hover p:after{
+	transform: translatex(-50%) scale(1);
+}
+.selfMedia a:hover p:before{
+	transform: translatex(-50%) scale(1);
+}
+
+/*针对移动端做媒体查询*/
+@media  screen and (max-width: 414px) {
+	.upturn-list {
+		margin: 0 15px;
+	}
+	.upturn-list .viewport-flip {
+		width: 100%;
+		margin-left: 0;
+		margin-top: 20px;
+	}
+	.selfMedia div {
+		margin-bottom: 20px;
+	}
+	.selfMedia a {
+		width: 100%;
+	}
+	.martop {
+		margin-top: 20px;
+		
+	}
+}
