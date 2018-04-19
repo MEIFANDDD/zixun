@@ -12,117 +12,17 @@
 		<link href="css/bootstrap.min.css" rel="stylesheet">
 		<link rel="stylesheet" href="css/font-awesome.min.css" />
 		<!--animate库组件-->
-		<link href="css/animate.css" rel="stylesheet">
-		<link href="css/bootsnav.css" rel="stylesheet">
-		<link rel="stylesheet" type="text/css" href="css/htmleaf-demo.css">
-		<link href="css/overwrite.css" rel="stylesheet">
-		<link href="css/style.css" rel="stylesheet">
-		<link href="css/color.css" rel="stylesheet">
+		<link href="css/animate.min.css" rel="stylesheet">
+		<link href="css/bootsnav.min.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/htmleaf-demo.min.css">
+		<link href="css/overwrite.min.css" rel="stylesheet">
+		<link href="css/style.min.css" rel="stylesheet">
+		<link href="css/color.min.css" rel="stylesheet">
 
 		<!--基础样式库-自定义-->
-		<link rel="stylesheet" href="css/comment.css" />
-		<style type="text/css">
-			html {
-				font-size: 14px;
-			}
-			
-			.jobs_container {
-				border: 1px solid #ddd;
-				background: #4a4a4a;
-			}
-			
-			.job_title {
-				height: 60px;
-				color: #b3b3b3;
-				margin: 0 20px;
-			}
-			
-			.job_title span {
-				display: inline-block;
-				width: 25rem;
-				line-height: 60px;
-			}
-			
-			.jobs_list .job {
-				cursor: pointer;
-			}
-			
-			.jobs_list .job .intro {
-				line-height: 60px;
-				border-bottom: 1px solid #DDD;
-				color: #4A4A4A;
-				padding: 0 20px;
-				font-size: 14px;
-				background: #FFF;
-				transition: all 0.3s ease;
-			}
-			
-			.jobs_list .job .intro:hover {
-				background: #EAEAEA;
-			}
-			
-			.jobs_list .job .intro .detial_title,
-			.jobs_list .job .intro>span {
-				display: inline-block;
-				width: 25rem;
-			}
-			
-			.jobs_list .job .intro .arrow {
-				display: inline-block;
-				width: 9px;
-				height: 5px;
-				margin-left: 20px;
-				background: url(./img/arrow.png) no-repeat;
-			}
-			
-			.rotate {
-				transform: rotate(180deg);
-			}
-			/*展开的面板*/
-			
-			.job .content {
-				color: #4A4A4A;
-				/*灰色*/
-				background: #F4F4F4;
-				padding: 0 50px 20px 50px;
-			}
-			
-			.job .content .header {
-				padding-top: 10px;
-				margin-bottom: 20px;
-				font-weight: 700;
-			}
-			
-			.job .content .ability {
-				border-bottom: 1px solid #ddd;
-			}
-			
-			.job .content ul {
-				padding-left: 13px;
-				padding-bottom: 20px;
-			}
-			
-			.job .content ul li {
-				line-height: 32px;
-			}
-			/*现在申请*/
-			
-			.job .content>.apply {
-				display: block;
-				width: 140px;
-				height: 50px;
-				line-height: 50px;
-				font-weight: 700;
-				text-align: center;
-				border: 2px solid #FFF;
-				border-radius: 5px;
-				background: #1b75a5;
-			}
-			
-			.job .content>.apply>a {
-				color: #FFF;
-			}
-		</style>
+		<link rel="stylesheet" href="css/comment.min.css" />
+		<!--针对职位申请界面的样式-->
+		<link rel="stylesheet" href="css/jobApplication.min.css" />
 
 	</head>
 
@@ -412,7 +312,7 @@
 					jobNumber: "急招",
 					workDay: "5天",
 					excepts:  ["1、本科及以上学历，1年以上工作经验，有互联网或科技类行业人力资源管理经验者优先", "2、能随时到岗者优先", "3、办事效率高，细心，有洞察力", "4、抗压能力强，做事积极主动。"],
-					category: "人力资源管理"
+					category: "HR"
 				}, {
 					title: "软件系统工程师",
 					abilities: ["1.学历要求：本科或以上学历，有相关工作经验者优先；", "2.专业要求：软件工程、通讯工程等相关专业；", "3.精通主从C/S、S/S框架设计及实现者优先；", "4.熟练掌握HTTP、HTTPS、WebSocket等通讯协议；", "5.熟练使用前端技术开发单页面应用（SPA）；", "6. 勤奋好学，有创新意识，工作严谨，具备团队合作精神。", "7. 熟悉前端和服务端开发语言（例如Python、C/C++、Java、H5、C#、PHP等）优先；", "8.勤奋好学，有创新意识，工作严谨，具备团队合作精神。"],
@@ -507,7 +407,7 @@
 					workDay: "6天",
 					excepts:  ["1.	新算法的设计与开发，以及持续改善", "2.	产品人工智能部分的开发、训练流程管理、算法训练效率的优化、降低训练的计算成本，提升产品的人工智能识别效率", "3.	阅读英文文献，能够讲解国际前沿技术", "4.	产品人工智能部分的著作权专利撰写", "5.	产品人工智能部分的异常分析与改善", "6.	产品人工智能部分的代码管理、撰写试验报告、工作周报、团队人才培训，以及带领团队攻坚。"],
 					additionTerm:  ["1.	发表过人工智能领域高水平论文的优先 ，包括但不限于NIPS，ICML，ICLR，AAAI，IJ…I，KDD，WWW，CVPR，ICCV，ACL，EMNLP，ICASSP，INTERSPEECH等", "2.	有机器学习人工智能竞赛算法得奖经验者优先，如ImageNet、Kaggle、ACM/ICPC。"],
-					category: "人工智能设计"
+					category: "人工智能"
 				}, {
 					title: "人工智能工程师",
 					abilities:  ["1.	学历要求：研究生及以上学历，博士学历者优先", "2.	专业要求：数学、物理、材料、计算机等", "3.	研究经历要求：对机器学习、深度学习、自然语言理解、图像处理、时间序列、并行化计算等至少一个领域有所研究和了解", "4.	投递简历者需提交研究生或博士毕业论文电子版，及答辩委员会意见函复印件", "5.	熟练掌握一种机器学习模型，如CNN或RNN", "6.	熟练掌握一种机器学习框架，如TensorFlow、Caffe或MxNet等", "7.	熟练掌握至少一门常用编程语言如Python、JAVA或C/C++", "8.	熟练掌握至少一门数据库编程技术，如Spark、MySQL等", "9.	具有良好的团队合作精神，有良好的中文文案能力。"],
@@ -515,7 +415,7 @@
 					workDay: "6天",
 					excepts: ["1.	新算法的开发，以及持续改善", "2.	产品人工智能部分的开发、算法训练效率的优化、降低训练的计算成本，提升产品的人工智能识别效率", "3.	产品人工智能部分的异常分析与改善", "4.	产品人工智能部分的代码管理、撰写试验报告。"],
 					additionTerm: ["1.	发表过人工智能领域高水平论文的优先 ，包括但不限于NIPS，ICML，ICLR，AAAI，IJ…I，KDD，WWW，CVPR，ICCV，ACL，EMNLP，ICASSP，INTERSPEECH等", "2.	有机器学习人工智能竞赛算法得奖经验者优先，如ImageNet、Kaggle、ACM/ICPC。"],
-					category: "人工智能设计"
+					category: "人工智能"
 				},
 				{
 					title: "人工智能助理工程师",
@@ -524,7 +424,7 @@
 					workDay: "6天",
 					excepts:  ["1.	新算法的开发，以及持续改善", "2.	产品人工智能部分的开发、算法训练效率的优化，提升产品的人工智能识别效率", "3.	产品人工智能部分的代码管理、撰写试验报告。"],
 					additionTerm: ["1.	发表过人工智能领域高水平论文的优先 ，包括但不限于NIPS，ICML，ICLR，AAAI，IJ…I，KDD，WWW，CVPR，ICCV，ACL，EMNLP，ICASSP，INTERSPEECH等", "2.	有机器学习人工智能竞赛算法得奖经验者优先，如ImageNet、Kaggle、ACM/ICPC。"],
-					category: "人工智能设计"
+					category: "人工智能"
 				}
 
 			];
