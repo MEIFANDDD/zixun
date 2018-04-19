@@ -261,4 +261,52 @@
 /** 案例展示 **/
 
 /** 自媒体 **/
+.self-media a div:hover p{
+	background: transparent;
+}
+.self-media a div{
+	width: 100%;
+	height: 100%;
+	background: transparent;
+	transition: all 0.3s ease;
+}
+.self-media a div:hover{
+	background: #116891;
+}
+.self-media a div p{
+	font-size: 1.4rem;
+	color: #fff;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	height: 4rem;
+	background: rgba(00,00,00,.7);
+	text-align: center;
+	line-height: 4rem;
+	margin: 0 auto;
+}
 
+.self-media a div p::before{
+	content: "";
+	width: 90%;
+	height: 1px;
+	background: #fff;
+	display: block;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%) scale(0);
+	transition: all 0.6s ease;
+}
+.self-media a div p::after{
+	content: "";
+	width: 90%;
+	height: 1px;
+	background: #fff;
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%) scale(0);
+	transition: all 0.6s ease;
+}
