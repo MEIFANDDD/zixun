@@ -161,6 +161,25 @@
 	font-size: 1.12rem;
 	color: #FFFFFF;
 }
+
+/*轮播样式重写*/
+.carousel-caption {
+	font-size: 18px;
+	bottom: 32px;
+}
+
+.carousel-indicators li {
+	width: 14px;
+	height: 14px;
+	border-radius: 50%;
+	margin-right: 10px;
+}
+.carousel-indicators .active {
+	width: 14px;
+	height: 14px;
+	margin-right: 10px;
+}
+
 /** 圆角矩形样式 **/
 .fillet{
 	width: 18rem;

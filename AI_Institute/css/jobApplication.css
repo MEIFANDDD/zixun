@@ -133,7 +133,6 @@ html {
 }
 
 @media screen and (min-width: 321px) and (max-width: 415px) {
-	/* 415px*/
 	.jobs_list {
 		font-size: 12px;
 	}
@@ -155,8 +154,11 @@ html {
 	.jobs_list .job .intro .detial_title {
 		width: 10rem;
 	}
-	.jobs_list .job .intro>span {
+	.jobs_list .job .intro>span.type {
 		width: 6.5rem;
+	}
+	.jobs_list .job .intro>span.location {
+		width: 4rem;
 	}
 	.job .content {
 		padding-left: 20px;
