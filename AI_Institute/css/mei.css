@@ -256,13 +256,13 @@
 	background-size: cover;
 }
 .selfMedia .article{
-	background: url(../img/demo/article2.jpg);
+	background: url(../img/demo/article.jpeg);
 }
 .selfMedia .video{
-	background: url(../img/demo/video2.jpg);
+	background: url(../img/demo/video.jpeg);
 }
 .selfMedia .advisory{
-	background: url(../img/demo/advisory2.jpg);
+	background: url(../img/demo/advisory.jpeg);
 }
 .selfMedia a div {
 	width: 100%;
