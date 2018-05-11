@@ -20,11 +20,12 @@ html,body {
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
+  /*  font-family: 'Open Sans', sans-serif;*/
+    font-family:"Microsoft Yahei, PingFang SC, Hiragino Sans GB, sans-serif";
     position: relative;
 	font-size:14px;
 	line-height:24px;
-	color:#6f6f6f;
+	/*color:#6f6f6f;*/
 }
 
 a{

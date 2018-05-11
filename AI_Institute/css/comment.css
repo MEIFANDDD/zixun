@@ -21,7 +21,12 @@ a:hover {
 	text-decoration: none;
 }
 
-
+/*解决在移动端下logo大小被限制的问题，其实是overwrite.css 第206行设置了*/
+@media (max-width: 992px) {
+	nav.navbar .navbar-brand img.logo{
+        width: 100%;
+    }
+}
 /*间距*/
 
 .space {
